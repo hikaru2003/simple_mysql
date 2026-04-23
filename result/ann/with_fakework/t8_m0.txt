@@ -1,0 +1,8 @@
+Starting experiment: Threads=8, Multiplier=0, Rounds=30
+------------------------------------
+Total Counter: 1370220
+Throughput: 137022.00 ops/sec
+Global ut_delay count: 19208304
+Global yield count: 518601
+Global sleep count: 407349
+Average Latency[tsc]: 95727
