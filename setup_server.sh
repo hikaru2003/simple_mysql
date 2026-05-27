@@ -1,0 +1,69 @@
+#!/bin/bash
+
+# Setup script for simple_mysql experiment on CloudLab
+# - Install build tools and CPU frequency utilities
+# - Disable turbo boost and set performance governor
+# - Clone simple_mysql repository and build binary
+
+INSTALL_PACKAGES="build-essential git python3 python3-pip python3-pandas cpufrequtils linux-tools-common linux-tools-generic zsh curl htop"
+GIT_REPO_URL="https://github.com/hikaru2003/simple_mysql.git"
+ZSHRC_REPO_URL="https://github.com/hikaru2003/zshrc.git"
+USER_HOME=/users/Morisaki
+
+set -x
+exec > >(tee -a /local/startup.log) 2>&1
+echo "=== Startup script started ==="
+
+# Disable Turbo Boost
+echo "Disabling Turbo Boost..."
+if [ -e /sys/devices/system/cpu/intel_pstate/no_turbo ]; then
+    echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo
+    echo "Intel turbo disabled."
+elif [ -e /sys/devices/system/cpu/cpufreq/boost ]; then
+    echo 0 > /sys/devices/system/cpu/cpufreq/boost
+    echo "AMD boost disabled."
+else
+    echo "Turbo control not found, skipping."
+fi
+
+# Install packages
+echo "Installing packages..."
+DEBIAN_FRONTEND=noninteractive apt update
+DEBIAN_FRONTEND=noninteractive apt install -y ${INSTALL_PACKAGES}
+
+# Set performance governor
+echo "Setting CPU governor to performance..."
+cpupower frequency-set -g performance || echo "cpupower failed, trying cpufreq-set..."
+for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do
+    echo performance > $cpu 2>/dev/null || true
+done
+
+# Set zsh as default shell
+sudo chsh -s $(which zsh) $USER
+
+# Clone simple_mysql repository
+echo "Cloning simple_mysql repository..."
+cd $USER_HOME
+git clone ${GIT_REPO_URL}
+
+# Build binary
+echo "Building simple_lock binary..."
+cd $USER_HOME/simple_mysql
+gcc -O2 -march=native -o simple_lock wait_signal.c -lpthread
+echo "Build complete."
+
+# Clone zshrc repository
+echo "Cloning zshrc repository..."
+cd $USER_HOME
+git clone ${ZSHRC_REPO_URL}
+bash zshrc/install.sh
+cp zshrc/zshrc ${USER_HOME}/.zshrc
+chmod 644 ${USER_HOME}/.zshrc
+
+# Change ownership
+USER_NAME=Morisaki
+USER_GROUP=sslabko-fast-nw-
+chown -R $USER_NAME:$USER_GROUP $USER_HOME/simple_mysql
+chown -R $USER_NAME:$USER_GROUP $USER_HOME/zshrc
+
+echo "=== Startup script completed ==="

@@ -6,10 +6,12 @@
 #include <sched.h>
 #include <unistd.h>
 #include <stdalign.h>
+#include <stdint.h>
+#include <time.h>
 #include <x86gprintrin.h>
 
 #define cpu_relax()     asm volatile("rep; nop")
-#define DURATION 10
+#define DURATION 30
 #define WORKING_SET_SIZE (1024 * 1024) // 1MB程度のバッファ
 
 alignas(64) atomic_bool	lock_var;
@@ -31,9 +33,37 @@ alignas(64) unsigned int	num_threads = 16;
 alignas(64) unsigned int	spin_wait_pause_multiplier = 50;
 alignas(64) unsigned int	spin_wait_rounds = 30;
 alignas(64) unsigned int	spin_wait_delay = 6;
+alignas(64) long			
+work_ns = 0;
 
 void lock_init(atomic_bool *l) {
 	atomic_store(l, false);
+}
+
+static uint64_t tsc_cycles_per_ns = 0;
+
+static void calibrate_tsc(void) {
+	struct timespec t1, t2;
+	uint64_t c1, c2;
+
+	clock_gettime(CLOCK_MONOTONIC, &t1);
+	c1 = __rdtsc();
+	struct timespec sleep_ts = {0, 100000000L}; // 100ms
+	nanosleep(&sleep_ts, NULL);
+	c2 = __rdtsc();
+	clock_gettime(CLOCK_MONOTONIC, &t2);
+
+	long elapsed_ns = (t2.tv_sec - t1.tv_sec) * 1000000000L + (t2.tv_nsec - t1.tv_nsec);
+	tsc_cycles_per_ns = (c2 - c1) / elapsed_ns;
+	printf("TSC calibration: %llu cycles/ns (%.3f GHz)\n",
+	       (unsigned long long)tsc_cycles_per_ns,
+	       (double)tsc_cycles_per_ns);
+}
+
+static void busy_wait_ns(long ns) {
+	if (ns <= 0) return;
+	uint64_t target = __rdtsc() + (uint64_t)ns * tsc_cycles_per_ns;
+	while (__rdtsc() < target);
 }
 
 // https://github.com/mysql/mysql-server/blob/trunk/storage/innobase/ut/ut0ut.cc#L95
@@ -115,20 +145,20 @@ void fake_work() {
 void *thread_func(void *param)
 {
 	while (!atomic_load_explicit(&stop_flag, memory_order_relaxed)) {
-		unsigned long long start = __rdtsc();
+		// unsigned long long start = __rdtsc();
 		lock_acquire(&lock_var);
-		// fake_work();
+		busy_wait_ns(work_ns);
 		total_count++;
-		unsigned long long end = __rdtsc();
-		atomic_fetch_add_explicit(&total_latency_tsc, (end - start), memory_order_relaxed);
 		lock_release(&lock_var);
+		// unsigned long long end = __rdtsc();
+		// atomic_fetch_add_explicit(&total_latency_tsc, (end - start), memory_order_relaxed);
 	}
 	return NULL;
 }
 
 int main(int argc, char *argv[]) {
 	int opt;
-	while ((opt = getopt(argc, argv, "t:m:r:")) != -1) {
+	while ((opt = getopt(argc, argv, "t:m:r:w:")) != -1) {
 		switch (opt) {
 			case 't':
 				num_threads = atoi(optarg);
@@ -138,8 +168,12 @@ int main(int argc, char *argv[]) {
 				break;
 			case 'r':
 				spin_wait_rounds = atoi(optarg);
+				break;
+			case 'w':
+				work_ns = atol(optarg);
+				break;
 			default:
-				fprintf(stderr, "Usage: %s [-t num_threads] [-m multiplier] [-r spin wait rounds]\n", argv[0]);
+				fprintf(stderr, "Usage: %s [-t num_threads] [-m multiplier] [-r rounds] [-w work_ns]\n", argv[0]);
 				exit(EXIT_FAILURE);
 		}
 	}
@@ -152,7 +186,8 @@ int main(int argc, char *argv[]) {
 	lock_init(&lock_var);
 	lock_init(&stop_flag);
 
-	printf("Starting experiment: Threads=%u, Multiplier=%u, Rounds=%u\n", num_threads, spin_wait_pause_multiplier, spin_wait_rounds);
+	calibrate_tsc();
+	printf("Starting experiment: Threads=%u, Multiplier=%u, Rounds=%u, WorkNs=%ld\n", num_threads, spin_wait_pause_multiplier, spin_wait_rounds, work_ns);
 
 	for (int i = 0; i < num_threads; i++) {
 		if (pthread_create(&threads[i], NULL, thread_func, NULL) != 0) {
@@ -175,7 +210,8 @@ int main(int argc, char *argv[]) {
 	printf("Global ut_delay count: %lld\n", global_ut_delay_count);
 	printf("Global yield count: %lld\n", global_yield_count);
 	printf("Global sleep count: %lld\n", global_sleep_count);
-	printf("Average Latency[tsc]: %lld\n", total_latency_tsc / total_count);
+	printf("Work[ns]: %ld\n", work_ns);
+	// printf("Average Latency[tsc]: %lld\n", total_latency_tsc / total_count);
 	
 	free(threads);
 	return 0;
