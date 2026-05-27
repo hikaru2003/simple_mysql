@@ -43,6 +43,10 @@ cd $USER_HOME
 git clone ${GIT_REPO_URL}
 chmod +x $USER_HOME/simple_mysql/simple_lock $USER_HOME/simple_mysql/pause_cycle_count
 
+# Apply htop config
+mkdir -p $USER_HOME/.config/htop
+cp $USER_HOME/simple_mysql/dotfiles/htoprc $USER_HOME/.config/htop/htoprc
+
 # Change ownership
 USER_NAME=Morisaki
 USER_GROUP=sslabko-fast-nw-
