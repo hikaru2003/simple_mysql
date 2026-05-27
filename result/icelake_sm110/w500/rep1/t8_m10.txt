@@ -1,0 +1,9 @@
+TSC calibration: 2 cycles/ns (2.000 GHz)
+Starting experiment: Threads=8, Multiplier=10, Rounds=30, WorkNs=500
+------------------------------------
+Total Counter: 55513758
+Throughput: 1850458.60 ops/sec
+Global ut_delay count: 75293190
+Global yield count: 344805
+Global sleep count: 309911
+Work[ns]: 500
