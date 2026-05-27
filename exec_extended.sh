@@ -7,7 +7,8 @@ THREADS=(1 4 8)
 MULTIPLIERS=(0 10 20 30 40 50 60 70 80 90 100)
 WORK_DURATIONS=(0 500)   # ns: 0=no work, 500=fixed 500ns critical section
 BINARY=simple_lock
-OUTDIR=result_new
+SERVER=${1:-$(hostname -s)}
+OUTDIR=result/${SERVER}
 
 # CPU frequency setup
 echo "=== CPU Setup ==="
@@ -36,7 +37,7 @@ total=$((REPS * ${#THREADS[@]} * ${#MULTIPLIERS[@]} * ${#WORK_DURATIONS[@]}))
 done_count=0
 start_time=$(date +%s)
 
-echo "=== Experiment ==="
+echo "=== Experiment (Server: ${SERVER}) ==="
 echo "Reps: $REPS, Threads: ${THREADS[*]}, Multipliers: ${MULTIPLIERS[*]}, Work(ns): ${WORK_DURATIONS[*]}"
 echo "Total runs: $total (est. ~$((total * 30 / 60)) min)"
 echo ""
