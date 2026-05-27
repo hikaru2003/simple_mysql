@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Setup script for simple_mysql experiment on CloudLab
-# - Install build tools and CPU frequency utilities
+# - Install CPU frequency utilities
 # - Disable turbo boost and set performance governor
-# - Clone simple_mysql repository and build binary
+# - Clone simple_mysql repository (pre-built binary included)
 
-INSTALL_PACKAGES="build-essential git python3 python3-pip python3-pandas cpufrequtils linux-tools-common linux-tools-generic zsh curl htop"
+INSTALL_PACKAGES="git python3 python3-pip python3-pandas cpufrequtils linux-tools-common linux-tools-generic zsh curl htop"
 GIT_REPO_URL="https://github.com/hikaru2003/simple_mysql.git"
 ZSHRC_REPO_URL="https://github.com/hikaru2003/zshrc.git"
 USER_HOME=/users/Morisaki
@@ -41,16 +41,11 @@ done
 # Set zsh as default shell
 sudo chsh -s $(which zsh) $USER
 
-# Clone simple_mysql repository
+# Clone simple_mysql repository (pre-built binary included)
 echo "Cloning simple_mysql repository..."
 cd $USER_HOME
 git clone ${GIT_REPO_URL}
-
-# Build binary
-echo "Building simple_lock binary..."
-cd $USER_HOME/simple_mysql
-gcc -O2 -march=native -o simple_lock wait_signal.c -lpthread
-echo "Build complete."
+chmod +x $USER_HOME/simple_mysql/simple_lock $USER_HOME/simple_mysql/pause_cycle_count
 
 # Clone zshrc repository
 echo "Cloning zshrc repository..."
