@@ -27,7 +27,7 @@ echo ""
 
 # Build
 echo "=== Build ==="
-gcc -O2 -march=native -o ${BINARY} wait_signal.c -lpthread
+gcc -O2 -march=x86-64 -o ${BINARY} wait_signal.c -lpthread
 echo "  Built: ${BINARY}"
 echo ""
 
