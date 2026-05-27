@@ -25,12 +25,6 @@ else
 fi
 echo ""
 
-# Build
-echo "=== Build ==="
-gcc -O2 -march=x86-64 -o ${BINARY} wait_signal.c -lpthread
-echo "  Built: ${BINARY}"
-echo ""
-
 # Setup output dirs
 for w in "${WORK_DURATIONS[@]}"; do
     for rep in $(seq 1 $REPS); do
