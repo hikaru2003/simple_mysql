@@ -7,7 +7,6 @@
 
 INSTALL_PACKAGES="git python3 python3-pip python3-pandas cpufrequtils linux-tools-common linux-tools-generic zsh curl htop"
 GIT_REPO_URL="https://github.com/hikaru2003/simple_mysql.git"
-ZSHRC_REPO_URL="https://github.com/hikaru2003/zshrc.git"
 USER_HOME=/users/Morisaki
 
 set -x
@@ -38,27 +37,15 @@ for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do
     echo performance > $cpu 2>/dev/null || true
 done
 
-# Set zsh as default shell
-sudo chsh -s $(which zsh) $USER
-
 # Clone simple_mysql repository (pre-built binary included)
 echo "Cloning simple_mysql repository..."
 cd $USER_HOME
 git clone ${GIT_REPO_URL}
 chmod +x $USER_HOME/simple_mysql/simple_lock $USER_HOME/simple_mysql/pause_cycle_count
 
-# Clone zshrc repository
-echo "Cloning zshrc repository..."
-cd $USER_HOME
-git clone ${ZSHRC_REPO_URL}
-bash zshrc/install.sh
-cp zshrc/zshrc ${USER_HOME}/.zshrc
-chmod 644 ${USER_HOME}/.zshrc
-
 # Change ownership
 USER_NAME=Morisaki
 USER_GROUP=sslabko-fast-nw-
 chown -R $USER_NAME:$USER_GROUP $USER_HOME/simple_mysql
-chown -R $USER_NAME:$USER_GROUP $USER_HOME/zshrc
 
 echo "=== Startup script completed ==="
