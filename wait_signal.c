@@ -28,6 +28,18 @@ alignas(64) long long	global_yield_count = 0;
 alignas(64) long long	global_sleep_count = 0;
 alignas(64) long long	total_latency_tsc = 0;
 
+typedef struct thread_stats {
+	long long total_count;
+	long long ut_delay_count;
+	long long yield_count;
+	long long sleep_count;
+} thread_stats_t;
+
+typedef struct thread_arg {
+	int thread_id;
+	thread_stats_t stats;
+} thread_arg_t;
+
 // 実験パラメータ
 alignas(64) unsigned int	num_threads = 16;
 alignas(64) unsigned int	spin_wait_pause_multiplier = 50;
@@ -40,7 +52,7 @@ void lock_init(atomic_bool *l) {
 	atomic_store(l, false);
 }
 
-static uint64_t tsc_cycles_per_ns = 0;
+static double tsc_cycles_per_ns = 0.0;
 
 static void calibrate_tsc(void) {
 	struct timespec t1, t2;
@@ -54,15 +66,14 @@ static void calibrate_tsc(void) {
 	clock_gettime(CLOCK_MONOTONIC, &t2);
 
 	long elapsed_ns = (t2.tv_sec - t1.tv_sec) * 1000000000L + (t2.tv_nsec - t1.tv_nsec);
-	tsc_cycles_per_ns = (c2 - c1) / elapsed_ns;
-	printf("TSC calibration: %llu cycles/ns (%.3f GHz)\n",
-	       (unsigned long long)tsc_cycles_per_ns,
-	       (double)tsc_cycles_per_ns);
+	tsc_cycles_per_ns = (double)(c2 - c1) / elapsed_ns;
+	printf("TSC calibration: %.4f cycles/ns (%.4f GHz)\n",
+	       tsc_cycles_per_ns, tsc_cycles_per_ns);
 }
 
 static void busy_wait_ns(long ns) {
 	if (ns <= 0) return;
-	uint64_t target = __rdtsc() + (uint64_t)ns * tsc_cycles_per_ns;
+	uint64_t target = __rdtsc() + (uint64_t)((double)ns * tsc_cycles_per_ns);
 	while (__rdtsc() < target);
 }
 
@@ -88,14 +99,14 @@ unsigned long ut_delay(unsigned long delay) {
 }
 
 // https://github.com/mysql/mysql-server/blob/447eb26e094b444a88c532028647e48228c3c04f/storage/innobase/sync/sync0rw.cc#L273
-void lock_acquire(atomic_bool *l) {
+void lock_acquire(atomic_bool *l, thread_stats_t *stats) {
 	unsigned long	i = 0;
 
 lock_loop:
 
 	while (i < spin_wait_rounds && atomic_load_explicit(l, memory_order_relaxed)) {
 		if (spin_wait_delay) {
-			atomic_fetch_add_explicit(&global_ut_delay_count, 1, memory_order_relaxed);
+			stats->ut_delay_count++;
 			ut_delay(rand() % spin_wait_delay);
 		}
 
@@ -103,7 +114,7 @@ lock_loop:
 	}
 
 	if (i >= spin_wait_rounds) {
-		atomic_fetch_add_explicit(&global_yield_count, 1, memory_order_relaxed);
+		stats->yield_count++;
 		sched_yield();
 	}
 
@@ -116,7 +127,7 @@ lock_loop:
 		}
 
 		// lock holderからシグナルを受け取るまでスリープ
-		atomic_fetch_add_explicit(&global_sleep_count, 1, memory_order_relaxed);
+		stats->sleep_count++;
 		pthread_mutex_lock(&mutex);
 		pthread_cond_wait(&cond, &mutex);
 		pthread_mutex_unlock(&mutex);
@@ -144,11 +155,14 @@ void fake_work() {
 
 void *thread_func(void *param)
 {
+	thread_arg_t *arg = (thread_arg_t *)param;
+	thread_stats_t *stats = &arg->stats;
+
 	while (!atomic_load_explicit(&stop_flag, memory_order_relaxed)) {
 		// unsigned long long start = __rdtsc();
-		lock_acquire(&lock_var);
+		lock_acquire(&lock_var, stats);
 		busy_wait_ns(work_ns);
-		total_count++;
+		stats->total_count++;
 		lock_release(&lock_var);
 		// unsigned long long end = __rdtsc();
 		// atomic_fetch_add_explicit(&total_latency_tsc, (end - start), memory_order_relaxed);
@@ -182,6 +196,12 @@ int main(int argc, char *argv[]) {
 		perror("malloc");
 		return 1;
 	}
+	thread_arg_t *thread_args = calloc(num_threads, sizeof(thread_arg_t));
+	if (!thread_args) {
+		perror("calloc");
+		free(threads);
+		return 1;
+	}
 
 	lock_init(&lock_var);
 	lock_init(&stop_flag);
@@ -190,8 +210,10 @@ int main(int argc, char *argv[]) {
 	printf("Starting experiment: Threads=%u, Multiplier=%u, Rounds=%u, WorkNs=%ld\n", num_threads, spin_wait_pause_multiplier, spin_wait_rounds, work_ns);
 
 	for (int i = 0; i < num_threads; i++) {
-		if (pthread_create(&threads[i], NULL, thread_func, NULL) != 0) {
+		thread_args[i].thread_id = i;
+		if (pthread_create(&threads[i], NULL, thread_func, &thread_args[i]) != 0) {
 			perror("fail: pthread_create");
+			free(thread_args);
 			return 1;
 		}
 		// printf("Thread[%d] is created\n", i);
@@ -204,6 +226,13 @@ int main(int argc, char *argv[]) {
 		pthread_join(threads[i], NULL);
 	}
 
+	for (int i = 0; i < num_threads; i++) {
+		total_count += thread_args[i].stats.total_count;
+		global_ut_delay_count += thread_args[i].stats.ut_delay_count;
+		global_yield_count += thread_args[i].stats.yield_count;
+		global_sleep_count += thread_args[i].stats.sleep_count;
+	}
+
 	printf("------------------------------------\n");
 	printf("Total Counter: %lld\n", total_count);
 	printf("Throughput: %.2f ops/sec\n", (double)total_count / DURATION);
@@ -213,6 +242,7 @@ int main(int argc, char *argv[]) {
 	printf("Work[ns]: %ld\n", work_ns);
 	// printf("Average Latency[tsc]: %lld\n", total_latency_tsc / total_count);
 	
+	free(thread_args);
 	free(threads);
 	return 0;
 }
