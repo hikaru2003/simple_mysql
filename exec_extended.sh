@@ -1,4 +1,19 @@
 #!/bin/bash
+#
+# Usage:
+#   bash exec_extended.sh [SERVER_NAME]
+#
+# Examples:
+#   bash exec_extended.sh                  # SERVER_NAME = $(hostname -s)
+#   bash exec_extended.sh ivy_c8220        # SERVER_NAME を明示指定
+#   bash exec_extended.sh > experiment.log 2>&1 &   # バックグラウンド実行（ログあり）
+#
+# Output:
+#   result/${SERVER_NAME}/w{0,500}/rep{1,2,3}/t{1,4,8}_m{0..100}.txt
+#
+# Prerequisites:
+#   - ./simple_lock がカレントディレクトリにあること（make または gcc でビルド済み）
+#   - sudo 権限があること（cpupower, intel_pstate 設定に使用）
 
 set -e
 
@@ -57,16 +72,6 @@ for w in "${WORK_DURATIONS[@]}"; do
         done
     done
 done
-
-# Restore CPU settings
-echo ""
-echo "=== CPU Restore ==="
-sudo cpupower frequency-set -g ondemand 2>/dev/null || true
-if echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo > /dev/null 2>&1; then
-    echo "  Intel turbo: restored"
-elif echo 1 | sudo tee /sys/devices/system/cpu/cpufreq/boost > /dev/null 2>&1; then
-    echo "  AMD boost: restored"
-fi
 
 echo ""
 echo "=== Done. Results in ${OUTDIR}/ ==="
