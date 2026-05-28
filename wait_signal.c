@@ -221,6 +221,9 @@ int main(int argc, char *argv[]) {
 
 	sleep(DURATION);
 	atomic_store_explicit(&stop_flag, true, memory_order_relaxed);
+	pthread_mutex_lock(&mutex);
+	pthread_cond_broadcast(&cond);
+	pthread_mutex_unlock(&mutex);
 
 	for (int i = 0; i < num_threads; i++) {
 		pthread_join(threads[i], NULL);
