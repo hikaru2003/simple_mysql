@@ -18,8 +18,8 @@
 set -e
 
 REPS=3
-THREADS=(4 8)
-MULTIPLIERS=(250 500 1000 5000 10000)
+THREADS=(16 32)
+MULTIPLIERS=(0 10 20 30 40 50 60 70 80 90 100 250 500 1000 5000 10000)
 WORK_DURATIONS=(0 500)   # ns: 0=no work, 500=fixed 500ns critical section
 BINARY=simple_lock
 SERVER=${1:-$(hostname -s)}
