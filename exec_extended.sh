@@ -6,7 +6,7 @@
 # Examples:
 #   bash exec_extended.sh                  # SERVER_NAME = $(hostname -s)
 #   bash exec_extended.sh ivy_c8220        # SERVER_NAME を明示指定
-#   bash exec_extended.sh ivy_c8220 > experiment.log 2>&1 &   # バックグラウンド実行（ログあり）
+#   bash exec_extended.sh ivy_c8220 > result/ivy_c8220/experiment.log 2>&1 &   # バックグラウンド実行（ログあり）
 #
 # Output:
 #   result/${SERVER_NAME}/w{0,500}/rep{1,2,3}/t{1,4,8}_m{0..100}.txt
@@ -19,7 +19,7 @@ set -e
 
 REPS=3
 THREADS=(4 8)
-MULTIPLIERS=(0 10 20 30 40 50 60 70 80 90 100)
+MULTIPLIERS=(250 500 1000 5000 10000)
 WORK_DURATIONS=(0 500)   # ns: 0=no work, 500=fixed 500ns critical section
 BINARY=simple_lock
 SERVER=${1:-$(hostname -s)}
