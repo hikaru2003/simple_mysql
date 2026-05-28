@@ -6,7 +6,7 @@
 # Examples:
 #   bash exec_extended.sh                  # SERVER_NAME = $(hostname -s)
 #   bash exec_extended.sh ivy_c8220        # SERVER_NAME を明示指定
-#   bash exec_extended.sh > experiment.log 2>&1 &   # バックグラウンド実行（ログあり）
+#   bash exec_extended.sh ivy_c8220 > experiment.log 2>&1 &   # バックグラウンド実行（ログあり）
 #
 # Output:
 #   result/${SERVER_NAME}/w{0,500}/rep{1,2,3}/t{1,4,8}_m{0..100}.txt
