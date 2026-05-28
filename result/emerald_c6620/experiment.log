@@ -1,0 +1,417 @@
+=== CPU Setup ===
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+Setting cpu: 16
+Setting cpu: 17
+Setting cpu: 18
+Setting cpu: 19
+Setting cpu: 20
+Setting cpu: 21
+Setting cpu: 22
+Setting cpu: 23
+Setting cpu: 24
+Setting cpu: 25
+Setting cpu: 26
+Setting cpu: 27
+Setting cpu: 28
+Setting cpu: 29
+Setting cpu: 30
+Setting cpu: 31
+Setting cpu: 32
+Setting cpu: 33
+Setting cpu: 34
+Setting cpu: 35
+Setting cpu: 36
+Setting cpu: 37
+Setting cpu: 38
+Setting cpu: 39
+Setting cpu: 40
+Setting cpu: 41
+Setting cpu: 42
+Setting cpu: 43
+Setting cpu: 44
+Setting cpu: 45
+Setting cpu: 46
+Setting cpu: 47
+Setting cpu: 48
+Setting cpu: 49
+Setting cpu: 50
+Setting cpu: 51
+Setting cpu: 52
+Setting cpu: 53
+Setting cpu: 54
+Setting cpu: 55
+  governor: performance
+  Intel turbo: disabled
+
+=== Experiment (Server: emerald_c6620) ===
+Reps: 3, Threads: 4 8, Multipliers: 0 10 20 30 40 50 60 70 80 90 100, Work(ns): 0 500
+Total runs: 132 (est. ~66 min)
+
+--- w=0ns, rep=1/3 ---
+  [1/132] t=4 m=0 w=0 | elapsed=30s eta=3930s
+  [2/132] t=4 m=10 w=0 | elapsed=60s eta=3900s
+  [3/132] t=4 m=20 w=0 | elapsed=90s eta=3870s
+  [4/132] t=4 m=30 w=0 | elapsed=120s eta=3840s
+  [5/132] t=4 m=40 w=0 | elapsed=150s eta=3810s
+  [6/132] t=4 m=50 w=0 | elapsed=181s eta=3801s
+  [7/132] t=4 m=60 w=0 | elapsed=211s eta=3767s
+  [8/132] t=4 m=70 w=0 | elapsed=241s eta=3735s
+  [9/132] t=4 m=80 w=0 | elapsed=271s eta=3703s
+  [10/132] t=4 m=90 w=0 | elapsed=301s eta=3672s
+  [11/132] t=4 m=100 w=0 | elapsed=331s eta=3641s
+  [12/132] t=8 m=0 w=0 | elapsed=361s eta=3610s
+  [13/132] t=8 m=10 w=0 | elapsed=391s eta=3579s
+  [14/132] t=8 m=20 w=0 | elapsed=421s eta=3548s
+  [15/132] t=8 m=30 w=0 | elapsed=451s eta=3517s
+  [16/132] t=8 m=40 w=0 | elapsed=482s eta=3494s
+  [17/132] t=8 m=50 w=0 | elapsed=512s eta=3463s
+  [18/132] t=8 m=60 w=0 | elapsed=542s eta=3432s
+  [19/132] t=8 m=70 w=0 | elapsed=572s eta=3401s
+  [20/132] t=8 m=80 w=0 | elapsed=602s eta=3371s
+  [21/132] t=8 m=90 w=0 | elapsed=632s eta=3340s
+  [22/132] t=8 m=100 w=0 | elapsed=662s eta=3310s
+--- w=0ns, rep=2/3 ---
+  [23/132] t=4 m=0 w=0 | elapsed=692s eta=3279s
+  [24/132] t=4 m=10 w=0 | elapsed=722s eta=3249s
+  [25/132] t=4 m=20 w=0 | elapsed=753s eta=3222s
+  [26/132] t=4 m=30 w=0 | elapsed=783s eta=3192s
+  [27/132] t=4 m=40 w=0 | elapsed=813s eta=3161s
+  [28/132] t=4 m=50 w=0 | elapsed=843s eta=3131s
+  [29/132] t=4 m=60 w=0 | elapsed=873s eta=3100s
+  [30/132] t=4 m=70 w=0 | elapsed=903s eta=3070s
+  [31/132] t=4 m=80 w=0 | elapsed=933s eta=3039s
+  [32/132] t=4 m=90 w=0 | elapsed=963s eta=3009s
+  [33/132] t=4 m=100 w=0 | elapsed=993s eta=2979s
+  [34/132] t=8 m=0 w=0 | elapsed=1023s eta=2948s
+  [35/132] t=8 m=10 w=0 | elapsed=1054s eta=2921s
+  [36/132] t=8 m=20 w=0 | elapsed=1084s eta=2890s
+  [37/132] t=8 m=30 w=0 | elapsed=1114s eta=2860s
+  [38/132] t=8 m=40 w=0 | elapsed=1144s eta=2829s
+  [39/132] t=8 m=50 w=0 | elapsed=1174s eta=2799s
+  [40/132] t=8 m=60 w=0 | elapsed=1204s eta=2769s
+  [41/132] t=8 m=70 w=0 | elapsed=1234s eta=2738s
+  [42/132] t=8 m=80 w=0 | elapsed=1264s eta=2708s
+  [43/132] t=8 m=90 w=0 | elapsed=1294s eta=2678s
+  [44/132] t=8 m=100 w=0 | elapsed=1324s eta=2648s
+--- w=0ns, rep=3/3 ---
+  [45/132] t=4 m=0 w=0 | elapsed=1355s eta=2619s
+  [46/132] t=4 m=10 w=0 | elapsed=1385s eta=2589s
+  [47/132] t=4 m=20 w=0 | elapsed=1415s eta=2559s
+  [48/132] t=4 m=30 w=0 | elapsed=1445s eta=2528s
+  [49/132] t=4 m=40 w=0 | elapsed=1475s eta=2498s
+  [50/132] t=4 m=50 w=0 | elapsed=1505s eta=2468s
+  [51/132] t=4 m=60 w=0 | elapsed=1535s eta=2437s
+  [52/132] t=4 m=70 w=0 | elapsed=1565s eta=2407s
+  [53/132] t=4 m=80 w=0 | elapsed=1595s eta=2377s
+  [54/132] t=4 m=90 w=0 | elapsed=1626s eta=2348s
+  [55/132] t=4 m=100 w=0 | elapsed=1656s eta=2318s
+  [56/132] t=8 m=0 w=0 | elapsed=1686s eta=2288s
+  [57/132] t=8 m=10 w=0 | elapsed=1716s eta=2257s
+  [58/132] t=8 m=20 w=0 | elapsed=1746s eta=2227s
+  [59/132] t=8 m=30 w=0 | elapsed=1776s eta=2197s
+  [60/132] t=8 m=40 w=0 | elapsed=1806s eta=2167s
+  [61/132] t=8 m=50 w=0 | elapsed=1836s eta=2136s
+  [62/132] t=8 m=60 w=0 | elapsed=1866s eta=2106s
+  [63/132] t=8 m=70 w=0 | elapsed=1896s eta=2076s
+  [64/132] t=8 m=80 w=0 | elapsed=1927s eta=2047s
+  [65/132] t=8 m=90 w=0 | elapsed=1957s eta=2017s
+  [66/132] t=8 m=100 w=0 | elapsed=1987s eta=1987s
+--- w=500ns, rep=1/3 ---
+  [67/132] t=4 m=0 w=500 | elapsed=2017s eta=1956s
+  [68/132] t=4 m=10 w=500 | elapsed=2047s eta=1926s
+  [69/132] t=4 m=20 w=500 | elapsed=2077s eta=1896s
+  [70/132] t=4 m=30 w=500 | elapsed=2107s eta=1866s
+  [71/132] t=4 m=40 w=500 | elapsed=2137s eta=1836s
+  [72/132] t=4 m=50 w=500 | elapsed=2167s eta=1805s
+  [73/132] t=4 m=60 w=500 | elapsed=2197s eta=1775s
+  [74/132] t=4 m=70 w=500 | elapsed=2228s eta=1746s
+  [75/132] t=4 m=80 w=500 | elapsed=2258s eta=1716s
+  [76/132] t=4 m=90 w=500 | elapsed=2288s eta=1685s
+  [77/132] t=4 m=100 w=500 | elapsed=2318s eta=1655s
+  [78/132] t=8 m=0 w=500 | elapsed=2348s eta=1625s
+  [79/132] t=8 m=10 w=500 | elapsed=2378s eta=1595s
+  [80/132] t=8 m=20 w=500 | elapsed=2408s eta=1565s
+  [81/132] t=8 m=30 w=500 | elapsed=2438s eta=1535s
+  [82/132] t=8 m=40 w=500 | elapsed=2468s eta=1504s
+  [83/132] t=8 m=50 w=500 | elapsed=2498s eta=1474s
+  [84/132] t=8 m=60 w=500 | elapsed=2529s eta=1445s
+  [85/132] t=8 m=70 w=500 | elapsed=2559s eta=1414s
+  [86/132] t=8 m=80 w=500 | elapsed=2589s eta=1384s
+  [87/132] t=8 m=90 w=500 | elapsed=2619s eta=1354s
+  [88/132] t=8 m=100 w=500 | elapsed=2649s eta=1324s
+--- w=500ns, rep=2/3 ---
+  [89/132] t=4 m=0 w=500 | elapsed=2679s eta=1294s
+  [90/132] t=4 m=10 w=500 | elapsed=2709s eta=1264s
+  [91/132] t=4 m=20 w=500 | elapsed=2739s eta=1234s
+  [92/132] t=4 m=30 w=500 | elapsed=2769s eta=1203s
+  [93/132] t=4 m=40 w=500 | elapsed=2800s eta=1174s
+  [94/132] t=4 m=50 w=500 | elapsed=2830s eta=1144s
+  [95/132] t=4 m=60 w=500 | elapsed=2860s eta=1113s
+  [96/132] t=4 m=70 w=500 | elapsed=2890s eta=1083s
+  [97/132] t=4 m=80 w=500 | elapsed=2920s eta=1053s
+  [98/132] t=4 m=90 w=500 | elapsed=2950s eta=1023s
+  [99/132] t=4 m=100 w=500 | elapsed=2980s eta=993s
+  [100/132] t=8 m=0 w=500 | elapsed=3010s eta=963s
+  [101/132] t=8 m=10 w=500 | elapsed=3040s eta=933s
+  [102/132] t=8 m=20 w=500 | elapsed=3070s eta=902s
+  [103/132] t=8 m=30 w=500 | elapsed=3101s eta=873s
+  [104/132] t=8 m=40 w=500 | elapsed=3131s eta=842s
+  [105/132] t=8 m=50 w=500 | elapsed=3161s eta=812s
+  [106/132] t=8 m=60 w=500 | elapsed=3191s eta=782s
+  [107/132] t=8 m=70 w=500 | elapsed=3221s eta=752s
+  [108/132] t=8 m=80 w=500 | elapsed=3251s eta=722s
+  [109/132] t=8 m=90 w=500 | elapsed=3281s eta=692s
+  [110/132] t=8 m=100 w=500 | elapsed=3311s eta=662s
+--- w=500ns, rep=3/3 ---
+  [111/132] t=4 m=0 w=500 | elapsed=3341s eta=632s
+  [112/132] t=4 m=10 w=500 | elapsed=3371s eta=601s
+  [113/132] t=4 m=20 w=500 | elapsed=3402s eta=572s
+  [114/132] t=4 m=30 w=500 | elapsed=3432s eta=541s
+  [115/132] t=4 m=40 w=500 | elapsed=3462s eta=511s
+  [116/132] t=4 m=50 w=500 | elapsed=3492s eta=481s
+  [117/132] t=4 m=60 w=500 | elapsed=3522s eta=451s
+  [118/132] t=4 m=70 w=500 | elapsed=3552s eta=421s
+  [119/132] t=4 m=80 w=500 | elapsed=3582s eta=391s
+  [120/132] t=4 m=90 w=500 | elapsed=3612s eta=361s
+  [121/132] t=4 m=100 w=500 | elapsed=3642s eta=331s
+  [122/132] t=8 m=0 w=500 | elapsed=3673s eta=301s
+  [123/132] t=8 m=10 w=500 | elapsed=3703s eta=270s
+  [124/132] t=8 m=20 w=500 | elapsed=3733s eta=240s
+  [125/132] t=8 m=30 w=500 | elapsed=3763s eta=210s
+  [126/132] t=8 m=40 w=500 | elapsed=3793s eta=180s
+  [127/132] t=8 m=50 w=500 | elapsed=3823s eta=150s
+  [128/132] t=8 m=60 w=500 | elapsed=3853s eta=120s
+  [129/132] t=8 m=70 w=500 | elapsed=3883s eta=90s
+  [130/132] t=8 m=80 w=500 | elapsed=3913s eta=60s
+  [131/132] t=8 m=90 w=500 | elapsed=3943s eta=30s
+  [132/132] t=8 m=100 w=500 | elapsed=3974s eta=0s
+
+=== Done. Results in result/emerald_c6620/ ===
+=== CPU Setup ===
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+Setting cpu: 16
+Setting cpu: 17
+Setting cpu: 18
+Setting cpu: 19
+Setting cpu: 20
+Setting cpu: 21
+Setting cpu: 22
+Setting cpu: 23
+Setting cpu: 24
+Setting cpu: 25
+Setting cpu: 26
+Setting cpu: 27
+Setting cpu: 28
+Setting cpu: 29
+Setting cpu: 30
+Setting cpu: 31
+Setting cpu: 32
+Setting cpu: 33
+Setting cpu: 34
+Setting cpu: 35
+Setting cpu: 36
+Setting cpu: 37
+Setting cpu: 38
+Setting cpu: 39
+Setting cpu: 40
+Setting cpu: 41
+Setting cpu: 42
+Setting cpu: 43
+Setting cpu: 44
+Setting cpu: 45
+Setting cpu: 46
+Setting cpu: 47
+Setting cpu: 48
+Setting cpu: 49
+Setting cpu: 50
+Setting cpu: 51
+Setting cpu: 52
+Setting cpu: 53
+Setting cpu: 54
+Setting cpu: 55
+  governor: performance
+  Intel turbo: disabled
+
+=== Experiment (Server: emerald_c6620) ===
+Reps: 3, Threads: 4 8, Multipliers: 250 500 1000 5000 10000, Work(ns): 0 500
+Total runs: 60 (est. ~30 min)
+
+--- w=0ns, rep=1/3 ---
+  [1/60] t=4 m=250 w=0 | elapsed=30s eta=1770s
+  [2/60] t=4 m=500 w=0 | elapsed=60s eta=1740s
+  [3/60] t=4 m=1000 w=0 | elapsed=90s eta=1710s
+  [4/60] t=4 m=5000 w=0 | elapsed=121s eta=1694s
+  [5/60] t=4 m=10000 w=0 | elapsed=151s eta=1661s
+  [6/60] t=8 m=250 w=0 | elapsed=181s eta=1629s
+  [7/60] t=8 m=500 w=0 | elapsed=211s eta=1597s
+  [8/60] t=8 m=1000 w=0 | elapsed=241s eta=1566s
+  [9/60] t=8 m=5000 w=0 | elapsed=271s eta=1535s
+  [10/60] t=8 m=10000 w=0 | elapsed=301s eta=1505s
+--- w=0ns, rep=2/3 ---
+  [11/60] t=4 m=250 w=0 | elapsed=331s eta=1474s
+  [12/60] t=4 m=500 w=0 | elapsed=361s eta=1444s
+  [13/60] t=4 m=1000 w=0 | elapsed=392s eta=1417s
+  [14/60] t=4 m=5000 w=0 | elapsed=422s eta=1386s
+  [15/60] t=4 m=10000 w=0 | elapsed=452s eta=1356s
+=== CPU Setup ===
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+Setting cpu: 16
+Setting cpu: 17
+Setting cpu: 18
+Setting cpu: 19
+Setting cpu: 20
+Setting cpu: 21
+Setting cpu: 22
+Setting cpu: 23
+Setting cpu: 24
+Setting cpu: 25
+Setting cpu: 26
+Setting cpu: 27
+Setting cpu: 28
+Setting cpu: 29
+Setting cpu: 30
+Setting cpu: 31
+Setting cpu: 32
+Setting cpu: 33
+Setting cpu: 34
+Setting cpu: 35
+Setting cpu: 36
+Setting cpu: 37
+Setting cpu: 38
+Setting cpu: 39
+Setting cpu: 40
+Setting cpu: 41
+Setting cpu: 42
+Setting cpu: 43
+Setting cpu: 44
+Setting cpu: 45
+Setting cpu: 46
+Setting cpu: 47
+Setting cpu: 48
+Setting cpu: 49
+Setting cpu: 50
+Setting cpu: 51
+Setting cpu: 52
+Setting cpu: 53
+Setting cpu: 54
+Setting cpu: 55
+  governor: performance
+  Intel turbo: disabled
+
+=== Experiment (Server: emerald_c6620) ===
+Reps: 3, Threads: 4 8, Multipliers: 250 500 1000 5000 10000, Work(ns): 0 500
+Total runs: 60 (est. ~30 min)
+
+--- w=0ns, rep=1/3 ---
+  [1/60] t=4 m=250 w=0 | elapsed=30s eta=1770s
+  [2/60] t=4 m=500 w=0 | elapsed=60s eta=1740s
+  [3/60] t=4 m=1000 w=0 | elapsed=91s eta=1729s
+  [4/60] t=4 m=5000 w=0 | elapsed=121s eta=1694s
+  [5/60] t=4 m=10000 w=0 | elapsed=151s eta=1661s
+  [6/60] t=8 m=250 w=0 | elapsed=181s eta=1629s
+  [7/60] t=8 m=500 w=0 | elapsed=211s eta=1597s
+  [8/60] t=8 m=1000 w=0 | elapsed=241s eta=1566s
+  [9/60] t=8 m=5000 w=0 | elapsed=271s eta=1535s
+  [10/60] t=8 m=10000 w=0 | elapsed=301s eta=1505s
+--- w=0ns, rep=2/3 ---
+  [11/60] t=4 m=250 w=0 | elapsed=331s eta=1474s
+  [12/60] t=4 m=500 w=0 | elapsed=361s eta=1444s
+  [13/60] t=4 m=1000 w=0 | elapsed=392s eta=1417s
+  [14/60] t=4 m=5000 w=0 | elapsed=422s eta=1386s
+  [15/60] t=4 m=10000 w=0 | elapsed=452s eta=1356s
+  [16/60] t=8 m=250 w=0 | elapsed=482s eta=1325s
+  [17/60] t=8 m=500 w=0 | elapsed=512s eta=1295s
+  [18/60] t=8 m=1000 w=0 | elapsed=542s eta=1264s
+  [19/60] t=8 m=5000 w=0 | elapsed=572s eta=1234s
+  [20/60] t=8 m=10000 w=0 | elapsed=602s eta=1204s
+--- w=0ns, rep=3/3 ---
+  [21/60] t=4 m=250 w=0 | elapsed=632s eta=1173s
+  [22/60] t=4 m=500 w=0 | elapsed=663s eta=1145s
+  [23/60] t=4 m=1000 w=0 | elapsed=693s eta=1114s
+  [24/60] t=4 m=5000 w=0 | elapsed=723s eta=1084s
+  [25/60] t=4 m=10000 w=0 | elapsed=753s eta=1054s
+  [26/60] t=8 m=250 w=0 | elapsed=783s eta=1023s
+  [27/60] t=8 m=500 w=0 | elapsed=813s eta=993s
+  [28/60] t=8 m=1000 w=0 | elapsed=843s eta=963s
+  [29/60] t=8 m=5000 w=0 | elapsed=873s eta=933s
+  [30/60] t=8 m=10000 w=0 | elapsed=903s eta=903s
+--- w=500ns, rep=1/3 ---
+  [31/60] t=4 m=250 w=500 | elapsed=933s eta=872s
+  [32/60] t=4 m=500 w=500 | elapsed=964s eta=843s
+  [33/60] t=4 m=1000 w=500 | elapsed=994s eta=813s
+  [34/60] t=4 m=5000 w=500 | elapsed=1024s eta=783s
+  [35/60] t=4 m=10000 w=500 | elapsed=1054s eta=752s
+  [36/60] t=8 m=250 w=500 | elapsed=1084s eta=722s
+  [37/60] t=8 m=500 w=500 | elapsed=1114s eta=692s
+  [38/60] t=8 m=1000 w=500 | elapsed=1144s eta=662s
+  [39/60] t=8 m=5000 w=500 | elapsed=1174s eta=632s
+  [40/60] t=8 m=10000 w=500 | elapsed=1204s eta=602s
+--- w=500ns, rep=2/3 ---
+  [41/60] t=4 m=250 w=500 | elapsed=1234s eta=571s
+  [42/60] t=4 m=500 w=500 | elapsed=1265s eta=542s
+  [43/60] t=4 m=1000 w=500 | elapsed=1295s eta=511s
+  [44/60] t=4 m=5000 w=500 | elapsed=1325s eta=481s
+  [45/60] t=4 m=10000 w=500 | elapsed=1355s eta=451s
+  [46/60] t=8 m=250 w=500 | elapsed=1385s eta=421s
+  [47/60] t=8 m=500 w=500 | elapsed=1415s eta=391s
+  [48/60] t=8 m=1000 w=500 | elapsed=1445s eta=361s
+  [49/60] t=8 m=5000 w=500 | elapsed=1475s eta=331s
+  [50/60] t=8 m=10000 w=500 | elapsed=1505s eta=301s
+--- w=500ns, rep=3/3 ---
+  [51/60] t=4 m=250 w=500 | elapsed=1536s eta=271s
+  [52/60] t=4 m=500 w=500 | elapsed=1566s eta=240s
+  [53/60] t=4 m=1000 w=500 | elapsed=1596s eta=210s
+  [54/60] t=4 m=5000 w=500 | elapsed=1626s eta=180s
+  [55/60] t=4 m=10000 w=500 | elapsed=1656s eta=150s
+  [56/60] t=8 m=250 w=500 | elapsed=1686s eta=120s
+  [57/60] t=8 m=500 w=500 | elapsed=1716s eta=90s
+  [58/60] t=8 m=1000 w=500 | elapsed=1746s eta=60s
+  [59/60] t=8 m=5000 w=500 | elapsed=1776s eta=30s
+  [60/60] t=8 m=10000 w=500 | elapsed=1806s eta=0s
+
+=== Done. Results in result/emerald_c6620/ ===
