@@ -50,6 +50,7 @@ done
 
 total=$((REPS * ${#THREADS[@]} * ${#MULTIPLIERS[@]} * ${#WORK_DURATIONS[@]}))
 done_count=0
+skip_count=0
 start_time=$(date +%s)
 
 echo "=== Experiment (Server: ${SERVER}) ==="
@@ -62,11 +63,18 @@ for w in "${WORK_DURATIONS[@]}"; do
         echo "--- w=${w}ns, rep=${rep}/${REPS} ---"
         for t in "${THREADS[@]}"; do
             for m in "${MULTIPLIERS[@]}"; do
-                taskset -c 0-7 ./${BINARY} -t $t -m $m -w $w \
-                    > ${OUTDIR}/w${w}/rep${rep}/t${t}_m${m}.txt
+                outfile=${OUTDIR}/w${w}/rep${rep}/t${t}_m${m}.txt
                 done_count=$((done_count + 1))
+                if grep -q "Total Counter:" "$outfile" 2>/dev/null; then
+                    skip_count=$((skip_count + 1))
+                    echo "  [${done_count}/${total}] SKIP t=${t} m=${m} w=${w}"
+                    continue
+                fi
+                taskset -c 0-7 ./${BINARY} -t $t -m $m -w $w > "$outfile"
                 elapsed=$(( $(date +%s) - start_time ))
-                eta=$(( elapsed * (total - done_count) / done_count ))
+                remaining=$((total - done_count))
+                ran=$((done_count - skip_count))
+                eta=$(( ran > 0 ? elapsed * remaining / ran : 0 ))
                 echo "  [${done_count}/${total}] t=${t} m=${m} w=${w} | elapsed=${elapsed}s eta=${eta}s"
             done
         done
@@ -74,4 +82,4 @@ for w in "${WORK_DURATIONS[@]}"; do
 done
 
 echo ""
-echo "=== Done. Results in ${OUTDIR}/ ==="
+echo "=== Done. Results in ${OUTDIR}/ (skipped: ${skip_count}/${total}) ==="

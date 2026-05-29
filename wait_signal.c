@@ -129,11 +129,16 @@ lock_loop:
 		// lock holderからシグナルを受け取るまでスリープ
 		stats->sleep_count++;
 		pthread_mutex_lock(&mutex);
-		pthread_cond_wait(&cond, &mutex);
+		if (!atomic_load_explicit(&stop_flag, memory_order_relaxed) &&
+		    atomic_load_explicit(l, memory_order_relaxed)) {
+			pthread_cond_wait(&cond, &mutex);
+		}
+		bool stopping = atomic_load_explicit(&stop_flag, memory_order_relaxed);
 		pthread_mutex_unlock(&mutex);
 
+		if (stopping) return;
 		i = 0;
-		
+
 		goto lock_loop;
 	}
 }
