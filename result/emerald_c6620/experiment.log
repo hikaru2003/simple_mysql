@@ -415,3 +415,527 @@ Total runs: 60 (est. ~30 min)
   [60/60] t=8 m=10000 w=500 | elapsed=1806s eta=0s
 
 === Done. Results in result/emerald_c6620/ ===
+=== CPU Setup ===
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+Setting cpu: 16
+Setting cpu: 17
+Setting cpu: 18
+Setting cpu: 19
+Setting cpu: 20
+Setting cpu: 21
+Setting cpu: 22
+Setting cpu: 23
+Setting cpu: 24
+Setting cpu: 25
+Setting cpu: 26
+Setting cpu: 27
+Setting cpu: 28
+Setting cpu: 29
+Setting cpu: 30
+Setting cpu: 31
+Setting cpu: 32
+Setting cpu: 33
+Setting cpu: 34
+Setting cpu: 35
+Setting cpu: 36
+Setting cpu: 37
+Setting cpu: 38
+Setting cpu: 39
+Setting cpu: 40
+Setting cpu: 41
+Setting cpu: 42
+Setting cpu: 43
+Setting cpu: 44
+Setting cpu: 45
+Setting cpu: 46
+Setting cpu: 47
+Setting cpu: 48
+Setting cpu: 49
+Setting cpu: 50
+Setting cpu: 51
+Setting cpu: 52
+Setting cpu: 53
+Setting cpu: 54
+Setting cpu: 55
+  governor: performance
+  Intel turbo: disabled
+
+=== Experiment (Server: emerald_c6620) ===
+Reps: 3, Threads: 16 32, Multipliers: 0 10 20 30 40 50 60 70 80 90 100 250 500 1000 5000 10000, Work(ns): 0 500
+Total runs: 192 (est. ~96 min)
+
+--- w=0ns, rep=1/3 ---
+  [1/192] t=16 m=0 w=0 | elapsed=30s eta=5730s
+  [2/192] t=16 m=10 w=0 | elapsed=60s eta=5700s
+  [3/192] t=16 m=20 w=0 | elapsed=90s eta=5670s
+  [4/192] t=16 m=30 w=0 | elapsed=121s eta=5687s
+  [5/192] t=16 m=40 w=0 | elapsed=151s eta=5647s
+  [6/192] t=16 m=50 w=0 | elapsed=181s eta=5611s
+  [7/192] t=16 m=60 w=0 | elapsed=211s eta=5576s
+  [8/192] t=16 m=70 w=0 | elapsed=241s eta=5543s
+  [9/192] t=16 m=80 w=0 | elapsed=271s eta=5510s
+  [10/192] t=16 m=90 w=0 | elapsed=301s eta=5478s
+  [11/192] t=16 m=100 w=0 | elapsed=331s eta=5446s
+  [12/192] t=16 m=250 w=0 | elapsed=361s eta=5415s
+  [13/192] t=16 m=500 w=0 | elapsed=391s eta=5383s
+  [14/192] t=16 m=1000 w=0 | elapsed=422s eta=5365s
+  [15/192] t=16 m=5000 w=0 | elapsed=452s eta=5333s
+  [16/192] t=16 m=10000 w=0 | elapsed=482s eta=5302s
+  [17/192] t=32 m=0 w=0 | elapsed=512s eta=5270s
+  [18/192] t=32 m=10 w=0 | elapsed=542s eta=5239s
+  [19/192] t=32 m=20 w=0 | elapsed=572s eta=5208s
+  [20/192] t=32 m=30 w=0 | elapsed=602s eta=5177s
+  [21/192] t=32 m=40 w=0 | elapsed=632s eta=5146s
+  [22/192] t=32 m=50 w=0 | elapsed=662s eta=5115s
+  [23/192] t=32 m=60 w=0 | elapsed=693s eta=5092s
+  [24/192] t=32 m=70 w=0 | elapsed=723s eta=5061s
+  [25/192] t=32 m=80 w=0 | elapsed=753s eta=5030s
+  [26/192] t=32 m=90 w=0 | elapsed=783s eta=4999s
+  [27/192] t=32 m=100 w=0 | elapsed=813s eta=4968s
+  [28/192] t=32 m=250 w=0 | elapsed=843s eta=4937s
+  [29/192] t=32 m=500 w=0 | elapsed=873s eta=4906s
+  [30/192] t=32 m=1000 w=0 | elapsed=903s eta=4876s
+  [31/192] t=32 m=5000 w=0 | elapsed=933s eta=4845s
+  [32/192] t=32 m=10000 w=0 | elapsed=964s eta=4820s
+--- w=0ns, rep=2/3 ---
+  [33/192] t=16 m=0 w=0 | elapsed=994s eta=4789s
+  [34/192] t=16 m=10 w=0 | elapsed=1024s eta=4758s
+  [35/192] t=16 m=20 w=0 | elapsed=1054s eta=4727s
+  [36/192] t=16 m=30 w=0 | elapsed=1084s eta=4697s
+  [37/192] t=16 m=40 w=0 | elapsed=1114s eta=4666s
+  [38/192] t=16 m=50 w=0 | elapsed=1144s eta=4636s
+  [39/192] t=16 m=60 w=0 | elapsed=1174s eta=4605s
+  [40/192] t=16 m=70 w=0 | elapsed=1204s eta=4575s
+  [41/192] t=16 m=80 w=0 | elapsed=1234s eta=4544s
+  [42/192] t=16 m=90 w=0 | elapsed=1265s eta=4517s
+  [43/192] t=16 m=100 w=0 | elapsed=1295s eta=4487s
+  [44/192] t=16 m=250 w=0 | elapsed=1325s eta=4456s
+  [45/192] t=16 m=500 w=0 | elapsed=1355s eta=4426s
+  [46/192] t=16 m=1000 w=0 | elapsed=1385s eta=4395s
+  [47/192] t=16 m=5000 w=0 | elapsed=1415s eta=4365s
+  [48/192] t=16 m=10000 w=0 | elapsed=1445s eta=4335s
+  [49/192] t=32 m=0 w=0 | elapsed=1475s eta=4304s
+  [50/192] t=32 m=10 w=0 | elapsed=1505s eta=4274s
+  [51/192] t=32 m=20 w=0 | elapsed=1535s eta=4243s
+  [52/192] t=32 m=30 w=0 | elapsed=1566s eta=4216s
+  [53/192] t=32 m=40 w=0 | elapsed=1596s eta=4185s
+  [54/192] t=32 m=50 w=0 | elapsed=1626s eta=4155s
+  [55/192] t=32 m=60 w=0 | elapsed=1656s eta=4124s
+  [56/192] t=32 m=70 w=0 | elapsed=1686s eta=4094s
+  [57/192] t=32 m=80 w=0 | elapsed=1716s eta=4064s
+  [58/192] t=32 m=90 w=0 | elapsed=1746s eta=4033s
+  [59/192] t=32 m=100 w=0 | elapsed=1776s eta=4003s
+  [60/192] t=32 m=250 w=0 | elapsed=1806s eta=3973s
+  [61/192] t=32 m=500 w=0 | elapsed=1837s eta=3945s
+  [62/192] t=32 m=1000 w=0 | elapsed=1867s eta=3914s
+  [63/192] t=32 m=5000 w=0 | elapsed=1897s eta=3884s
+  [64/192] t=32 m=10000 w=0 | elapsed=1927s eta=3854s
+--- w=0ns, rep=3/3 ---
+  [65/192] t=16 m=0 w=0 | elapsed=1957s eta=3823s
+  [66/192] t=16 m=10 w=0 | elapsed=1987s eta=3793s
+  [67/192] t=16 m=20 w=0 | elapsed=2017s eta=3763s
+  [68/192] t=16 m=30 w=0 | elapsed=2047s eta=3732s
+  [69/192] t=16 m=40 w=0 | elapsed=2077s eta=3702s
+  [70/192] t=16 m=50 w=0 | elapsed=2108s eta=3673s
+  [71/192] t=16 m=60 w=0 | elapsed=2138s eta=3643s
+  [72/192] t=16 m=70 w=0 | elapsed=2168s eta=3613s
+  [73/192] t=16 m=80 w=0 | elapsed=2198s eta=3583s
+  [74/192] t=16 m=90 w=0 | elapsed=2228s eta=3552s
+  [75/192] t=16 m=100 w=0 | elapsed=2258s eta=3522s
+  [76/192] t=16 m=250 w=0 | elapsed=2288s eta=3492s
+  [77/192] t=16 m=500 w=0 | elapsed=2318s eta=3461s
+  [78/192] t=16 m=1000 w=0 | elapsed=2348s eta=3431s
+  [79/192] t=16 m=5000 w=0 | elapsed=2378s eta=3401s
+  [80/192] t=16 m=10000 w=0 | elapsed=2409s eta=3372s
+  [81/192] t=32 m=0 w=0 | elapsed=2439s eta=3342s
+  [82/192] t=32 m=10 w=0 | elapsed=2469s eta=3312s
+  [83/192] t=32 m=20 w=0 | elapsed=2499s eta=3281s
+  [84/192] t=32 m=30 w=0 | elapsed=2529s eta=3251s
+  [85/192] t=32 m=40 w=0 | elapsed=2559s eta=3221s
+  [86/192] t=32 m=50 w=0 | elapsed=2589s eta=3191s
+  [87/192] t=32 m=60 w=0 | elapsed=2619s eta=3160s
+  [88/192] t=32 m=70 w=0 | elapsed=2649s eta=3130s
+  [89/192] t=32 m=80 w=0 | elapsed=2680s eta=3101s
+  [90/192] t=32 m=90 w=0 | elapsed=2710s eta=3071s
+  [91/192] t=32 m=100 w=0 | elapsed=2740s eta=3041s
+  [92/192] t=32 m=250 w=0 | elapsed=2770s eta=3010s
+  [93/192] t=32 m=500 w=0 | elapsed=2800s eta=2980s
+  [94/192] t=32 m=1000 w=0 | elapsed=2830s eta=2950s
+  [95/192] t=32 m=5000 w=0 | elapsed=2860s eta=2920s
+  [96/192] t=32 m=10000 w=0 | elapsed=2890s eta=2890s
+--- w=500ns, rep=1/3 ---
+  [97/192] t=16 m=0 w=500 | elapsed=2920s eta=2859s
+  [98/192] t=16 m=10 w=500 | elapsed=2951s eta=2830s
+  [99/192] t=16 m=20 w=500 | elapsed=2981s eta=2800s
+  [100/192] t=16 m=30 w=500 | elapsed=3011s eta=2770s
+  [101/192] t=16 m=40 w=500 | elapsed=3041s eta=2739s
+  [102/192] t=16 m=50 w=500 | elapsed=3071s eta=2709s
+  [103/192] t=16 m=60 w=500 | elapsed=3101s eta=2679s
+  [104/192] t=16 m=70 w=500 | elapsed=3131s eta=2649s
+  [105/192] t=16 m=80 w=500 | elapsed=3161s eta=2619s
+  [106/192] t=16 m=90 w=500 | elapsed=3191s eta=2588s
+  [107/192] t=16 m=100 w=500 | elapsed=3221s eta=2558s
+  [108/192] t=16 m=250 w=500 | elapsed=3252s eta=2529s
+  [109/192] t=16 m=500 w=500 | elapsed=3282s eta=2499s
+  [110/192] t=16 m=1000 w=500 | elapsed=3312s eta=2468s
+  [111/192] t=16 m=5000 w=500 | elapsed=3342s eta=2438s
+  [112/192] t=16 m=10000 w=500 | elapsed=3372s eta=2408s
+  [113/192] t=32 m=0 w=500 | elapsed=3402s eta=2378s
+  [114/192] t=32 m=10 w=500 | elapsed=3432s eta=2348s
+  [115/192] t=32 m=20 w=500 | elapsed=3462s eta=2318s
+  [116/192] t=32 m=30 w=500 | elapsed=3492s eta=2287s
+  [117/192] t=32 m=40 w=500 | elapsed=3522s eta=2257s
+  [118/192] t=32 m=50 w=500 | elapsed=3553s eta=2228s
+  [119/192] t=32 m=60 w=500 | elapsed=3583s eta=2197s
+  [120/192] t=32 m=70 w=500 | elapsed=3613s eta=2167s
+  [121/192] t=32 m=80 w=500 | elapsed=3643s eta=2137s
+  [122/192] t=32 m=90 w=500 | elapsed=3673s eta=2107s
+  [123/192] t=32 m=100 w=500 | elapsed=3703s eta=2077s
+  [124/192] t=32 m=250 w=500 | elapsed=3733s eta=2047s
+  [125/192] t=32 m=500 w=500 | elapsed=3763s eta=2016s
+  [126/192] t=32 m=1000 w=500 | elapsed=3793s eta=1986s
+  [127/192] t=32 m=5000 w=500 | elapsed=3824s eta=1957s
+  [128/192] t=32 m=10000 w=500 | elapsed=3854s eta=1927s
+--- w=500ns, rep=2/3 ---
+  [129/192] t=16 m=0 w=500 | elapsed=3884s eta=1896s
+  [130/192] t=16 m=10 w=500 | elapsed=3914s eta=1866s
+  [131/192] t=16 m=20 w=500 | elapsed=3944s eta=1836s
+  [132/192] t=16 m=30 w=500 | elapsed=3974s eta=1806s
+  [133/192] t=16 m=40 w=500 | elapsed=4004s eta=1776s
+  [134/192] t=16 m=50 w=500 | elapsed=4034s eta=1746s
+  [135/192] t=16 m=60 w=500 | elapsed=4064s eta=1715s
+  [136/192] t=16 m=70 w=500 | elapsed=4094s eta=1685s
+  [137/192] t=16 m=80 w=500 | elapsed=4125s eta=1656s
+  [138/192] t=16 m=90 w=500 | elapsed=4155s eta=1625s
+  [139/192] t=16 m=100 w=500 | elapsed=4185s eta=1595s
+  [140/192] t=16 m=250 w=500 | elapsed=4215s eta=1565s
+  [141/192] t=16 m=500 w=500 | elapsed=4245s eta=1535s
+  [142/192] t=16 m=1000 w=500 | elapsed=4275s eta=1505s
+  [143/192] t=16 m=5000 w=500 | elapsed=4305s eta=1475s
+  [144/192] t=16 m=10000 w=500 | elapsed=4335s eta=1445s
+  [145/192] t=32 m=0 w=500 | elapsed=4365s eta=1414s
+  [146/192] t=32 m=10 w=500 | elapsed=4396s eta=1385s
+  [147/192] t=32 m=20 w=500 | elapsed=4426s eta=1354s
+  [148/192] t=32 m=30 w=500 | elapsed=4456s eta=1324s
+  [149/192] t=32 m=40 w=500 | elapsed=4486s eta=1294s
+  [150/192] t=32 m=50 w=500 | elapsed=4516s eta=1264s
+  [151/192] t=32 m=60 w=500 | elapsed=4546s eta=1234s
+  [152/192] t=32 m=70 w=500 | elapsed=4576s eta=1204s
+  [153/192] t=32 m=80 w=500 | elapsed=4606s eta=1174s
+  [154/192] t=32 m=90 w=500 | elapsed=4636s eta=1143s
+  [155/192] t=32 m=100 w=500 | elapsed=4666s eta=1113s
+  [156/192] t=32 m=250 w=500 | elapsed=4697s eta=1083s
+  [157/192] t=32 m=500 w=500 | elapsed=4727s eta=1053s
+  [158/192] t=32 m=1000 w=500 | elapsed=4757s eta=1023s
+  [159/192] t=32 m=5000 w=500 | elapsed=4787s eta=993s
+  [160/192] t=32 m=10000 w=500 | elapsed=4817s eta=963s
+--- w=500ns, rep=3/3 ---
+  [161/192] t=16 m=0 w=500 | elapsed=4847s eta=933s
+  [162/192] t=16 m=10 w=500 | elapsed=4877s eta=903s
+  [163/192] t=16 m=20 w=500 | elapsed=4907s eta=873s
+  [164/192] t=16 m=30 w=500 | elapsed=4937s eta=842s
+  [165/192] t=16 m=40 w=500 | elapsed=4968s eta=812s
+  [166/192] t=16 m=50 w=500 | elapsed=4998s eta=782s
+  [167/192] t=16 m=60 w=500 | elapsed=5028s eta=752s
+  [168/192] t=16 m=70 w=500 | elapsed=5058s eta=722s
+  [169/192] t=16 m=80 w=500 | elapsed=5088s eta=692s
+  [170/192] t=16 m=90 w=500 | elapsed=5118s eta=662s
+  [171/192] t=16 m=100 w=500 | elapsed=5148s eta=632s
+  [172/192] t=16 m=250 w=500 | elapsed=5178s eta=602s
+  [173/192] t=16 m=500 w=500 | elapsed=5208s eta=571s
+  [174/192] t=16 m=1000 w=500 | elapsed=5238s eta=541s
+  [175/192] t=16 m=5000 w=500 | elapsed=5269s eta=511s
+  [176/192] t=16 m=10000 w=500 | elapsed=5299s eta=481s
+  [177/192] t=32 m=0 w=500 | elapsed=5329s eta=451s
+  [178/192] t=32 m=10 w=500 | elapsed=5359s eta=421s
+  [179/192] t=32 m=20 w=500 | elapsed=5389s eta=391s
+  [180/192] t=32 m=30 w=500 | elapsed=5419s eta=361s
+  [181/192] t=32 m=40 w=500 | elapsed=5449s eta=331s
+  [182/192] t=32 m=50 w=500 | elapsed=5479s eta=301s
+  [183/192] t=32 m=60 w=500 | elapsed=5509s eta=270s
+  [184/192] t=32 m=70 w=500 | elapsed=5540s eta=240s
+  [185/192] t=32 m=80 w=500 | elapsed=5570s eta=210s
+  [186/192] t=32 m=90 w=500 | elapsed=5600s eta=180s
+  [187/192] t=32 m=100 w=500 | elapsed=5630s eta=150s
+  [188/192] t=32 m=250 w=500 | elapsed=5660s eta=120s
+  [189/192] t=32 m=500 w=500 | elapsed=5690s eta=90s
+Terminated
+=== CPU Setup ===
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+Setting cpu: 16
+Setting cpu: 17
+Setting cpu: 18
+Setting cpu: 19
+Setting cpu: 20
+Setting cpu: 21
+Setting cpu: 22
+Setting cpu: 23
+Setting cpu: 24
+Setting cpu: 25
+Setting cpu: 26
+Setting cpu: 27
+Setting cpu: 28
+Setting cpu: 29
+Setting cpu: 30
+Setting cpu: 31
+Setting cpu: 32
+Setting cpu: 33
+Setting cpu: 34
+Setting cpu: 35
+Setting cpu: 36
+Setting cpu: 37
+Setting cpu: 38
+Setting cpu: 39
+Setting cpu: 40
+Setting cpu: 41
+Setting cpu: 42
+Setting cpu: 43
+Setting cpu: 44
+Setting cpu: 45
+Setting cpu: 46
+Setting cpu: 47
+Setting cpu: 48
+Setting cpu: 49
+Setting cpu: 50
+Setting cpu: 51
+Setting cpu: 52
+Setting cpu: 53
+Setting cpu: 54
+Setting cpu: 55
+  governor: performance
+  Intel turbo: disabled
+
+=== Experiment (Server: emerald_c6620) ===
+Reps: 3, Threads: 16 32, Multipliers: 0 10 20 30 40 50 60 70 80 90 100 250 500 1000 5000 10000, Work(ns): 0 500
+Total runs: 192 (est. ~96 min)
+
+--- w=0ns, rep=1/3 ---
+  [1/192] SKIP t=16 m=0 w=0
+  [2/192] SKIP t=16 m=10 w=0
+  [3/192] SKIP t=16 m=20 w=0
+  [4/192] SKIP t=16 m=30 w=0
+  [5/192] SKIP t=16 m=40 w=0
+  [6/192] SKIP t=16 m=50 w=0
+  [7/192] SKIP t=16 m=60 w=0
+  [8/192] SKIP t=16 m=70 w=0
+  [9/192] SKIP t=16 m=80 w=0
+  [10/192] SKIP t=16 m=90 w=0
+  [11/192] SKIP t=16 m=100 w=0
+  [12/192] SKIP t=16 m=250 w=0
+  [13/192] SKIP t=16 m=500 w=0
+  [14/192] SKIP t=16 m=1000 w=0
+  [15/192] SKIP t=16 m=5000 w=0
+  [16/192] SKIP t=16 m=10000 w=0
+  [17/192] SKIP t=32 m=0 w=0
+  [18/192] SKIP t=32 m=10 w=0
+  [19/192] SKIP t=32 m=20 w=0
+  [20/192] SKIP t=32 m=30 w=0
+  [21/192] SKIP t=32 m=40 w=0
+  [22/192] SKIP t=32 m=50 w=0
+  [23/192] SKIP t=32 m=60 w=0
+  [24/192] SKIP t=32 m=70 w=0
+  [25/192] SKIP t=32 m=80 w=0
+  [26/192] SKIP t=32 m=90 w=0
+  [27/192] SKIP t=32 m=100 w=0
+  [28/192] SKIP t=32 m=250 w=0
+  [29/192] SKIP t=32 m=500 w=0
+  [30/192] SKIP t=32 m=1000 w=0
+  [31/192] SKIP t=32 m=5000 w=0
+  [32/192] SKIP t=32 m=10000 w=0
+--- w=0ns, rep=2/3 ---
+  [33/192] SKIP t=16 m=0 w=0
+  [34/192] SKIP t=16 m=10 w=0
+  [35/192] SKIP t=16 m=20 w=0
+  [36/192] SKIP t=16 m=30 w=0
+  [37/192] SKIP t=16 m=40 w=0
+  [38/192] SKIP t=16 m=50 w=0
+  [39/192] SKIP t=16 m=60 w=0
+  [40/192] SKIP t=16 m=70 w=0
+  [41/192] SKIP t=16 m=80 w=0
+  [42/192] SKIP t=16 m=90 w=0
+  [43/192] SKIP t=16 m=100 w=0
+  [44/192] SKIP t=16 m=250 w=0
+  [45/192] SKIP t=16 m=500 w=0
+  [46/192] SKIP t=16 m=1000 w=0
+  [47/192] SKIP t=16 m=5000 w=0
+  [48/192] SKIP t=16 m=10000 w=0
+  [49/192] SKIP t=32 m=0 w=0
+  [50/192] SKIP t=32 m=10 w=0
+  [51/192] SKIP t=32 m=20 w=0
+  [52/192] SKIP t=32 m=30 w=0
+  [53/192] SKIP t=32 m=40 w=0
+  [54/192] SKIP t=32 m=50 w=0
+  [55/192] SKIP t=32 m=60 w=0
+  [56/192] SKIP t=32 m=70 w=0
+  [57/192] SKIP t=32 m=80 w=0
+  [58/192] SKIP t=32 m=90 w=0
+  [59/192] SKIP t=32 m=100 w=0
+  [60/192] SKIP t=32 m=250 w=0
+  [61/192] SKIP t=32 m=500 w=0
+  [62/192] SKIP t=32 m=1000 w=0
+  [63/192] SKIP t=32 m=5000 w=0
+  [64/192] SKIP t=32 m=10000 w=0
+--- w=0ns, rep=3/3 ---
+  [65/192] SKIP t=16 m=0 w=0
+  [66/192] SKIP t=16 m=10 w=0
+  [67/192] SKIP t=16 m=20 w=0
+  [68/192] SKIP t=16 m=30 w=0
+  [69/192] SKIP t=16 m=40 w=0
+  [70/192] SKIP t=16 m=50 w=0
+  [71/192] SKIP t=16 m=60 w=0
+  [72/192] SKIP t=16 m=70 w=0
+  [73/192] SKIP t=16 m=80 w=0
+  [74/192] SKIP t=16 m=90 w=0
+  [75/192] SKIP t=16 m=100 w=0
+  [76/192] SKIP t=16 m=250 w=0
+  [77/192] SKIP t=16 m=500 w=0
+  [78/192] SKIP t=16 m=1000 w=0
+  [79/192] SKIP t=16 m=5000 w=0
+  [80/192] SKIP t=16 m=10000 w=0
+  [81/192] SKIP t=32 m=0 w=0
+  [82/192] SKIP t=32 m=10 w=0
+  [83/192] SKIP t=32 m=20 w=0
+  [84/192] SKIP t=32 m=30 w=0
+  [85/192] SKIP t=32 m=40 w=0
+  [86/192] SKIP t=32 m=50 w=0
+  [87/192] SKIP t=32 m=60 w=0
+  [88/192] SKIP t=32 m=70 w=0
+  [89/192] SKIP t=32 m=80 w=0
+  [90/192] SKIP t=32 m=90 w=0
+  [91/192] SKIP t=32 m=100 w=0
+  [92/192] SKIP t=32 m=250 w=0
+  [93/192] SKIP t=32 m=500 w=0
+  [94/192] SKIP t=32 m=1000 w=0
+  [95/192] SKIP t=32 m=5000 w=0
+  [96/192] SKIP t=32 m=10000 w=0
+--- w=500ns, rep=1/3 ---
+  [97/192] SKIP t=16 m=0 w=500
+  [98/192] SKIP t=16 m=10 w=500
+  [99/192] SKIP t=16 m=20 w=500
+  [100/192] SKIP t=16 m=30 w=500
+  [101/192] SKIP t=16 m=40 w=500
+  [102/192] SKIP t=16 m=50 w=500
+  [103/192] SKIP t=16 m=60 w=500
+  [104/192] SKIP t=16 m=70 w=500
+  [105/192] SKIP t=16 m=80 w=500
+  [106/192] SKIP t=16 m=90 w=500
+  [107/192] SKIP t=16 m=100 w=500
+  [108/192] SKIP t=16 m=250 w=500
+  [109/192] SKIP t=16 m=500 w=500
+  [110/192] SKIP t=16 m=1000 w=500
+  [111/192] SKIP t=16 m=5000 w=500
+  [112/192] SKIP t=16 m=10000 w=500
+  [113/192] SKIP t=32 m=0 w=500
+  [114/192] SKIP t=32 m=10 w=500
+  [115/192] SKIP t=32 m=20 w=500
+  [116/192] SKIP t=32 m=30 w=500
+  [117/192] SKIP t=32 m=40 w=500
+  [118/192] SKIP t=32 m=50 w=500
+  [119/192] SKIP t=32 m=60 w=500
+  [120/192] SKIP t=32 m=70 w=500
+  [121/192] SKIP t=32 m=80 w=500
+  [122/192] SKIP t=32 m=90 w=500
+  [123/192] SKIP t=32 m=100 w=500
+  [124/192] SKIP t=32 m=250 w=500
+  [125/192] SKIP t=32 m=500 w=500
+  [126/192] SKIP t=32 m=1000 w=500
+  [127/192] SKIP t=32 m=5000 w=500
+  [128/192] SKIP t=32 m=10000 w=500
+--- w=500ns, rep=2/3 ---
+  [129/192] SKIP t=16 m=0 w=500
+  [130/192] SKIP t=16 m=10 w=500
+  [131/192] SKIP t=16 m=20 w=500
+  [132/192] SKIP t=16 m=30 w=500
+  [133/192] SKIP t=16 m=40 w=500
+  [134/192] SKIP t=16 m=50 w=500
+  [135/192] SKIP t=16 m=60 w=500
+  [136/192] SKIP t=16 m=70 w=500
+  [137/192] SKIP t=16 m=80 w=500
+  [138/192] SKIP t=16 m=90 w=500
+  [139/192] SKIP t=16 m=100 w=500
+  [140/192] SKIP t=16 m=250 w=500
+  [141/192] SKIP t=16 m=500 w=500
+  [142/192] SKIP t=16 m=1000 w=500
+  [143/192] SKIP t=16 m=5000 w=500
+  [144/192] SKIP t=16 m=10000 w=500
+  [145/192] SKIP t=32 m=0 w=500
+  [146/192] SKIP t=32 m=10 w=500
+  [147/192] SKIP t=32 m=20 w=500
+  [148/192] SKIP t=32 m=30 w=500
+  [149/192] SKIP t=32 m=40 w=500
+  [150/192] SKIP t=32 m=50 w=500
+  [151/192] SKIP t=32 m=60 w=500
+  [152/192] SKIP t=32 m=70 w=500
+  [153/192] SKIP t=32 m=80 w=500
+  [154/192] SKIP t=32 m=90 w=500
+  [155/192] SKIP t=32 m=100 w=500
+  [156/192] SKIP t=32 m=250 w=500
+  [157/192] SKIP t=32 m=500 w=500
+  [158/192] SKIP t=32 m=1000 w=500
+  [159/192] SKIP t=32 m=5000 w=500
+  [160/192] SKIP t=32 m=10000 w=500
+--- w=500ns, rep=3/3 ---
+  [161/192] SKIP t=16 m=0 w=500
+  [162/192] SKIP t=16 m=10 w=500
+  [163/192] SKIP t=16 m=20 w=500
+  [164/192] SKIP t=16 m=30 w=500
+  [165/192] SKIP t=16 m=40 w=500
+  [166/192] SKIP t=16 m=50 w=500
+  [167/192] SKIP t=16 m=60 w=500
+  [168/192] SKIP t=16 m=70 w=500
+  [169/192] SKIP t=16 m=80 w=500
+  [170/192] SKIP t=16 m=90 w=500
+  [171/192] SKIP t=16 m=100 w=500
+  [172/192] SKIP t=16 m=250 w=500
+  [173/192] SKIP t=16 m=500 w=500
+  [174/192] SKIP t=16 m=1000 w=500
+  [175/192] SKIP t=16 m=5000 w=500
+  [176/192] SKIP t=16 m=10000 w=500
+  [177/192] SKIP t=32 m=0 w=500
+  [178/192] SKIP t=32 m=10 w=500
+  [179/192] SKIP t=32 m=20 w=500
+  [180/192] SKIP t=32 m=30 w=500
+  [181/192] SKIP t=32 m=40 w=500
+  [182/192] SKIP t=32 m=50 w=500
+  [183/192] SKIP t=32 m=60 w=500
+  [184/192] SKIP t=32 m=70 w=500
+  [185/192] SKIP t=32 m=80 w=500
+  [186/192] SKIP t=32 m=90 w=500
+  [187/192] SKIP t=32 m=100 w=500
+  [188/192] SKIP t=32 m=250 w=500
+  [189/192] SKIP t=32 m=500 w=500
+  [190/192] t=32 m=1000 w=500 | elapsed=31s eta=62s
+  [191/192] t=32 m=5000 w=500 | elapsed=61s eta=30s
+  [192/192] t=32 m=10000 w=500 | elapsed=91s eta=0s
+
+=== Done. Results in result/emerald_c6620/ (skipped: 189/192) ===
