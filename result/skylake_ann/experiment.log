@@ -1,0 +1,219 @@
+=== CPU Setup ===
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Following CPUs are offline:
+8-15
+cpupower set operation was not performed on them
+  governor: performance
+  WARNING: could not disable turbo/boost
+
+=== Experiment (Server: skylake_ann) ===
+Reps: 3, Threads: 16 32, Multipliers: 0 10 20 30 40 50 60 70 80 90 100 250 500 1000 5000 10000, Work(ns): 0 500
+Total runs: 192 (est. ~96 min)
+
+--- w=0ns, rep=1/3 ---
+  [1/192] t=16 m=0 w=0 | elapsed=30s eta=5730s
+  [2/192] t=16 m=10 w=0 | elapsed=60s eta=5700s
+  [3/192] t=16 m=20 w=0 | elapsed=90s eta=5670s
+  [4/192] t=16 m=30 w=0 | elapsed=120s eta=5640s
+  [5/192] t=16 m=40 w=0 | elapsed=151s eta=5647s
+  [6/192] t=16 m=50 w=0 | elapsed=181s eta=5611s
+  [7/192] t=16 m=60 w=0 | elapsed=211s eta=5576s
+  [8/192] t=16 m=70 w=0 | elapsed=241s eta=5543s
+  [9/192] t=16 m=80 w=0 | elapsed=271s eta=5510s
+  [10/192] t=16 m=90 w=0 | elapsed=301s eta=5478s
+  [11/192] t=16 m=100 w=0 | elapsed=331s eta=5446s
+  [12/192] t=16 m=250 w=0 | elapsed=361s eta=5415s
+  [13/192] t=16 m=500 w=0 | elapsed=391s eta=5383s
+  [14/192] t=16 m=1000 w=0 | elapsed=422s eta=5365s
+  [15/192] t=16 m=5000 w=0 | elapsed=452s eta=5333s
+  [16/192] t=16 m=10000 w=0 | elapsed=482s eta=5302s
+  [17/192] t=32 m=0 w=0 | elapsed=512s eta=5270s
+  [18/192] t=32 m=10 w=0 | elapsed=542s eta=5239s
+  [19/192] t=32 m=20 w=0 | elapsed=572s eta=5208s
+  [20/192] t=32 m=30 w=0 | elapsed=602s eta=5177s
+  [21/192] t=32 m=40 w=0 | elapsed=632s eta=5146s
+  [22/192] t=32 m=50 w=0 | elapsed=662s eta=5115s
+  [23/192] t=32 m=60 w=0 | elapsed=693s eta=5092s
+  [24/192] t=32 m=70 w=0 | elapsed=723s eta=5061s
+  [25/192] t=32 m=80 w=0 | elapsed=753s eta=5030s
+  [26/192] t=32 m=90 w=0 | elapsed=783s eta=4999s
+  [27/192] t=32 m=100 w=0 | elapsed=813s eta=4968s
+  [28/192] t=32 m=250 w=0 | elapsed=843s eta=4937s
+  [29/192] t=32 m=500 w=0 | elapsed=873s eta=4906s
+  [30/192] t=32 m=1000 w=0 | elapsed=903s eta=4876s
+  [31/192] t=32 m=5000 w=0 | elapsed=933s eta=4845s
+  [32/192] t=32 m=10000 w=0 | elapsed=964s eta=4820s
+--- w=0ns, rep=2/3 ---
+  [33/192] t=16 m=0 w=0 | elapsed=994s eta=4789s
+  [34/192] t=16 m=10 w=0 | elapsed=1024s eta=4758s
+  [35/192] t=16 m=20 w=0 | elapsed=1054s eta=4727s
+  [36/192] t=16 m=30 w=0 | elapsed=1084s eta=4697s
+  [37/192] t=16 m=40 w=0 | elapsed=1114s eta=4666s
+  [38/192] t=16 m=50 w=0 | elapsed=1144s eta=4636s
+  [39/192] t=16 m=60 w=0 | elapsed=1174s eta=4605s
+  [40/192] t=16 m=70 w=0 | elapsed=1204s eta=4575s
+  [41/192] t=16 m=80 w=0 | elapsed=1235s eta=4548s
+  [42/192] t=16 m=90 w=0 | elapsed=1265s eta=4517s
+  [43/192] t=16 m=100 w=0 | elapsed=1295s eta=4487s
+  [44/192] t=16 m=250 w=0 | elapsed=1325s eta=4456s
+  [45/192] t=16 m=500 w=0 | elapsed=1355s eta=4426s
+  [46/192] t=16 m=1000 w=0 | elapsed=1385s eta=4395s
+  [47/192] t=16 m=5000 w=0 | elapsed=1415s eta=4365s
+  [48/192] t=16 m=10000 w=0 | elapsed=1445s eta=4335s
+  [49/192] t=32 m=0 w=0 | elapsed=1475s eta=4304s
+  [50/192] t=32 m=10 w=0 | elapsed=1506s eta=4277s
+  [51/192] t=32 m=20 w=0 | elapsed=1536s eta=4246s
+  [52/192] t=32 m=30 w=0 | elapsed=1566s eta=4216s
+  [53/192] t=32 m=40 w=0 | elapsed=1596s eta=4185s
+  [54/192] t=32 m=50 w=0 | elapsed=1626s eta=4155s
+  [55/192] t=32 m=60 w=0 | elapsed=1656s eta=4124s
+  [56/192] t=32 m=70 w=0 | elapsed=1686s eta=4094s
+  [57/192] t=32 m=80 w=0 | elapsed=1716s eta=4064s
+  [58/192] t=32 m=90 w=0 | elapsed=1746s eta=4033s
+  [59/192] t=32 m=100 w=0 | elapsed=1777s eta=4005s
+  [60/192] t=32 m=250 w=0 | elapsed=1807s eta=3975s
+  [61/192] t=32 m=500 w=0 | elapsed=1837s eta=3945s
+  [62/192] t=32 m=1000 w=0 | elapsed=1867s eta=3914s
+  [63/192] t=32 m=5000 w=0 | elapsed=1897s eta=3884s
+  [64/192] t=32 m=10000 w=0 | elapsed=1927s eta=3854s
+--- w=0ns, rep=3/3 ---
+  [65/192] t=16 m=0 w=0 | elapsed=1957s eta=3823s
+  [66/192] t=16 m=10 w=0 | elapsed=1987s eta=3793s
+  [67/192] t=16 m=20 w=0 | elapsed=2017s eta=3763s
+  [68/192] t=16 m=30 w=0 | elapsed=2048s eta=3734s
+  [69/192] t=16 m=40 w=0 | elapsed=2078s eta=3704s
+  [70/192] t=16 m=50 w=0 | elapsed=2108s eta=3673s
+  [71/192] t=16 m=60 w=0 | elapsed=2138s eta=3643s
+  [72/192] t=16 m=70 w=0 | elapsed=2168s eta=3613s
+  [73/192] t=16 m=80 w=0 | elapsed=2198s eta=3583s
+  [74/192] t=16 m=90 w=0 | elapsed=2228s eta=3552s
+  [75/192] t=16 m=100 w=0 | elapsed=2258s eta=3522s
+  [76/192] t=16 m=250 w=0 | elapsed=2288s eta=3492s
+  [77/192] t=16 m=500 w=0 | elapsed=2319s eta=3463s
+  [78/192] t=16 m=1000 w=0 | elapsed=2349s eta=3433s
+  [79/192] t=16 m=5000 w=0 | elapsed=2379s eta=3402s
+  [80/192] t=16 m=10000 w=0 | elapsed=2409s eta=3372s
+  [81/192] t=32 m=0 w=0 | elapsed=2439s eta=3342s
+  [82/192] t=32 m=10 w=0 | elapsed=2469s eta=3312s
+  [83/192] t=32 m=20 w=0 | elapsed=2499s eta=3281s
+  [84/192] t=32 m=30 w=0 | elapsed=2529s eta=3251s
+  [85/192] t=32 m=40 w=0 | elapsed=2559s eta=3221s
+  [86/192] t=32 m=50 w=0 | elapsed=2590s eta=3192s
+  [87/192] t=32 m=60 w=0 | elapsed=2620s eta=3162s
+  [88/192] t=32 m=70 w=0 | elapsed=2650s eta=3131s
+  [89/192] t=32 m=80 w=0 | elapsed=2680s eta=3101s
+  [90/192] t=32 m=90 w=0 | elapsed=2710s eta=3071s
+  [91/192] t=32 m=100 w=0 | elapsed=2740s eta=3041s
+  [92/192] t=32 m=250 w=0 | elapsed=2770s eta=3010s
+  [93/192] t=32 m=500 w=0 | elapsed=2800s eta=2980s
+  [94/192] t=32 m=1000 w=0 | elapsed=2830s eta=2950s
+  [95/192] t=32 m=5000 w=0 | elapsed=2861s eta=2921s
+  [96/192] t=32 m=10000 w=0 | elapsed=2891s eta=2891s
+--- w=500ns, rep=1/3 ---
+  [97/192] t=16 m=0 w=500 | elapsed=2921s eta=2860s
+  [98/192] t=16 m=10 w=500 | elapsed=2951s eta=2830s
+  [99/192] t=16 m=20 w=500 | elapsed=2981s eta=2800s
+  [100/192] t=16 m=30 w=500 | elapsed=3011s eta=2770s
+  [101/192] t=16 m=40 w=500 | elapsed=3041s eta=2739s
+  [102/192] t=16 m=50 w=500 | elapsed=3071s eta=2709s
+  [103/192] t=16 m=60 w=500 | elapsed=3101s eta=2679s
+  [104/192] t=16 m=70 w=500 | elapsed=3132s eta=2650s
+  [105/192] t=16 m=80 w=500 | elapsed=3162s eta=2619s
+  [106/192] t=16 m=90 w=500 | elapsed=3192s eta=2589s
+  [107/192] t=16 m=100 w=500 | elapsed=3222s eta=2559s
+  [108/192] t=16 m=250 w=500 | elapsed=3252s eta=2529s
+  [109/192] t=16 m=500 w=500 | elapsed=3282s eta=2499s
+  [110/192] t=16 m=1000 w=500 | elapsed=3312s eta=2468s
+  [111/192] t=16 m=5000 w=500 | elapsed=3342s eta=2438s
+  [112/192] t=16 m=10000 w=500 | elapsed=3372s eta=2408s
+  [113/192] t=32 m=0 w=500 | elapsed=3403s eta=2379s
+  [114/192] t=32 m=10 w=500 | elapsed=3433s eta=2348s
+  [115/192] t=32 m=20 w=500 | elapsed=3463s eta=2318s
+  [116/192] t=32 m=30 w=500 | elapsed=3493s eta=2288s
+  [117/192] t=32 m=40 w=500 | elapsed=3523s eta=2258s
+  [118/192] t=32 m=50 w=500 | elapsed=3553s eta=2228s
+  [119/192] t=32 m=60 w=500 | elapsed=3583s eta=2197s
+  [120/192] t=32 m=70 w=500 | elapsed=3613s eta=2167s
+  [121/192] t=32 m=80 w=500 | elapsed=3643s eta=2137s
+  [122/192] t=32 m=90 w=500 | elapsed=3674s eta=2108s
+  [123/192] t=32 m=100 w=500 | elapsed=3704s eta=2077s
+  [124/192] t=32 m=250 w=500 | elapsed=3734s eta=2047s
+  [125/192] t=32 m=500 w=500 | elapsed=3764s eta=2017s
+  [126/192] t=32 m=1000 w=500 | elapsed=3794s eta=1987s
+  [127/192] t=32 m=5000 w=500 | elapsed=3824s eta=1957s
+  [128/192] t=32 m=10000 w=500 | elapsed=3854s eta=1927s
+--- w=500ns, rep=2/3 ---
+  [129/192] t=16 m=0 w=500 | elapsed=3884s eta=1896s
+  [130/192] t=16 m=10 w=500 | elapsed=3914s eta=1866s
+  [131/192] t=16 m=20 w=500 | elapsed=3945s eta=1836s
+  [132/192] t=16 m=30 w=500 | elapsed=3975s eta=1806s
+  [133/192] t=16 m=40 w=500 | elapsed=4005s eta=1776s
+  [134/192] t=16 m=50 w=500 | elapsed=4035s eta=1746s
+  [135/192] t=16 m=60 w=500 | elapsed=4065s eta=1716s
+  [136/192] t=16 m=70 w=500 | elapsed=4095s eta=1686s
+  [137/192] t=16 m=80 w=500 | elapsed=4125s eta=1656s
+  [138/192] t=16 m=90 w=500 | elapsed=4155s eta=1625s
+  [139/192] t=16 m=100 w=500 | elapsed=4185s eta=1595s
+  [140/192] t=16 m=250 w=500 | elapsed=4215s eta=1565s
+  [141/192] t=16 m=500 w=500 | elapsed=4246s eta=1535s
+  [142/192] t=16 m=1000 w=500 | elapsed=4276s eta=1505s
+  [143/192] t=16 m=5000 w=500 | elapsed=4306s eta=1475s
+  [144/192] t=16 m=10000 w=500 | elapsed=4336s eta=1445s
+  [145/192] t=32 m=0 w=500 | elapsed=4366s eta=1415s
+  [146/192] t=32 m=10 w=500 | elapsed=4396s eta=1385s
+  [147/192] t=32 m=20 w=500 | elapsed=4426s eta=1354s
+  [148/192] t=32 m=30 w=500 | elapsed=4456s eta=1324s
+  [149/192] t=32 m=40 w=500 | elapsed=4486s eta=1294s
+  [150/192] t=32 m=50 w=500 | elapsed=4517s eta=1264s
+  [151/192] t=32 m=60 w=500 | elapsed=4547s eta=1234s
+  [152/192] t=32 m=70 w=500 | elapsed=4577s eta=1204s
+  [153/192] t=32 m=80 w=500 | elapsed=4607s eta=1174s
+  [154/192] t=32 m=90 w=500 | elapsed=4637s eta=1144s
+  [155/192] t=32 m=100 w=500 | elapsed=4667s eta=1114s
+  [156/192] t=32 m=250 w=500 | elapsed=4697s eta=1083s
+  [157/192] t=32 m=500 w=500 | elapsed=4727s eta=1053s
+  [158/192] t=32 m=1000 w=500 | elapsed=4757s eta=1023s
+  [159/192] t=32 m=5000 w=500 | elapsed=4788s eta=993s
+  [160/192] t=32 m=10000 w=500 | elapsed=4818s eta=963s
+--- w=500ns, rep=3/3 ---
+  [161/192] t=16 m=0 w=500 | elapsed=4848s eta=933s
+  [162/192] t=16 m=10 w=500 | elapsed=4878s eta=903s
+  [163/192] t=16 m=20 w=500 | elapsed=4908s eta=873s
+  [164/192] t=16 m=30 w=500 | elapsed=4938s eta=843s
+  [165/192] t=16 m=40 w=500 | elapsed=4968s eta=812s
+  [166/192] t=16 m=50 w=500 | elapsed=4998s eta=782s
+  [167/192] t=16 m=60 w=500 | elapsed=5028s eta=752s
+  [168/192] t=16 m=70 w=500 | elapsed=5059s eta=722s
+  [169/192] t=16 m=80 w=500 | elapsed=5089s eta=692s
+  [170/192] t=16 m=90 w=500 | elapsed=5119s eta=662s
+  [171/192] t=16 m=100 w=500 | elapsed=5149s eta=632s
+  [172/192] t=16 m=250 w=500 | elapsed=5179s eta=602s
+  [173/192] t=16 m=500 w=500 | elapsed=5209s eta=572s
+  [174/192] t=16 m=1000 w=500 | elapsed=5239s eta=541s
+  [175/192] t=16 m=5000 w=500 | elapsed=5269s eta=511s
+  [176/192] t=16 m=10000 w=500 | elapsed=5299s eta=481s
+  [177/192] t=32 m=0 w=500 | elapsed=5330s eta=451s
+  [178/192] t=32 m=10 w=500 | elapsed=5360s eta=421s
+  [179/192] t=32 m=20 w=500 | elapsed=5390s eta=391s
+  [180/192] t=32 m=30 w=500 | elapsed=5420s eta=361s
+  [181/192] t=32 m=40 w=500 | elapsed=5450s eta=331s
+  [182/192] t=32 m=50 w=500 | elapsed=5480s eta=301s
+  [183/192] t=32 m=60 w=500 | elapsed=5510s eta=270s
+  [184/192] t=32 m=70 w=500 | elapsed=5540s eta=240s
+  [185/192] t=32 m=80 w=500 | elapsed=5570s eta=210s
+  [186/192] t=32 m=90 w=500 | elapsed=5601s eta=180s
+  [187/192] t=32 m=100 w=500 | elapsed=5631s eta=150s
+  [188/192] t=32 m=250 w=500 | elapsed=5661s eta=120s
+  [189/192] t=32 m=500 w=500 | elapsed=5691s eta=90s
+  [190/192] t=32 m=1000 w=500 | elapsed=5721s eta=60s
+  [191/192] t=32 m=5000 w=500 | elapsed=5751s eta=30s
+  [192/192] t=32 m=10000 w=500 | elapsed=5781s eta=0s
+
+=== Done. Results in result/skylake_ann/ (skipped: 0/192) ===
