@@ -71,7 +71,8 @@ static void calibrate_tsc(void) {
 	       tsc_cycles_per_ns, tsc_cycles_per_ns);
 }
 
-static void busy_wait_ns(long ns) {
+static void busy_wait_ns(long ns)
+{
 	if (ns <= 0) return;
 	uint64_t target = __rdtsc() + (uint64_t)((double)ns * tsc_cycles_per_ns);
 	while (__rdtsc() < target);
@@ -135,8 +136,8 @@ lock_loop:
 		}
 		bool stopping = atomic_load_explicit(&stop_flag, memory_order_relaxed);
 		pthread_mutex_unlock(&mutex);
-
 		if (stopping) return;
+
 		i = 0;
 
 		goto lock_loop;
@@ -146,6 +147,7 @@ lock_loop:
 void lock_release(atomic_bool *l) {
 	atomic_exchange_explicit(l, false, memory_order_release);
 	pthread_mutex_lock(&mutex);
+	// cond_signalはブロックしているスレッドを1つだけ起床させる
 	pthread_cond_signal(&cond);
 	pthread_mutex_unlock(&mutex);
 }
@@ -225,8 +227,8 @@ int main(int argc, char *argv[]) {
 	}
 
 	sleep(DURATION);
-	atomic_store_explicit(&stop_flag, true, memory_order_relaxed);
 	pthread_mutex_lock(&mutex);
+	atomic_store_explicit(&stop_flag, true, memory_order_relaxed);
 	pthread_cond_broadcast(&cond);
 	pthread_mutex_unlock(&mutex);
 

@@ -18,9 +18,9 @@
 set -e
 
 REPS=3
-THREADS=(16 32)
+THREADS=(8 16 32)
 MULTIPLIERS=(0 10 20 30 40 50 60 70 80 90 100 250 500 1000 5000 10000)
-WORK_DURATIONS=(0 500)   # ns: 0=no work, 500=fixed 500ns critical section
+WORK_DURATIONS=(0 100 200 500 1000 2000 5000)   # ns
 BINARY=simple_lock
 SERVER=${1:-$(hostname -s)}
 OUTDIR=result/${SERVER}
@@ -70,7 +70,11 @@ for w in "${WORK_DURATIONS[@]}"; do
                     echo "  [${done_count}/${total}] SKIP t=${t} m=${m} w=${w}"
                     continue
                 fi
-                taskset -c 0-7 ./${BINARY} -t $t -m $m -w $w > "$outfile"
+                if ! timeout 45 taskset -c 0-7 ./${BINARY} -t $t -m $m -w $w > "$outfile"; then
+                    echo "  [${done_count}/${total}] TIMEOUT/ERROR t=${t} m=${m} w=${w} -- skipping" >&2
+                    rm -f "$outfile"
+                    continue
+                fi
                 elapsed=$(( $(date +%s) - start_time ))
                 remaining=$((total - done_count))
                 ran=$((done_count - skip_count))
