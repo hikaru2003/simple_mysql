@@ -59,883 +59,1667 @@ Setting cpu: 55
   Intel turbo: disabled
 
 === Experiment (Server: emerald_c6620) ===
-Reps: 3, Threads: 4 8, Multipliers: 0 10 20 30 40 50 60 70 80 90 100, Work(ns): 0 500
-Total runs: 132 (est. ~66 min)
+Reps: 3, Threads: 8 16 32, Multipliers: 0 10 20 30 40 50 60 70 80 90 100 150 200 250 300 400 500 700 1000 2000 3000 5000 7000 10000 20000 50000, Work(ns): 0 100 200 500 1000 2000 5000
+Total runs: 1638 (est. ~819 min)
 
 --- w=0ns, rep=1/3 ---
-  [1/132] t=4 m=0 w=0 | elapsed=30s eta=3930s
-  [2/132] t=4 m=10 w=0 | elapsed=60s eta=3900s
-  [3/132] t=4 m=20 w=0 | elapsed=90s eta=3870s
-  [4/132] t=4 m=30 w=0 | elapsed=120s eta=3840s
-  [5/132] t=4 m=40 w=0 | elapsed=150s eta=3810s
-  [6/132] t=4 m=50 w=0 | elapsed=181s eta=3801s
-  [7/132] t=4 m=60 w=0 | elapsed=211s eta=3767s
-  [8/132] t=4 m=70 w=0 | elapsed=241s eta=3735s
-  [9/132] t=4 m=80 w=0 | elapsed=271s eta=3703s
-  [10/132] t=4 m=90 w=0 | elapsed=301s eta=3672s
-  [11/132] t=4 m=100 w=0 | elapsed=331s eta=3641s
-  [12/132] t=8 m=0 w=0 | elapsed=361s eta=3610s
-  [13/132] t=8 m=10 w=0 | elapsed=391s eta=3579s
-  [14/132] t=8 m=20 w=0 | elapsed=421s eta=3548s
-  [15/132] t=8 m=30 w=0 | elapsed=451s eta=3517s
-  [16/132] t=8 m=40 w=0 | elapsed=482s eta=3494s
-  [17/132] t=8 m=50 w=0 | elapsed=512s eta=3463s
-  [18/132] t=8 m=60 w=0 | elapsed=542s eta=3432s
-  [19/132] t=8 m=70 w=0 | elapsed=572s eta=3401s
-  [20/132] t=8 m=80 w=0 | elapsed=602s eta=3371s
-  [21/132] t=8 m=90 w=0 | elapsed=632s eta=3340s
-  [22/132] t=8 m=100 w=0 | elapsed=662s eta=3310s
+  [1/1638] SKIP t=8 m=0 w=0
+  [2/1638] t=8 m=10 w=0 | elapsed=30s eta=49080s
+  [3/1638] t=8 m=20 w=0 | elapsed=61s eta=49867s
+  [4/1638] t=8 m=30 w=0 | elapsed=91s eta=49564s
+  [5/1638] t=8 m=40 w=0 | elapsed=121s eta=49398s
+  [6/1638] t=8 m=50 w=0 | elapsed=151s eta=49286s
+  [7/1638] t=8 m=60 w=0 | elapsed=181s eta=49201s
+  [8/1638] t=8 m=70 w=0 | elapsed=211s eta=49132s
+  [9/1638] t=8 m=80 w=0 | elapsed=241s eta=49073s
+  [10/1638] t=8 m=90 w=0 | elapsed=271s eta=49020s
+  [11/1638] t=8 m=100 w=0 | elapsed=301s eta=48972s
+  [12/1638] t=8 m=150 w=0 | elapsed=331s eta=48927s
+  [13/1638] t=8 m=200 w=0 | elapsed=362s eta=49020s
+  [14/1638] t=8 m=250 w=0 | elapsed=392s eta=48969s
+  [15/1638] t=8 m=300 w=0 | elapsed=422s eta=48921s
+  [16/1638] t=8 m=400 w=0 | elapsed=452s eta=48876s
+  [17/1638] t=8 m=500 w=0 | elapsed=482s eta=48832s
+  [18/1638] t=8 m=700 w=0 | elapsed=512s eta=48790s
+  [19/1638] t=8 m=1000 w=0 | elapsed=542s eta=48749s
+  [20/1638] t=8 m=2000 w=0 | elapsed=572s eta=48710s
+  [21/1638] t=8 m=3000 w=0 | elapsed=602s eta=48671s
+  [22/1638] t=8 m=5000 w=0 | elapsed=633s eta=48710s
+  [23/1638] t=8 m=7000 w=0 | elapsed=663s eta=48670s
+  [24/1638] t=8 m=10000 w=0 | elapsed=693s eta=48630s
+  [25/1638] t=8 m=20000 w=0 | elapsed=723s eta=48591s
+  [26/1638] t=8 m=50000 w=0 | elapsed=753s eta=48553s
+  [27/1638] t=16 m=0 w=0 | elapsed=783s eta=48515s
+  [28/1638] t=16 m=10 w=0 | elapsed=813s eta=48478s
+  [29/1638] t=16 m=20 w=0 | elapsed=843s eta=48442s
+  [30/1638] t=16 m=30 w=0 | elapsed=873s eta=48406s
+  [31/1638] t=16 m=40 w=0 | elapsed=904s eta=48424s
+  [32/1638] t=16 m=50 w=0 | elapsed=934s eta=48387s
+  [33/1638] t=16 m=60 w=0 | elapsed=964s eta=48350s
+  [34/1638] t=16 m=70 w=0 | elapsed=994s eta=48314s
+  [35/1638] t=16 m=80 w=0 | elapsed=1024s eta=48278s
+  [36/1638] t=16 m=90 w=0 | elapsed=1054s eta=48243s
+  [37/1638] t=16 m=100 w=0 | elapsed=1084s eta=48207s
+  [38/1638] t=16 m=150 w=0 | elapsed=1114s eta=48172s
+  [39/1638] t=16 m=200 w=0 | elapsed=1144s eta=48138s
+  [40/1638] t=16 m=250 w=0 | elapsed=1174s eta=48103s
+  [41/1638] t=16 m=300 w=0 | elapsed=1205s eta=48109s
+  [42/1638] t=16 m=400 w=0 | elapsed=1235s eta=48074s
+  [43/1638] t=16 m=500 w=0 | elapsed=1265s eta=48039s
+  [44/1638] t=16 m=700 w=0 | elapsed=1295s eta=48005s
+  [45/1638] t=16 m=1000 w=0 | elapsed=1325s eta=47971s
+  [46/1638] t=16 m=2000 w=0 | elapsed=1355s eta=47936s
+  [47/1638] t=16 m=3000 w=0 | elapsed=1385s eta=47902s
+  [48/1638] t=16 m=5000 w=0 | elapsed=1415s eta=47869s
+  [49/1638] t=16 m=7000 w=0 | elapsed=1445s eta=47835s
+  [50/1638] t=16 m=10000 w=0 | elapsed=1476s eta=47834s
+  [51/1638] t=16 m=20000 w=0 | elapsed=1506s eta=47800s
+  [52/1638] t=16 m=50000 w=0 | elapsed=1536s eta=47766s
+  [53/1638] t=32 m=0 w=0 | elapsed=1566s eta=47732s
+  [54/1638] t=32 m=10 w=0 | elapsed=1596s eta=47699s
+  [55/1638] t=32 m=20 w=0 | elapsed=1626s eta=47665s
+  [56/1638] t=32 m=30 w=0 | elapsed=1656s eta=47632s
+  [57/1638] t=32 m=40 w=0 | elapsed=1686s eta=47599s
+  [58/1638] t=32 m=50 w=0 | elapsed=1716s eta=47566s
+  [59/1638] t=32 m=60 w=0 | elapsed=1747s eta=47560s
+  [60/1638] t=32 m=70 w=0 | elapsed=1777s eta=47527s
+  [61/1638] t=32 m=80 w=0 | elapsed=1807s eta=47493s
+  [62/1638] t=32 m=90 w=0 | elapsed=1837s eta=47460s
+  [63/1638] t=32 m=100 w=0 | elapsed=1867s eta=47427s
+  [64/1638] t=32 m=150 w=0 | elapsed=1897s eta=47394s
+  [65/1638] t=32 m=200 w=0 | elapsed=1927s eta=47362s
+  [66/1638] t=32 m=250 w=0 | elapsed=1957s eta=47329s
+  [67/1638] t=32 m=300 w=0 | elapsed=1987s eta=47296s
+  [68/1638] t=32 m=400 w=0 | elapsed=2018s eta=47287s
+  [69/1638] t=32 m=500 w=0 | elapsed=2048s eta=47254s
+  [70/1638] t=32 m=700 w=0 | elapsed=2078s eta=47221s
+  [71/1638] t=32 m=1000 w=0 | elapsed=2108s eta=47189s
+  [72/1638] t=32 m=2000 w=0 | elapsed=2138s eta=47156s
+  [73/1638] t=32 m=3000 w=0 | elapsed=2168s eta=47123s
+  [74/1638] t=32 m=5000 w=0 | elapsed=2198s eta=47091s
+  [75/1638] t=32 m=7000 w=0 | elapsed=2228s eta=47058s
+  [76/1638] t=32 m=10000 w=0 | elapsed=2258s eta=47026s
+  [77/1638] t=32 m=20000 w=0 | elapsed=2289s eta=47014s
+  [78/1638] t=32 m=50000 w=0 | elapsed=2319s eta=46982s
 --- w=0ns, rep=2/3 ---
-  [23/132] t=4 m=0 w=0 | elapsed=692s eta=3279s
-  [24/132] t=4 m=10 w=0 | elapsed=722s eta=3249s
-  [25/132] t=4 m=20 w=0 | elapsed=753s eta=3222s
-  [26/132] t=4 m=30 w=0 | elapsed=783s eta=3192s
-  [27/132] t=4 m=40 w=0 | elapsed=813s eta=3161s
-  [28/132] t=4 m=50 w=0 | elapsed=843s eta=3131s
-  [29/132] t=4 m=60 w=0 | elapsed=873s eta=3100s
-  [30/132] t=4 m=70 w=0 | elapsed=903s eta=3070s
-  [31/132] t=4 m=80 w=0 | elapsed=933s eta=3039s
-  [32/132] t=4 m=90 w=0 | elapsed=963s eta=3009s
-  [33/132] t=4 m=100 w=0 | elapsed=993s eta=2979s
-  [34/132] t=8 m=0 w=0 | elapsed=1023s eta=2948s
-  [35/132] t=8 m=10 w=0 | elapsed=1054s eta=2921s
-  [36/132] t=8 m=20 w=0 | elapsed=1084s eta=2890s
-  [37/132] t=8 m=30 w=0 | elapsed=1114s eta=2860s
-  [38/132] t=8 m=40 w=0 | elapsed=1144s eta=2829s
-  [39/132] t=8 m=50 w=0 | elapsed=1174s eta=2799s
-  [40/132] t=8 m=60 w=0 | elapsed=1204s eta=2769s
-  [41/132] t=8 m=70 w=0 | elapsed=1234s eta=2738s
-  [42/132] t=8 m=80 w=0 | elapsed=1264s eta=2708s
-  [43/132] t=8 m=90 w=0 | elapsed=1294s eta=2678s
-  [44/132] t=8 m=100 w=0 | elapsed=1324s eta=2648s
+  [79/1638] t=8 m=0 w=0 | elapsed=2349s eta=46949s
+  [80/1638] t=8 m=10 w=0 | elapsed=2379s eta=46917s
+  [81/1638] t=8 m=20 w=0 | elapsed=2409s eta=46885s
+  [82/1638] t=8 m=30 w=0 | elapsed=2439s eta=46852s
+  [83/1638] t=8 m=40 w=0 | elapsed=2469s eta=46820s
+  [84/1638] t=8 m=50 w=0 | elapsed=2499s eta=46788s
+  [85/1638] t=8 m=60 w=0 | elapsed=2529s eta=46756s
+  [86/1638] t=8 m=70 w=0 | elapsed=2560s eta=46742s
+  [87/1638] t=8 m=80 w=0 | elapsed=2590s eta=46710s
+  [88/1638] t=8 m=90 w=0 | elapsed=2620s eta=46678s
+  [89/1638] t=8 m=100 w=0 | elapsed=2650s eta=46646s
+  [90/1638] t=8 m=150 w=0 | elapsed=2680s eta=46613s
+  [91/1638] t=8 m=200 w=0 | elapsed=2710s eta=46581s
+  [92/1638] t=8 m=250 w=0 | elapsed=2740s eta=46549s
+  [93/1638] t=8 m=300 w=0 | elapsed=2770s eta=46517s
+  [94/1638] t=8 m=400 w=0 | elapsed=2800s eta=46486s
+  [95/1638] t=8 m=500 w=0 | elapsed=2830s eta=46454s
+  [96/1638] t=8 m=700 w=0 | elapsed=2861s eta=46438s
+  [97/1638] t=8 m=1000 w=0 | elapsed=2891s eta=46406s
+  [98/1638] t=8 m=2000 w=0 | elapsed=2921s eta=46374s
+  [99/1638] t=8 m=3000 w=0 | elapsed=2951s eta=46342s
+  [100/1638] t=8 m=5000 w=0 | elapsed=2981s eta=46310s
+  [101/1638] t=8 m=7000 w=0 | elapsed=3011s eta=46279s
+  [102/1638] t=8 m=10000 w=0 | elapsed=3041s eta=46247s
+  [103/1638] t=8 m=20000 w=0 | elapsed=3071s eta=46215s
+  [104/1638] t=8 m=50000 w=0 | elapsed=3101s eta=46183s
+  [105/1638] t=16 m=0 w=0 | elapsed=3132s eta=46166s
+  [106/1638] t=16 m=10 w=0 | elapsed=3162s eta=46135s
+  [107/1638] t=16 m=20 w=0 | elapsed=3192s eta=46103s
+  [108/1638] t=16 m=30 w=0 | elapsed=3222s eta=46071s
+  [109/1638] t=16 m=40 w=0 | elapsed=3252s eta=46039s
+  [110/1638] t=16 m=50 w=0 | elapsed=3282s eta=46008s
+  [111/1638] t=16 m=60 w=0 | elapsed=3312s eta=45976s
+  [112/1638] t=16 m=70 w=0 | elapsed=3342s eta=45944s
+  [113/1638] t=16 m=80 w=0 | elapsed=3372s eta=45913s
+  [114/1638] t=16 m=90 w=0 | elapsed=3403s eta=45895s
+  [115/1638] t=16 m=100 w=0 | elapsed=3433s eta=45863s
+  [116/1638] t=16 m=150 w=0 | elapsed=3463s eta=45832s
+  [117/1638] t=16 m=200 w=0 | elapsed=3493s eta=45800s
+  [118/1638] t=16 m=250 w=0 | elapsed=3523s eta=45768s
+  [119/1638] t=16 m=300 w=0 | elapsed=3553s eta=45737s
+  [120/1638] t=16 m=400 w=0 | elapsed=3583s eta=45705s
+  [121/1638] t=16 m=500 w=0 | elapsed=3613s eta=45674s
+  [122/1638] t=16 m=700 w=0 | elapsed=3643s eta=45642s
+  [123/1638] t=16 m=1000 w=0 | elapsed=3673s eta=45611s
+  [124/1638] t=16 m=2000 w=0 | elapsed=3704s eta=45592s
+  [125/1638] t=16 m=3000 w=0 | elapsed=3734s eta=45560s
+  [126/1638] t=16 m=5000 w=0 | elapsed=3764s eta=45529s
+  [127/1638] t=16 m=7000 w=0 | elapsed=3794s eta=45497s
+  [128/1638] t=16 m=10000 w=0 | elapsed=3824s eta=45466s
+  [129/1638] t=16 m=20000 w=0 | elapsed=3854s eta=45435s
+  [130/1638] t=16 m=50000 w=0 | elapsed=3884s eta=45403s
+  [131/1638] t=32 m=0 w=0 | elapsed=3914s eta=45372s
+  [132/1638] t=32 m=10 w=0 | elapsed=3944s eta=45340s
+  [133/1638] t=32 m=20 w=0 | elapsed=3975s eta=45321s
+  [134/1638] t=32 m=30 w=0 | elapsed=4005s eta=45289s
+  [135/1638] t=32 m=40 w=0 | elapsed=4035s eta=45258s
+  [136/1638] t=32 m=50 w=0 | elapsed=4065s eta=45226s
+  [137/1638] t=32 m=60 w=0 | elapsed=4095s eta=45195s
+  [138/1638] t=32 m=70 w=0 | elapsed=4125s eta=45164s
+  [139/1638] t=32 m=80 w=0 | elapsed=4155s eta=45132s
+  [140/1638] t=32 m=90 w=0 | elapsed=4185s eta=45101s
+  [141/1638] t=32 m=100 w=0 | elapsed=4215s eta=45070s
+  [142/1638] t=32 m=150 w=0 | elapsed=4246s eta=45049s
+  [143/1638] t=32 m=200 w=0 | elapsed=4276s eta=45018s
+  [144/1638] t=32 m=250 w=0 | elapsed=4306s eta=44987s
+  [145/1638] t=32 m=300 w=0 | elapsed=4336s eta=44955s
+  [146/1638] t=32 m=400 w=0 | elapsed=4366s eta=44924s
+  [147/1638] t=32 m=500 w=0 | elapsed=4396s eta=44893s
+  [148/1638] t=32 m=700 w=0 | elapsed=4426s eta=44862s
+  [149/1638] t=32 m=1000 w=0 | elapsed=4456s eta=44830s
+  [150/1638] t=32 m=2000 w=0 | elapsed=4486s eta=44799s
+  [151/1638] t=32 m=3000 w=0 | elapsed=4517s eta=44778s
+  [152/1638] t=32 m=5000 w=0 | elapsed=4547s eta=44747s
+  [153/1638] t=32 m=7000 w=0 | elapsed=4577s eta=44716s
+  [154/1638] t=32 m=10000 w=0 | elapsed=4607s eta=44684s
+  [155/1638] t=32 m=20000 w=0 | elapsed=4637s eta=44653s
+  [156/1638] t=32 m=50000 w=0 | elapsed=4667s eta=44622s
 --- w=0ns, rep=3/3 ---
-  [45/132] t=4 m=0 w=0 | elapsed=1355s eta=2619s
-  [46/132] t=4 m=10 w=0 | elapsed=1385s eta=2589s
-  [47/132] t=4 m=20 w=0 | elapsed=1415s eta=2559s
-  [48/132] t=4 m=30 w=0 | elapsed=1445s eta=2528s
-  [49/132] t=4 m=40 w=0 | elapsed=1475s eta=2498s
-  [50/132] t=4 m=50 w=0 | elapsed=1505s eta=2468s
-  [51/132] t=4 m=60 w=0 | elapsed=1535s eta=2437s
-  [52/132] t=4 m=70 w=0 | elapsed=1565s eta=2407s
-  [53/132] t=4 m=80 w=0 | elapsed=1595s eta=2377s
-  [54/132] t=4 m=90 w=0 | elapsed=1626s eta=2348s
-  [55/132] t=4 m=100 w=0 | elapsed=1656s eta=2318s
-  [56/132] t=8 m=0 w=0 | elapsed=1686s eta=2288s
-  [57/132] t=8 m=10 w=0 | elapsed=1716s eta=2257s
-  [58/132] t=8 m=20 w=0 | elapsed=1746s eta=2227s
-  [59/132] t=8 m=30 w=0 | elapsed=1776s eta=2197s
-  [60/132] t=8 m=40 w=0 | elapsed=1806s eta=2167s
-  [61/132] t=8 m=50 w=0 | elapsed=1836s eta=2136s
-  [62/132] t=8 m=60 w=0 | elapsed=1866s eta=2106s
-  [63/132] t=8 m=70 w=0 | elapsed=1896s eta=2076s
-  [64/132] t=8 m=80 w=0 | elapsed=1927s eta=2047s
-  [65/132] t=8 m=90 w=0 | elapsed=1957s eta=2017s
-  [66/132] t=8 m=100 w=0 | elapsed=1987s eta=1987s
+  [157/1638] t=8 m=0 w=0 | elapsed=4697s eta=44591s
+  [158/1638] t=8 m=10 w=0 | elapsed=4727s eta=44560s
+  [159/1638] t=8 m=20 w=0 | elapsed=4757s eta=44529s
+  [160/1638] t=8 m=30 w=0 | elapsed=4788s eta=44507s
+  [161/1638] t=8 m=40 w=0 | elapsed=4818s eta=44476s
+  [162/1638] t=8 m=50 w=0 | elapsed=4848s eta=44445s
+  [163/1638] t=8 m=60 w=0 | elapsed=4878s eta=44413s
+  [164/1638] t=8 m=70 w=0 | elapsed=4908s eta=44382s
+  [165/1638] t=8 m=80 w=0 | elapsed=4938s eta=44351s
+  [166/1638] t=8 m=90 w=0 | elapsed=4968s eta=44320s
+  [167/1638] t=8 m=100 w=0 | elapsed=4998s eta=44289s
+  [168/1638] t=8 m=150 w=0 | elapsed=5028s eta=44258s
+  [169/1638] t=8 m=200 w=0 | elapsed=5058s eta=44227s
+  [170/1638] t=8 m=250 w=0 | elapsed=5089s eta=44205s
+  [171/1638] t=8 m=300 w=0 | elapsed=5119s eta=44173s
+  [172/1638] t=8 m=400 w=0 | elapsed=5149s eta=44142s
+  [173/1638] t=8 m=500 w=0 | elapsed=5179s eta=44111s
+  [174/1638] t=8 m=700 w=0 | elapsed=5209s eta=44080s
+  [175/1638] t=8 m=1000 w=0 | elapsed=5239s eta=44049s
+  [176/1638] t=8 m=2000 w=0 | elapsed=5269s eta=44018s
+  [177/1638] t=8 m=3000 w=0 | elapsed=5299s eta=43987s
+  [178/1638] t=8 m=5000 w=0 | elapsed=5329s eta=43956s
+  [179/1638] t=8 m=7000 w=0 | elapsed=5360s eta=43933s
+  [180/1638] t=8 m=10000 w=0 | elapsed=5390s eta=43902s
+  [181/1638] t=8 m=20000 w=0 | elapsed=5420s eta=43871s
+  [182/1638] t=8 m=50000 w=0 | elapsed=5450s eta=43840s
+  [183/1638] t=16 m=0 w=0 | elapsed=5480s eta=43809s
+  [184/1638] t=16 m=10 w=0 | elapsed=5510s eta=43778s
+  [185/1638] t=16 m=20 w=0 | elapsed=5540s eta=43747s
+  [186/1638] t=16 m=30 w=0 | elapsed=5570s eta=43716s
+  [187/1638] t=16 m=40 w=0 | elapsed=5600s eta=43686s
+  [188/1638] t=16 m=50 w=0 | elapsed=5631s eta=43662s
+  [189/1638] t=16 m=60 w=0 | elapsed=5661s eta=43631s
+  [190/1638] t=16 m=70 w=0 | elapsed=5691s eta=43600s
+  [191/1638] t=16 m=80 w=0 | elapsed=5721s eta=43569s
+  [192/1638] t=16 m=90 w=0 | elapsed=5751s eta=43538s
+  [193/1638] t=16 m=100 w=0 | elapsed=5781s eta=43508s
+  [194/1638] t=16 m=150 w=0 | elapsed=5811s eta=43477s
+  [195/1638] t=16 m=200 w=0 | elapsed=5841s eta=43446s
+  [196/1638] t=16 m=250 w=0 | elapsed=5871s eta=43415s
+  [197/1638] t=16 m=300 w=0 | elapsed=5901s eta=43384s
+  [198/1638] t=16 m=400 w=0 | elapsed=5932s eta=43360s
+  [199/1638] t=16 m=500 w=0 | elapsed=5962s eta=43329s
+  [200/1638] t=16 m=700 w=0 | elapsed=5992s eta=43298s
+  [201/1638] t=16 m=1000 w=0 | elapsed=6022s eta=43268s
+  [202/1638] t=16 m=2000 w=0 | elapsed=6052s eta=43237s
+  [203/1638] t=16 m=3000 w=0 | elapsed=6082s eta=43206s
+  [204/1638] t=16 m=5000 w=0 | elapsed=6112s eta=43175s
+  [205/1638] t=16 m=7000 w=0 | elapsed=6142s eta=43144s
+  [206/1638] t=16 m=10000 w=0 | elapsed=6172s eta=43113s
+  [207/1638] t=16 m=20000 w=0 | elapsed=6203s eta=43089s
+  [208/1638] t=16 m=50000 w=0 | elapsed=6233s eta=43058s
+  [209/1638] t=32 m=0 w=0 | elapsed=6263s eta=43028s
+  [210/1638] t=32 m=10 w=0 | elapsed=6293s eta=42997s
+  [211/1638] t=32 m=20 w=0 | elapsed=6323s eta=42966s
+  [212/1638] t=32 m=30 w=0 | elapsed=6353s eta=42935s
+  [213/1638] t=32 m=40 w=0 | elapsed=6383s eta=42904s
+  [214/1638] t=32 m=50 w=0 | elapsed=6413s eta=42873s
+  [215/1638] t=32 m=60 w=0 | elapsed=6443s eta=42842s
+  [216/1638] t=32 m=70 w=0 | elapsed=6474s eta=42818s
+  [217/1638] t=32 m=80 w=0 | elapsed=6504s eta=42787s
+  [218/1638] t=32 m=90 w=0 | elapsed=6534s eta=42757s
+  [219/1638] t=32 m=100 w=0 | elapsed=6564s eta=42726s
+  [220/1638] t=32 m=150 w=0 | elapsed=6594s eta=42695s
+  [221/1638] t=32 m=200 w=0 | elapsed=6624s eta=42664s
+  [222/1638] t=32 m=250 w=0 | elapsed=6654s eta=42633s
+  [223/1638] t=32 m=300 w=0 | elapsed=6684s eta=42602s
+  [224/1638] t=32 m=400 w=0 | elapsed=6714s eta=42572s
+  [225/1638] t=32 m=500 w=0 | elapsed=6745s eta=42547s
+  [226/1638] t=32 m=700 w=0 | elapsed=6775s eta=42516s
+  [227/1638] t=32 m=1000 w=0 | elapsed=6805s eta=42486s
+  [228/1638] t=32 m=2000 w=0 | elapsed=6835s eta=42455s
+  [229/1638] t=32 m=3000 w=0 | elapsed=6865s eta=42424s
+  [230/1638] t=32 m=5000 w=0 | elapsed=6895s eta=42393s
+  [231/1638] t=32 m=7000 w=0 | elapsed=6925s eta=42362s
+  [232/1638] t=32 m=10000 w=0 | elapsed=6955s eta=42332s
+  [233/1638] t=32 m=20000 w=0 | elapsed=6985s eta=42301s
+  [234/1638] t=32 m=50000 w=0 | elapsed=7016s eta=42276s
+--- w=100ns, rep=1/3 ---
+  [235/1638] t=8 m=0 w=100 | elapsed=7046s eta=42245s
+  [236/1638] t=8 m=10 w=100 | elapsed=7076s eta=42215s
+  [237/1638] t=8 m=20 w=100 | elapsed=7106s eta=42184s
+  [238/1638] t=8 m=30 w=100 | elapsed=7136s eta=42153s
+  [239/1638] t=8 m=40 w=100 | elapsed=7166s eta=42122s
+  [240/1638] t=8 m=50 w=100 | elapsed=7196s eta=42092s
+  [241/1638] t=8 m=60 w=100 | elapsed=7226s eta=42061s
+  [242/1638] t=8 m=70 w=100 | elapsed=7256s eta=42030s
+  [243/1638] t=8 m=80 w=100 | elapsed=7287s eta=42005s
+  [244/1638] t=8 m=90 w=100 | elapsed=7317s eta=41974s
+  [245/1638] t=8 m=100 w=100 | elapsed=7347s eta=41944s
+  [246/1638] t=8 m=150 w=100 | elapsed=7377s eta=41913s
+  [247/1638] t=8 m=200 w=100 | elapsed=7407s eta=41882s
+  [248/1638] t=8 m=250 w=100 | elapsed=7437s eta=41851s
+  [249/1638] t=8 m=300 w=100 | elapsed=7467s eta=41821s
+  [250/1638] t=8 m=400 w=100 | elapsed=7497s eta=41790s
+  [251/1638] t=8 m=500 w=100 | elapsed=7527s eta=41759s
+  [252/1638] t=8 m=700 w=100 | elapsed=7558s eta=41734s
+  [253/1638] t=8 m=1000 w=100 | elapsed=7588s eta=41703s
+  [254/1638] t=8 m=2000 w=100 | elapsed=7618s eta=41673s
+  [255/1638] t=8 m=3000 w=100 | elapsed=7648s eta=41642s
+  [256/1638] t=8 m=5000 w=100 | elapsed=7678s eta=41611s
+  [257/1638] t=8 m=7000 w=100 | elapsed=7708s eta=41581s
+  [258/1638] t=8 m=10000 w=100 | elapsed=7738s eta=41550s
+  [259/1638] t=8 m=20000 w=100 | elapsed=7768s eta=41519s
+  [260/1638] t=8 m=50000 w=100 | elapsed=7798s eta=41488s
+  [261/1638] t=16 m=0 w=100 | elapsed=7828s eta=41458s
+  [262/1638] t=16 m=10 w=100 | elapsed=7859s eta=41432s
+  [263/1638] t=16 m=20 w=100 | elapsed=7889s eta=41402s
+  [264/1638] t=16 m=30 w=100 | elapsed=7919s eta=41371s
+  [265/1638] t=16 m=40 w=100 | elapsed=7949s eta=41340s
+  [266/1638] t=16 m=50 w=100 | elapsed=7979s eta=41310s
+  [267/1638] t=16 m=60 w=100 | elapsed=8009s eta=41279s
+  [268/1638] t=16 m=70 w=100 | elapsed=8039s eta=41248s
+  [269/1638] t=16 m=80 w=100 | elapsed=8069s eta=41218s
+  [270/1638] t=16 m=90 w=100 | elapsed=8099s eta=41187s
+  [271/1638] t=16 m=100 w=100 | elapsed=8130s eta=41161s
+  [272/1638] t=16 m=150 w=100 | elapsed=8160s eta=41131s
+  [273/1638] t=16 m=200 w=100 | elapsed=8190s eta=41100s
+  [274/1638] t=16 m=250 w=100 | elapsed=8220s eta=41069s
+  [275/1638] t=16 m=300 w=100 | elapsed=8250s eta=41039s
+  [276/1638] t=16 m=400 w=100 | elapsed=8280s eta=41008s
+  [277/1638] t=16 m=500 w=100 | elapsed=8310s eta=40977s
+  [278/1638] t=16 m=700 w=100 | elapsed=8340s eta=40947s
+  [279/1638] t=16 m=1000 w=100 | elapsed=8370s eta=40916s
+  [280/1638] t=16 m=2000 w=100 | elapsed=8401s eta=40890s
+  [281/1638] t=16 m=3000 w=100 | elapsed=8431s eta=40860s
+  [282/1638] t=16 m=5000 w=100 | elapsed=8461s eta=40829s
+  [283/1638] t=16 m=7000 w=100 | elapsed=8491s eta=40798s
+  [284/1638] t=16 m=10000 w=100 | elapsed=8521s eta=40768s
+  [285/1638] t=16 m=20000 w=100 | elapsed=8551s eta=40737s
+  [286/1638] t=16 m=50000 w=100 | elapsed=8581s eta=40707s
+  [287/1638] t=32 m=0 w=100 | elapsed=8611s eta=40676s
+  [288/1638] t=32 m=10 w=100 | elapsed=8641s eta=40645s
+  [289/1638] t=32 m=20 w=100 | elapsed=8672s eta=40619s
+  [290/1638] t=32 m=30 w=100 | elapsed=8702s eta=40589s
+  [291/1638] t=32 m=40 w=100 | elapsed=8732s eta=40558s
+  [292/1638] t=32 m=50 w=100 | elapsed=8762s eta=40528s
+  [293/1638] t=32 m=60 w=100 | elapsed=8792s eta=40497s
+  [294/1638] t=32 m=70 w=100 | elapsed=8822s eta=40466s
+  [295/1638] t=32 m=80 w=100 | elapsed=8852s eta=40436s
+  [296/1638] t=32 m=90 w=100 | elapsed=8882s eta=40405s
+  [297/1638] t=32 m=100 w=100 | elapsed=8912s eta=40374s
+  [298/1638] t=32 m=150 w=100 | elapsed=8942s eta=40344s
+  [299/1638] t=32 m=200 w=100 | elapsed=8973s eta=40318s
+  [300/1638] t=32 m=250 w=100 | elapsed=9003s eta=40287s
+  [301/1638] t=32 m=300 w=100 | elapsed=9033s eta=40257s
+  [302/1638] t=32 m=400 w=100 | elapsed=9063s eta=40226s
+  [303/1638] t=32 m=500 w=100 | elapsed=9093s eta=40195s
+  [304/1638] t=32 m=700 w=100 | elapsed=9123s eta=40165s
+  [305/1638] t=32 m=1000 w=100 | elapsed=9153s eta=40134s
+  [306/1638] t=32 m=2000 w=100 | elapsed=9183s eta=40104s
+  [307/1638] t=32 m=3000 w=100 | elapsed=9213s eta=40073s
+  [308/1638] t=32 m=5000 w=100 | elapsed=9244s eta=40047s
+  [309/1638] t=32 m=7000 w=100 | elapsed=9274s eta=40016s
+  [310/1638] t=32 m=10000 w=100 | elapsed=9304s eta=39986s
+  [311/1638] t=32 m=20000 w=100 | elapsed=9334s eta=39955s
+  [312/1638] t=32 m=50000 w=100 | elapsed=9364s eta=39924s
+--- w=100ns, rep=2/3 ---
+  [313/1638] t=8 m=0 w=100 | elapsed=9394s eta=39894s
+  [314/1638] t=8 m=10 w=100 | elapsed=9424s eta=39863s
+  [315/1638] t=8 m=20 w=100 | elapsed=9454s eta=39833s
+  [316/1638] t=8 m=30 w=100 | elapsed=9484s eta=39802s
+  [317/1638] t=8 m=40 w=100 | elapsed=9515s eta=39776s
+  [318/1638] t=8 m=50 w=100 | elapsed=9545s eta=39745s
+  [319/1638] t=8 m=60 w=100 | elapsed=9575s eta=39715s
+  [320/1638] t=8 m=70 w=100 | elapsed=9605s eta=39684s
+  [321/1638] t=8 m=80 w=100 | elapsed=9635s eta=39654s
+  [322/1638] t=8 m=90 w=100 | elapsed=9665s eta=39623s
+  [323/1638] t=8 m=100 w=100 | elapsed=9695s eta=39592s
+  [324/1638] t=8 m=150 w=100 | elapsed=9725s eta=39562s
+  [325/1638] t=8 m=200 w=100 | elapsed=9755s eta=39531s
+  [326/1638] t=8 m=250 w=100 | elapsed=9786s eta=39505s
+  [327/1638] t=8 m=300 w=100 | elapsed=9816s eta=39474s
+  [328/1638] t=8 m=400 w=100 | elapsed=9846s eta=39444s
+  [329/1638] t=8 m=500 w=100 | elapsed=9876s eta=39413s
+  [330/1638] t=8 m=700 w=100 | elapsed=9906s eta=39383s
+  [331/1638] t=8 m=1000 w=100 | elapsed=9936s eta=39352s
+  [332/1638] t=8 m=2000 w=100 | elapsed=9966s eta=39322s
+  [333/1638] t=8 m=3000 w=100 | elapsed=9996s eta=39291s
+  [334/1638] t=8 m=5000 w=100 | elapsed=10026s eta=39260s
+  [335/1638] t=8 m=7000 w=100 | elapsed=10057s eta=39234s
+  [336/1638] t=8 m=10000 w=100 | elapsed=10087s eta=39203s
+  [337/1638] t=8 m=20000 w=100 | elapsed=10117s eta=39173s
+  [338/1638] t=8 m=50000 w=100 | elapsed=10147s eta=39142s
+  [339/1638] t=16 m=0 w=100 | elapsed=10177s eta=39112s
+  [340/1638] t=16 m=10 w=100 | elapsed=10207s eta=39081s
+  [341/1638] t=16 m=20 w=100 | elapsed=10237s eta=39051s
+  [342/1638] t=16 m=30 w=100 | elapsed=10267s eta=39020s
+  [343/1638] t=16 m=40 w=100 | elapsed=10297s eta=38990s
+  [344/1638] t=16 m=50 w=100 | elapsed=10327s eta=38959s
+  [345/1638] t=16 m=60 w=100 | elapsed=10358s eta=38932s
+  [346/1638] t=16 m=70 w=100 | elapsed=10388s eta=38902s
+  [347/1638] t=16 m=80 w=100 | elapsed=10418s eta=38871s
+  [348/1638] t=16 m=90 w=100 | elapsed=10448s eta=38841s
+  [349/1638] t=16 m=100 w=100 | elapsed=10478s eta=38810s
+  [350/1638] t=16 m=150 w=100 | elapsed=10508s eta=38780s
+  [351/1638] t=16 m=200 w=100 | elapsed=10538s eta=38749s
+  [352/1638] t=16 m=250 w=100 | elapsed=10568s eta=38719s
+  [353/1638] t=16 m=300 w=100 | elapsed=10598s eta=38688s
+  [354/1638] t=16 m=400 w=100 | elapsed=10629s eta=38661s
+  [355/1638] t=16 m=500 w=100 | elapsed=10659s eta=38631s
+  [356/1638] t=16 m=700 w=100 | elapsed=10689s eta=38600s
+  [357/1638] t=16 m=1000 w=100 | elapsed=10719s eta=38570s
+  [358/1638] t=16 m=2000 w=100 | elapsed=10749s eta=38539s
+  [359/1638] t=16 m=3000 w=100 | elapsed=10779s eta=38509s
+  [360/1638] t=16 m=5000 w=100 | elapsed=10809s eta=38478s
+  [361/1638] t=16 m=7000 w=100 | elapsed=10839s eta=38448s
+  [362/1638] t=16 m=10000 w=100 | elapsed=10869s eta=38417s
+  [363/1638] t=16 m=20000 w=100 | elapsed=10900s eta=38390s
+  [364/1638] t=16 m=50000 w=100 | elapsed=10930s eta=38360s
+  [365/1638] t=32 m=0 w=100 | elapsed=10960s eta=38329s
+  [366/1638] t=32 m=10 w=100 | elapsed=10990s eta=38299s
+  [367/1638] t=32 m=20 w=100 | elapsed=11020s eta=38268s
+  [368/1638] t=32 m=30 w=100 | elapsed=11050s eta=38238s
+  [369/1638] t=32 m=40 w=100 | elapsed=11080s eta=38207s
+  [370/1638] t=32 m=50 w=100 | elapsed=11110s eta=38177s
+  [371/1638] t=32 m=60 w=100 | elapsed=11140s eta=38146s
+  [372/1638] t=32 m=70 w=100 | elapsed=11171s eta=38119s
+  [373/1638] t=32 m=80 w=100 | elapsed=11201s eta=38089s
+  [374/1638] t=32 m=90 w=100 | elapsed=11231s eta=38058s
+  [375/1638] t=32 m=100 w=100 | elapsed=11261s eta=38028s
+  [376/1638] t=32 m=150 w=100 | elapsed=11291s eta=37997s
+  [377/1638] t=32 m=200 w=100 | elapsed=11321s eta=37967s
+  [378/1638] t=32 m=250 w=100 | elapsed=11351s eta=37937s
+  [379/1638] t=32 m=300 w=100 | elapsed=11381s eta=37906s
+  [380/1638] t=32 m=400 w=100 | elapsed=11411s eta=37876s
+  [381/1638] t=32 m=500 w=100 | elapsed=11442s eta=37848s
+  [382/1638] t=32 m=700 w=100 | elapsed=11472s eta=37818s
+  [383/1638] t=32 m=1000 w=100 | elapsed=11502s eta=37787s
+  [384/1638] t=32 m=2000 w=100 | elapsed=11532s eta=37757s
+  [385/1638] t=32 m=3000 w=100 | elapsed=11562s eta=37727s
+  [386/1638] t=32 m=5000 w=100 | elapsed=11592s eta=37696s
+  [387/1638] t=32 m=7000 w=100 | elapsed=11622s eta=37666s
+  [388/1638] t=32 m=10000 w=100 | elapsed=11652s eta=37635s
+  [389/1638] t=32 m=20000 w=100 | elapsed=11682s eta=37605s
+  [390/1638] t=32 m=50000 w=100 | elapsed=11713s eta=37577s
+--- w=100ns, rep=3/3 ---
+  [391/1638] t=8 m=0 w=100 | elapsed=11743s eta=37547s
+  [392/1638] t=8 m=10 w=100 | elapsed=11773s eta=37517s
+  [393/1638] t=8 m=20 w=100 | elapsed=11803s eta=37486s
+  [394/1638] t=8 m=30 w=100 | elapsed=11833s eta=37456s
+  [395/1638] t=8 m=40 w=100 | elapsed=11863s eta=37425s
+  [396/1638] t=8 m=50 w=100 | elapsed=11893s eta=37395s
+  [397/1638] t=8 m=60 w=100 | elapsed=11923s eta=37364s
+  [398/1638] t=8 m=70 w=100 | elapsed=11953s eta=37334s
+  [399/1638] t=8 m=80 w=100 | elapsed=11984s eta=37306s
+  [400/1638] t=8 m=90 w=100 | elapsed=12014s eta=37276s
+  [401/1638] t=8 m=100 w=100 | elapsed=12044s eta=37246s
+  [402/1638] t=8 m=150 w=100 | elapsed=12074s eta=37215s
+  [403/1638] t=8 m=200 w=100 | elapsed=12104s eta=37185s
+  [404/1638] t=8 m=250 w=100 | elapsed=12134s eta=37154s
+  [405/1638] t=8 m=300 w=100 | elapsed=12164s eta=37124s
+  [406/1638] t=8 m=400 w=100 | elapsed=12194s eta=37093s
+  [407/1638] t=8 m=500 w=100 | elapsed=12224s eta=37063s
+  [408/1638] t=8 m=700 w=100 | elapsed=12254s eta=37032s
+  [409/1638] t=8 m=1000 w=100 | elapsed=12285s eta=37005s
+  [410/1638] t=8 m=2000 w=100 | elapsed=12315s eta=36975s
+  [411/1638] t=8 m=3000 w=100 | elapsed=12345s eta=36944s
+  [412/1638] t=8 m=5000 w=100 | elapsed=12375s eta=36914s
+  [413/1638] t=8 m=7000 w=100 | elapsed=12405s eta=36883s
+  [414/1638] t=8 m=10000 w=100 | elapsed=12435s eta=36853s
+  [415/1638] t=8 m=20000 w=100 | elapsed=12465s eta=36822s
+  [416/1638] t=8 m=50000 w=100 | elapsed=12495s eta=36792s
+  [417/1638] t=16 m=0 w=100 | elapsed=12525s eta=36762s
+  [418/1638] t=16 m=10 w=100 | elapsed=12556s eta=36734s
+  [419/1638] t=16 m=20 w=100 | elapsed=12586s eta=36704s
+  [420/1638] t=16 m=30 w=100 | elapsed=12616s eta=36673s
+  [421/1638] t=16 m=40 w=100 | elapsed=12646s eta=36643s
+  [422/1638] t=16 m=50 w=100 | elapsed=12676s eta=36612s
+  [423/1638] t=16 m=60 w=100 | elapsed=12706s eta=36582s
+  [424/1638] t=16 m=70 w=100 | elapsed=12736s eta=36552s
+  [425/1638] t=16 m=80 w=100 | elapsed=12766s eta=36521s
+  [426/1638] t=16 m=90 w=100 | elapsed=12796s eta=36491s
+  [427/1638] t=16 m=100 w=100 | elapsed=12827s eta=36463s
+  [428/1638] t=16 m=150 w=100 | elapsed=12857s eta=36433s
+  [429/1638] t=16 m=200 w=100 | elapsed=12887s eta=36402s
+  [430/1638] t=16 m=250 w=100 | elapsed=12917s eta=36372s
+  [431/1638] t=16 m=300 w=100 | elapsed=12947s eta=36341s
+  [432/1638] t=16 m=400 w=100 | elapsed=12977s eta=36311s
+  [433/1638] t=16 m=500 w=100 | elapsed=13007s eta=36281s
+  [434/1638] t=16 m=700 w=100 | elapsed=13037s eta=36250s
+  [435/1638] t=16 m=1000 w=100 | elapsed=13067s eta=36220s
+  [436/1638] t=16 m=2000 w=100 | elapsed=13097s eta=36189s
+  [437/1638] t=16 m=3000 w=100 | elapsed=13128s eta=36162s
+  [438/1638] t=16 m=5000 w=100 | elapsed=13158s eta=36131s
+  [439/1638] t=16 m=7000 w=100 | elapsed=13188s eta=36101s
+  [440/1638] t=16 m=10000 w=100 | elapsed=13218s eta=36070s
+  [441/1638] t=16 m=20000 w=100 | elapsed=13248s eta=36040s
+  [442/1638] t=16 m=50000 w=100 | elapsed=13278s eta=36010s
+  [443/1638] t=32 m=0 w=100 | elapsed=13308s eta=35979s
+  [444/1638] t=32 m=10 w=100 | elapsed=13338s eta=35949s
+  [445/1638] t=32 m=20 w=100 | elapsed=13368s eta=35918s
+  [446/1638] t=32 m=30 w=100 | elapsed=13399s eta=35891s
+  [447/1638] t=32 m=40 w=100 | elapsed=13429s eta=35860s
+  [448/1638] t=32 m=50 w=100 | elapsed=13459s eta=35830s
+  [449/1638] t=32 m=60 w=100 | elapsed=13489s eta=35800s
+  [450/1638] t=32 m=70 w=100 | elapsed=13519s eta=35769s
+  [451/1638] t=32 m=80 w=100 | elapsed=13549s eta=35739s
+  [452/1638] t=32 m=90 w=100 | elapsed=13579s eta=35708s
+  [453/1638] t=32 m=100 w=100 | elapsed=13609s eta=35678s
+  [454/1638] t=32 m=150 w=100 | elapsed=13639s eta=35648s
+  [455/1638] t=32 m=200 w=100 | elapsed=13670s eta=35620s
+  [456/1638] t=32 m=250 w=100 | elapsed=13700s eta=35589s
+  [457/1638] t=32 m=300 w=100 | elapsed=13730s eta=35559s
+  [458/1638] t=32 m=400 w=100 | elapsed=13760s eta=35529s
+  [459/1638] t=32 m=500 w=100 | elapsed=13790s eta=35498s
+  [460/1638] t=32 m=700 w=100 | elapsed=13820s eta=35468s
+  [461/1638] t=32 m=1000 w=100 | elapsed=13850s eta=35437s
+  [462/1638] t=32 m=2000 w=100 | elapsed=13880s eta=35407s
+  [463/1638] t=32 m=3000 w=100 | elapsed=13910s eta=35377s
+  [464/1638] t=32 m=5000 w=100 | elapsed=13941s eta=35349s
+  [465/1638] t=32 m=7000 w=100 | elapsed=13971s eta=35318s
+  [466/1638] t=32 m=10000 w=100 | elapsed=14001s eta=35288s
+  [467/1638] t=32 m=20000 w=100 | elapsed=14031s eta=35258s
+  [468/1638] t=32 m=50000 w=100 | elapsed=14061s eta=35227s
+--- w=200ns, rep=1/3 ---
+  [469/1638] t=8 m=0 w=200 | elapsed=14091s eta=35197s
+  [470/1638] t=8 m=10 w=200 | elapsed=14121s eta=35167s
+  [471/1638] t=8 m=20 w=200 | elapsed=14151s eta=35136s
+  [472/1638] t=8 m=30 w=200 | elapsed=14181s eta=35106s
+  [473/1638] t=8 m=40 w=200 | elapsed=14212s eta=35078s
+  [474/1638] t=8 m=50 w=200 | elapsed=14242s eta=35047s
+  [475/1638] t=8 m=60 w=200 | elapsed=14272s eta=35017s
+  [476/1638] t=8 m=70 w=200 | elapsed=14302s eta=34987s
+  [477/1638] t=8 m=80 w=200 | elapsed=14332s eta=34956s
+  [478/1638] t=8 m=90 w=200 | elapsed=14362s eta=34926s
+  [479/1638] t=8 m=100 w=200 | elapsed=14392s eta=34896s
+  [480/1638] t=8 m=150 w=200 | elapsed=14422s eta=34865s
+  [481/1638] t=8 m=200 w=200 | elapsed=14452s eta=34835s
+  [482/1638] t=8 m=250 w=200 | elapsed=14483s eta=34807s
+  [483/1638] t=8 m=300 w=200 | elapsed=14513s eta=34777s
+  [484/1638] t=8 m=400 w=200 | elapsed=14543s eta=34746s
+  [485/1638] t=8 m=500 w=200 | elapsed=14573s eta=34716s
+  [486/1638] t=8 m=700 w=200 | elapsed=14603s eta=34685s
+  [487/1638] t=8 m=1000 w=200 | elapsed=14633s eta=34655s
+  [488/1638] t=8 m=2000 w=200 | elapsed=14663s eta=34625s
+  [489/1638] t=8 m=3000 w=200 | elapsed=14693s eta=34594s
+  [490/1638] t=8 m=5000 w=200 | elapsed=14723s eta=34564s
+  [491/1638] t=8 m=7000 w=200 | elapsed=14753s eta=34534s
+  [492/1638] t=8 m=10000 w=200 | elapsed=14784s eta=34506s
+  [493/1638] t=8 m=20000 w=200 | elapsed=14814s eta=34475s
+  [494/1638] t=8 m=50000 w=200 | elapsed=14844s eta=34445s
+  [495/1638] t=16 m=0 w=200 | elapsed=14874s eta=34414s
+  [496/1638] t=16 m=10 w=200 | elapsed=14904s eta=34384s
+  [497/1638] t=16 m=20 w=200 | elapsed=14934s eta=34354s
+  [498/1638] t=16 m=30 w=200 | elapsed=14964s eta=34323s
+  [499/1638] t=16 m=40 w=200 | elapsed=14994s eta=34293s
+  [500/1638] t=16 m=50 w=200 | elapsed=15024s eta=34263s
+  [501/1638] t=16 m=60 w=200 | elapsed=15055s eta=34235s
+  [502/1638] t=16 m=70 w=200 | elapsed=15085s eta=34204s
+  [503/1638] t=16 m=80 w=200 | elapsed=15115s eta=34174s
+  [504/1638] t=16 m=90 w=200 | elapsed=15145s eta=34143s
+  [505/1638] t=16 m=100 w=200 | elapsed=15175s eta=34113s
+  [506/1638] t=16 m=150 w=200 | elapsed=15205s eta=34083s
+  [507/1638] t=16 m=200 w=200 | elapsed=15235s eta=34052s
+  [508/1638] t=16 m=250 w=200 | elapsed=15265s eta=34022s
+  [509/1638] t=16 m=300 w=200 | elapsed=15295s eta=33992s
+  [510/1638] t=16 m=400 w=200 | elapsed=15326s eta=33964s
+  [511/1638] t=16 m=500 w=200 | elapsed=15356s eta=33933s
+  [512/1638] t=16 m=700 w=200 | elapsed=15386s eta=33903s
+  [513/1638] t=16 m=1000 w=200 | elapsed=15416s eta=33873s
+  [514/1638] t=16 m=2000 w=200 | elapsed=15446s eta=33842s
+  [515/1638] t=16 m=3000 w=200 | elapsed=15476s eta=33812s
+  [516/1638] t=16 m=5000 w=200 | elapsed=15506s eta=33782s
+  [517/1638] t=16 m=7000 w=200 | elapsed=15536s eta=33751s
+  [518/1638] t=16 m=10000 w=200 | elapsed=15566s eta=33721s
+  [519/1638] t=16 m=20000 w=200 | elapsed=15597s eta=33693s
+  [520/1638] t=16 m=50000 w=200 | elapsed=15627s eta=33662s
+  [521/1638] t=32 m=0 w=200 | elapsed=15657s eta=33632s
+  [522/1638] t=32 m=10 w=200 | elapsed=15687s eta=33602s
+  [523/1638] t=32 m=20 w=200 | elapsed=15717s eta=33571s
+  [524/1638] t=32 m=30 w=200 | elapsed=15747s eta=33541s
+  [525/1638] t=32 m=40 w=200 | elapsed=15777s eta=33511s
+  [526/1638] t=32 m=50 w=200 | elapsed=15807s eta=33480s
+  [527/1638] t=32 m=60 w=200 | elapsed=15837s eta=33450s
+  [528/1638] t=32 m=70 w=200 | elapsed=15867s eta=33420s
+  [529/1638] t=32 m=80 w=200 | elapsed=15898s eta=33391s
+  [530/1638] t=32 m=90 w=200 | elapsed=15928s eta=33361s
+  [531/1638] t=32 m=100 w=200 | elapsed=15958s eta=33331s
+  [532/1638] t=32 m=150 w=200 | elapsed=15988s eta=33300s
+  [533/1638] t=32 m=200 w=200 | elapsed=16018s eta=33270s
+  [534/1638] t=32 m=250 w=200 | elapsed=16048s eta=33240s
+  [535/1638] t=32 m=300 w=200 | elapsed=16078s eta=33209s
+  [536/1638] t=32 m=400 w=200 | elapsed=16108s eta=33179s
+  [537/1638] t=32 m=500 w=200 | elapsed=16138s eta=33149s
+  [538/1638] t=32 m=700 w=200 | elapsed=16169s eta=33120s
+  [539/1638] t=32 m=1000 w=200 | elapsed=16199s eta=33090s
+  [540/1638] t=32 m=2000 w=200 | elapsed=16229s eta=33060s
+  [541/1638] t=32 m=3000 w=200 | elapsed=16259s eta=33029s
+  [542/1638] t=32 m=5000 w=200 | elapsed=16289s eta=32999s
+  [543/1638] t=32 m=7000 w=200 | elapsed=16319s eta=32969s
+  [544/1638] t=32 m=10000 w=200 | elapsed=16349s eta=32938s
+  [545/1638] t=32 m=20000 w=200 | elapsed=16379s eta=32908s
+  [546/1638] t=32 m=50000 w=200 | elapsed=16410s eta=32880s
+--- w=200ns, rep=2/3 ---
+  [547/1638] t=8 m=0 w=200 | elapsed=16440s eta=32849s
+  [548/1638] t=8 m=10 w=200 | elapsed=16470s eta=32819s
+  [549/1638] t=8 m=20 w=200 | elapsed=16500s eta=32789s
+  [550/1638] t=8 m=30 w=200 | elapsed=16530s eta=32758s
+  [551/1638] t=8 m=40 w=200 | elapsed=16560s eta=32728s
+  [552/1638] t=8 m=50 w=200 | elapsed=16590s eta=32698s
+  [553/1638] t=8 m=60 w=200 | elapsed=16620s eta=32667s
+  [554/1638] t=8 m=70 w=200 | elapsed=16650s eta=32637s
+  [555/1638] t=8 m=80 w=200 | elapsed=16680s eta=32607s
+  [556/1638] t=8 m=90 w=200 | elapsed=16711s eta=32578s
+  [557/1638] t=8 m=100 w=200 | elapsed=16741s eta=32548s
+  [558/1638] t=8 m=150 w=200 | elapsed=16771s eta=32518s
+  [559/1638] t=8 m=200 w=200 | elapsed=16801s eta=32487s
+  [560/1638] t=8 m=250 w=200 | elapsed=16831s eta=32457s
+  [561/1638] t=8 m=300 w=200 | elapsed=16861s eta=32427s
+  [562/1638] t=8 m=400 w=200 | elapsed=16891s eta=32396s
+  [563/1638] t=8 m=500 w=200 | elapsed=16921s eta=32366s
+  [564/1638] t=8 m=700 w=200 | elapsed=16951s eta=32336s
+  [565/1638] t=8 m=1000 w=200 | elapsed=16982s eta=32307s
+  [566/1638] t=8 m=2000 w=200 | elapsed=17012s eta=32277s
+  [567/1638] t=8 m=3000 w=200 | elapsed=17042s eta=32247s
+  [568/1638] t=8 m=5000 w=200 | elapsed=17072s eta=32217s
+  [569/1638] t=8 m=7000 w=200 | elapsed=17102s eta=32186s
+  [570/1638] t=8 m=10000 w=200 | elapsed=17132s eta=32156s
+  [571/1638] t=8 m=20000 w=200 | elapsed=17162s eta=32126s
+  [572/1638] t=8 m=50000 w=200 | elapsed=17192s eta=32095s
+  [573/1638] t=16 m=0 w=200 | elapsed=17222s eta=32065s
+  [574/1638] t=16 m=10 w=200 | elapsed=17253s eta=32036s
+  [575/1638] t=16 m=20 w=200 | elapsed=17283s eta=32006s
+  [576/1638] t=16 m=30 w=200 | elapsed=17313s eta=31976s
+  [577/1638] t=16 m=40 w=200 | elapsed=17343s eta=31946s
+  [578/1638] t=16 m=50 w=200 | elapsed=17373s eta=31915s
+  [579/1638] t=16 m=60 w=200 | elapsed=17403s eta=31885s
+  [580/1638] t=16 m=70 w=200 | elapsed=17433s eta=31855s
+  [581/1638] t=16 m=80 w=200 | elapsed=17463s eta=31824s
+  [582/1638] t=16 m=90 w=200 | elapsed=17493s eta=31794s
+  [583/1638] t=16 m=100 w=200 | elapsed=17523s eta=31764s
+  [584/1638] t=16 m=150 w=200 | elapsed=17554s eta=31735s
+  [585/1638] t=16 m=200 w=200 | elapsed=17584s eta=31705s
+  [586/1638] t=16 m=250 w=200 | elapsed=17614s eta=31675s
+  [587/1638] t=16 m=300 w=200 | elapsed=17644s eta=31644s
+  [588/1638] t=16 m=400 w=200 | elapsed=17674s eta=31614s
+  [589/1638] t=16 m=500 w=200 | elapsed=17704s eta=31584s
+  [590/1638] t=16 m=700 w=200 | elapsed=17734s eta=31553s
+  [591/1638] t=16 m=1000 w=200 | elapsed=17764s eta=31523s
+  [592/1638] t=16 m=2000 w=200 | elapsed=17794s eta=31493s
+  [593/1638] t=16 m=3000 w=200 | elapsed=17825s eta=31464s
+  [594/1638] t=16 m=5000 w=200 | elapsed=17855s eta=31434s
+  [595/1638] t=16 m=7000 w=200 | elapsed=17885s eta=31404s
+  [596/1638] t=16 m=10000 w=200 | elapsed=17915s eta=31373s
+  [597/1638] t=16 m=20000 w=200 | elapsed=17945s eta=31343s
+  [598/1638] t=16 m=50000 w=200 | elapsed=17975s eta=31313s
+  [599/1638] t=32 m=0 w=200 | elapsed=18005s eta=31282s
+  [600/1638] t=32 m=10 w=200 | elapsed=18035s eta=31252s
+  [601/1638] t=32 m=20 w=200 | elapsed=18065s eta=31222s
+  [602/1638] t=32 m=30 w=200 | elapsed=18096s eta=31193s
+  [603/1638] t=32 m=40 w=200 | elapsed=18126s eta=31163s
+  [604/1638] t=32 m=50 w=200 | elapsed=18156s eta=31133s
+  [605/1638] t=32 m=60 w=200 | elapsed=18186s eta=31102s
+  [606/1638] t=32 m=70 w=200 | elapsed=18216s eta=31072s
+  [607/1638] t=32 m=80 w=200 | elapsed=18246s eta=31042s
+  [608/1638] t=32 m=90 w=200 | elapsed=18276s eta=31011s
+  [609/1638] t=32 m=100 w=200 | elapsed=18306s eta=30981s
+  [610/1638] t=32 m=150 w=200 | elapsed=18336s eta=30951s
+  [611/1638] t=32 m=200 w=200 | elapsed=18366s eta=30921s
+  [612/1638] t=32 m=250 w=200 | elapsed=18397s eta=30892s
+  [613/1638] t=32 m=300 w=200 | elapsed=18427s eta=30862s
+  [614/1638] t=32 m=400 w=200 | elapsed=18457s eta=30831s
+  [615/1638] t=32 m=500 w=200 | elapsed=18487s eta=30801s
+  [616/1638] t=32 m=700 w=200 | elapsed=18517s eta=30771s
+  [617/1638] t=32 m=1000 w=200 | elapsed=18547s eta=30741s
+  [618/1638] t=32 m=2000 w=200 | elapsed=18577s eta=30710s
+  [619/1638] t=32 m=3000 w=200 | elapsed=18607s eta=30680s
+  [620/1638] t=32 m=5000 w=200 | elapsed=18638s eta=30651s
+  [621/1638] t=32 m=7000 w=200 | elapsed=18668s eta=30621s
+  [622/1638] t=32 m=10000 w=200 | elapsed=18698s eta=30591s
+  [623/1638] t=32 m=20000 w=200 | elapsed=18728s eta=30560s
+  [624/1638] t=32 m=50000 w=200 | elapsed=18758s eta=30530s
+--- w=200ns, rep=3/3 ---
+  [625/1638] t=8 m=0 w=200 | elapsed=18788s eta=30500s
+  [626/1638] t=8 m=10 w=200 | elapsed=18818s eta=30470s
+  [627/1638] t=8 m=20 w=200 | elapsed=18848s eta=30439s
+  [628/1638] t=8 m=30 w=200 | elapsed=18878s eta=30409s
+  [629/1638] t=8 m=40 w=200 | elapsed=18909s eta=30380s
+  [630/1638] t=8 m=50 w=200 | elapsed=18939s eta=30350s
+  [631/1638] t=8 m=60 w=200 | elapsed=18969s eta=30320s
+  [632/1638] t=8 m=70 w=200 | elapsed=18999s eta=30290s
+  [633/1638] t=8 m=80 w=200 | elapsed=19029s eta=30259s
+  [634/1638] t=8 m=90 w=200 | elapsed=19059s eta=30229s
+  [635/1638] t=8 m=100 w=200 | elapsed=19089s eta=30199s
+  [636/1638] t=8 m=150 w=200 | elapsed=19119s eta=30168s
+  [637/1638] t=8 m=200 w=200 | elapsed=19149s eta=30138s
+  [638/1638] t=8 m=250 w=200 | elapsed=19179s eta=30108s
+  [639/1638] t=8 m=300 w=200 | elapsed=19210s eta=30079s
+  [640/1638] t=8 m=400 w=200 | elapsed=19240s eta=30049s
+  [641/1638] t=8 m=500 w=200 | elapsed=19270s eta=30019s
+  [642/1638] t=8 m=700 w=200 | elapsed=19300s eta=29988s
+  [643/1638] t=8 m=1000 w=200 | elapsed=19330s eta=29958s
+  [644/1638] t=8 m=2000 w=200 | elapsed=19360s eta=29928s
+  [645/1638] t=8 m=3000 w=200 | elapsed=19390s eta=29897s
+  [646/1638] t=8 m=5000 w=200 | elapsed=19420s eta=29867s
+  [647/1638] t=8 m=7000 w=200 | elapsed=19450s eta=29837s
+  [648/1638] t=8 m=10000 w=200 | elapsed=19481s eta=29808s
+  [649/1638] t=8 m=20000 w=200 | elapsed=19511s eta=29778s
+  [650/1638] t=8 m=50000 w=200 | elapsed=19541s eta=29748s
+  [651/1638] t=16 m=0 w=200 | elapsed=19571s eta=29717s
+  [652/1638] t=16 m=10 w=200 | elapsed=19601s eta=29687s
+  [653/1638] t=16 m=20 w=200 | elapsed=19631s eta=29657s
+  [654/1638] t=16 m=30 w=200 | elapsed=19661s eta=29626s
+  [655/1638] t=16 m=40 w=200 | elapsed=19691s eta=29596s
+  [656/1638] t=16 m=50 w=200 | elapsed=19721s eta=29566s
+  [657/1638] t=16 m=60 w=200 | elapsed=19752s eta=29537s
+  [658/1638] t=16 m=70 w=200 | elapsed=19782s eta=29507s
+  [659/1638] t=16 m=80 w=200 | elapsed=19812s eta=29477s
+  [660/1638] t=16 m=90 w=200 | elapsed=19842s eta=29446s
+  [661/1638] t=16 m=100 w=200 | elapsed=19872s eta=29416s
+  [662/1638] t=16 m=150 w=200 | elapsed=19902s eta=29386s
+  [663/1638] t=16 m=200 w=200 | elapsed=19932s eta=29356s
+  [664/1638] t=16 m=250 w=200 | elapsed=19962s eta=29325s
+  [665/1638] t=16 m=300 w=200 | elapsed=19992s eta=29295s
+  [666/1638] t=16 m=400 w=200 | elapsed=20022s eta=29265s
+  [667/1638] t=16 m=500 w=200 | elapsed=20053s eta=29236s
+  [668/1638] t=16 m=700 w=200 | elapsed=20083s eta=29206s
+  [669/1638] t=16 m=1000 w=200 | elapsed=20113s eta=29175s
+  [670/1638] t=16 m=2000 w=200 | elapsed=20143s eta=29145s
+  [671/1638] t=16 m=3000 w=200 | elapsed=20173s eta=29115s
+  [672/1638] t=16 m=5000 w=200 | elapsed=20203s eta=29085s
+  [673/1638] t=16 m=7000 w=200 | elapsed=20233s eta=29054s
+  [674/1638] t=16 m=10000 w=200 | elapsed=20263s eta=29024s
+  [675/1638] t=16 m=20000 w=200 | elapsed=20293s eta=28994s
+  [676/1638] t=16 m=50000 w=200 | elapsed=20324s eta=28965s
+  [677/1638] t=32 m=0 w=200 | elapsed=20354s eta=28935s
+  [678/1638] t=32 m=10 w=200 | elapsed=20384s eta=28904s
+  [679/1638] t=32 m=20 w=200 | elapsed=20414s eta=28874s
+  [680/1638] t=32 m=30 w=200 | elapsed=20444s eta=28844s
+  [681/1638] t=32 m=40 w=200 | elapsed=20474s eta=28814s
+  [682/1638] t=32 m=50 w=200 | elapsed=20504s eta=28783s
+  [683/1638] t=32 m=60 w=200 | elapsed=20534s eta=28753s
+  [684/1638] t=32 m=70 w=200 | elapsed=20564s eta=28723s
+  [685/1638] t=32 m=80 w=200 | elapsed=20595s eta=28694s
+  [686/1638] t=32 m=90 w=200 | elapsed=20625s eta=28664s
+  [687/1638] t=32 m=100 w=200 | elapsed=20655s eta=28633s
+  [688/1638] t=32 m=150 w=200 | elapsed=20685s eta=28603s
+  [689/1638] t=32 m=200 w=200 | elapsed=20715s eta=28573s
+  [690/1638] t=32 m=250 w=200 | elapsed=20745s eta=28543s
+  [691/1638] t=32 m=300 w=200 | elapsed=20775s eta=28512s
+  [692/1638] t=32 m=400 w=200 | elapsed=20805s eta=28482s
+  [693/1638] t=32 m=500 w=200 | elapsed=20835s eta=28452s
+  [694/1638] t=32 m=700 w=200 | elapsed=20866s eta=28423s
+  [695/1638] t=32 m=1000 w=200 | elapsed=20896s eta=28393s
+  [696/1638] t=32 m=2000 w=200 | elapsed=20926s eta=28363s
+  [697/1638] t=32 m=3000 w=200 | elapsed=20956s eta=28332s
+  [698/1638] t=32 m=5000 w=200 | elapsed=20986s eta=28302s
+  [699/1638] t=32 m=7000 w=200 | elapsed=21016s eta=28272s
+  [700/1638] t=32 m=10000 w=200 | elapsed=21046s eta=28241s
+  [701/1638] t=32 m=20000 w=200 | elapsed=21076s eta=28211s
+  [702/1638] t=32 m=50000 w=200 | elapsed=21106s eta=28181s
 --- w=500ns, rep=1/3 ---
-  [67/132] t=4 m=0 w=500 | elapsed=2017s eta=1956s
-  [68/132] t=4 m=10 w=500 | elapsed=2047s eta=1926s
-  [69/132] t=4 m=20 w=500 | elapsed=2077s eta=1896s
-  [70/132] t=4 m=30 w=500 | elapsed=2107s eta=1866s
-  [71/132] t=4 m=40 w=500 | elapsed=2137s eta=1836s
-  [72/132] t=4 m=50 w=500 | elapsed=2167s eta=1805s
-  [73/132] t=4 m=60 w=500 | elapsed=2197s eta=1775s
-  [74/132] t=4 m=70 w=500 | elapsed=2228s eta=1746s
-  [75/132] t=4 m=80 w=500 | elapsed=2258s eta=1716s
-  [76/132] t=4 m=90 w=500 | elapsed=2288s eta=1685s
-  [77/132] t=4 m=100 w=500 | elapsed=2318s eta=1655s
-  [78/132] t=8 m=0 w=500 | elapsed=2348s eta=1625s
-  [79/132] t=8 m=10 w=500 | elapsed=2378s eta=1595s
-  [80/132] t=8 m=20 w=500 | elapsed=2408s eta=1565s
-  [81/132] t=8 m=30 w=500 | elapsed=2438s eta=1535s
-  [82/132] t=8 m=40 w=500 | elapsed=2468s eta=1504s
-  [83/132] t=8 m=50 w=500 | elapsed=2498s eta=1474s
-  [84/132] t=8 m=60 w=500 | elapsed=2529s eta=1445s
-  [85/132] t=8 m=70 w=500 | elapsed=2559s eta=1414s
-  [86/132] t=8 m=80 w=500 | elapsed=2589s eta=1384s
-  [87/132] t=8 m=90 w=500 | elapsed=2619s eta=1354s
-  [88/132] t=8 m=100 w=500 | elapsed=2649s eta=1324s
+  [703/1638] t=8 m=0 w=500 | elapsed=21137s eta=28152s
+  [704/1638] t=8 m=10 w=500 | elapsed=21167s eta=28122s
+  [705/1638] t=8 m=20 w=500 | elapsed=21197s eta=28092s
+  [706/1638] t=8 m=30 w=500 | elapsed=21227s eta=28061s
+  [707/1638] t=8 m=40 w=500 | elapsed=21257s eta=28031s
+  [708/1638] t=8 m=50 w=500 | elapsed=21287s eta=28001s
+  [709/1638] t=8 m=60 w=500 | elapsed=21317s eta=27971s
+  [710/1638] t=8 m=70 w=500 | elapsed=21347s eta=27940s
+  [711/1638] t=8 m=80 w=500 | elapsed=21377s eta=27910s
+  [712/1638] t=8 m=90 w=500 | elapsed=21408s eta=27881s
+  [713/1638] t=8 m=100 w=500 | elapsed=21438s eta=27851s
+  [714/1638] t=8 m=150 w=500 | elapsed=21468s eta=27821s
+  [715/1638] t=8 m=200 w=500 | elapsed=21498s eta=27790s
+  [716/1638] t=8 m=250 w=500 | elapsed=21528s eta=27760s
+  [717/1638] t=8 m=300 w=500 | elapsed=21558s eta=27730s
+  [718/1638] t=8 m=400 w=500 | elapsed=21588s eta=27700s
+  [719/1638] t=8 m=500 w=500 | elapsed=21618s eta=27669s
+  [720/1638] t=8 m=700 w=500 | elapsed=21648s eta=27639s
+  [721/1638] t=8 m=1000 w=500 | elapsed=21678s eta=27609s
+  [722/1638] t=8 m=2000 w=500 | elapsed=21709s eta=27580s
+  [723/1638] t=8 m=3000 w=500 | elapsed=21739s eta=27550s
+  [724/1638] t=8 m=5000 w=500 | elapsed=21769s eta=27519s
+  [725/1638] t=8 m=7000 w=500 | elapsed=21799s eta=27489s
+  [726/1638] t=8 m=10000 w=500 | elapsed=21829s eta=27459s
+  [727/1638] t=8 m=20000 w=500 | elapsed=21859s eta=27429s
+  [728/1638] t=8 m=50000 w=500 | elapsed=21889s eta=27398s
+  [729/1638] t=16 m=0 w=500 | elapsed=21919s eta=27368s
+  [730/1638] t=16 m=10 w=500 | elapsed=21949s eta=27338s
+  [731/1638] t=16 m=20 w=500 | elapsed=21980s eta=27309s
+  [732/1638] t=16 m=30 w=500 | elapsed=22010s eta=27279s
+  [733/1638] t=16 m=40 w=500 | elapsed=22040s eta=27248s
+  [734/1638] t=16 m=50 w=500 | elapsed=22070s eta=27218s
+  [735/1638] t=16 m=60 w=500 | elapsed=22100s eta=27188s
+  [736/1638] t=16 m=70 w=500 | elapsed=22130s eta=27158s
+  [737/1638] t=16 m=80 w=500 | elapsed=22160s eta=27127s
+  [738/1638] t=16 m=90 w=500 | elapsed=22190s eta=27097s
+  [739/1638] t=16 m=100 w=500 | elapsed=22220s eta=27067s
+  [740/1638] t=16 m=150 w=500 | elapsed=22250s eta=27037s
+  [741/1638] t=16 m=200 w=500 | elapsed=22281s eta=27008s
+  [742/1638] t=16 m=250 w=500 | elapsed=22311s eta=26977s
+  [743/1638] t=16 m=300 w=500 | elapsed=22341s eta=26947s
+  [744/1638] t=16 m=400 w=500 | elapsed=22371s eta=26917s
+  [745/1638] t=16 m=500 w=500 | elapsed=22401s eta=26887s
+  [746/1638] t=16 m=700 w=500 | elapsed=22431s eta=26856s
+  [747/1638] t=16 m=1000 w=500 | elapsed=22461s eta=26826s
+  [748/1638] t=16 m=2000 w=500 | elapsed=22491s eta=26796s
+  [749/1638] t=16 m=3000 w=500 | elapsed=22521s eta=26766s
+  [750/1638] t=16 m=5000 w=500 | elapsed=22552s eta=26737s
+  [751/1638] t=16 m=7000 w=500 | elapsed=22582s eta=26706s
+  [752/1638] t=16 m=10000 w=500 | elapsed=22612s eta=26676s
+  [753/1638] t=16 m=20000 w=500 | elapsed=22642s eta=26646s
+  [754/1638] t=16 m=50000 w=500 | elapsed=22672s eta=26616s
+  [755/1638] t=32 m=0 w=500 | elapsed=22702s eta=26586s
+  [756/1638] t=32 m=10 w=500 | elapsed=22732s eta=26555s
+  [757/1638] t=32 m=20 w=500 | elapsed=22762s eta=26525s
+  [758/1638] t=32 m=30 w=500 | elapsed=22792s eta=26495s
+  [759/1638] t=32 m=40 w=500 | elapsed=22823s eta=26466s
+  [760/1638] t=32 m=50 w=500 | elapsed=22853s eta=26436s
+  [761/1638] t=32 m=60 w=500 | elapsed=22883s eta=26405s
+  [762/1638] t=32 m=70 w=500 | elapsed=22913s eta=26375s
+  [763/1638] t=32 m=80 w=500 | elapsed=22943s eta=26345s
+  [764/1638] t=32 m=90 w=500 | elapsed=22973s eta=26315s
+  [765/1638] t=32 m=100 w=500 | elapsed=23003s eta=26284s
+  [766/1638] t=32 m=150 w=500 | elapsed=23033s eta=26254s
+  [767/1638] t=32 m=200 w=500 | elapsed=23063s eta=26224s
+  [768/1638] t=32 m=250 w=500 | elapsed=23094s eta=26195s
+  [769/1638] t=32 m=300 w=500 | elapsed=23124s eta=26165s
+  [770/1638] t=32 m=400 w=500 | elapsed=23154s eta=26134s
+  [771/1638] t=32 m=500 w=500 | elapsed=23184s eta=26104s
+  [772/1638] t=32 m=700 w=500 | elapsed=23214s eta=26074s
+  [773/1638] t=32 m=1000 w=500 | elapsed=23244s eta=26044s
+  [774/1638] t=32 m=2000 w=500 | elapsed=23274s eta=26013s
+  [775/1638] t=32 m=3000 w=500 | elapsed=23304s eta=25983s
+  [776/1638] t=32 m=5000 w=500 | elapsed=23334s eta=25953s
+  [777/1638] t=32 m=7000 w=500 | elapsed=23365s eta=25924s
+  [778/1638] t=32 m=10000 w=500 | elapsed=23395s eta=25894s
+  [779/1638] t=32 m=20000 w=500 | elapsed=23425s eta=25863s
+  [780/1638] t=32 m=50000 w=500 | elapsed=23455s eta=25833s
 --- w=500ns, rep=2/3 ---
-  [89/132] t=4 m=0 w=500 | elapsed=2679s eta=1294s
-  [90/132] t=4 m=10 w=500 | elapsed=2709s eta=1264s
-  [91/132] t=4 m=20 w=500 | elapsed=2739s eta=1234s
-  [92/132] t=4 m=30 w=500 | elapsed=2769s eta=1203s
-  [93/132] t=4 m=40 w=500 | elapsed=2800s eta=1174s
-  [94/132] t=4 m=50 w=500 | elapsed=2830s eta=1144s
-  [95/132] t=4 m=60 w=500 | elapsed=2860s eta=1113s
-  [96/132] t=4 m=70 w=500 | elapsed=2890s eta=1083s
-  [97/132] t=4 m=80 w=500 | elapsed=2920s eta=1053s
-  [98/132] t=4 m=90 w=500 | elapsed=2950s eta=1023s
-  [99/132] t=4 m=100 w=500 | elapsed=2980s eta=993s
-  [100/132] t=8 m=0 w=500 | elapsed=3010s eta=963s
-  [101/132] t=8 m=10 w=500 | elapsed=3040s eta=933s
-  [102/132] t=8 m=20 w=500 | elapsed=3070s eta=902s
-  [103/132] t=8 m=30 w=500 | elapsed=3101s eta=873s
-  [104/132] t=8 m=40 w=500 | elapsed=3131s eta=842s
-  [105/132] t=8 m=50 w=500 | elapsed=3161s eta=812s
-  [106/132] t=8 m=60 w=500 | elapsed=3191s eta=782s
-  [107/132] t=8 m=70 w=500 | elapsed=3221s eta=752s
-  [108/132] t=8 m=80 w=500 | elapsed=3251s eta=722s
-  [109/132] t=8 m=90 w=500 | elapsed=3281s eta=692s
-  [110/132] t=8 m=100 w=500 | elapsed=3311s eta=662s
+  [781/1638] t=8 m=0 w=500 | elapsed=23485s eta=25803s
+  [782/1638] t=8 m=10 w=500 | elapsed=23515s eta=25773s
+  [783/1638] t=8 m=20 w=500 | elapsed=23545s eta=25742s
+  [784/1638] t=8 m=30 w=500 | elapsed=23575s eta=25712s
+  [785/1638] t=8 m=40 w=500 | elapsed=23605s eta=25682s
+  [786/1638] t=8 m=50 w=500 | elapsed=23636s eta=25653s
+  [787/1638] t=8 m=60 w=500 | elapsed=23666s eta=25623s
+  [788/1638] t=8 m=70 w=500 | elapsed=23696s eta=25592s
+  [789/1638] t=8 m=80 w=500 | elapsed=23726s eta=25562s
+  [790/1638] t=8 m=90 w=500 | elapsed=23756s eta=25532s
+  [791/1638] t=8 m=100 w=500 | elapsed=23786s eta=25502s
+  [792/1638] t=8 m=150 w=500 | elapsed=23816s eta=25471s
+  [793/1638] t=8 m=200 w=500 | elapsed=23846s eta=25441s
+  [794/1638] t=8 m=250 w=500 | elapsed=23876s eta=25411s
+  [795/1638] t=8 m=300 w=500 | elapsed=23906s eta=25381s
+  [796/1638] t=8 m=400 w=500 | elapsed=23937s eta=25352s
+  [797/1638] t=8 m=500 w=500 | elapsed=23967s eta=25321s
+  [798/1638] t=8 m=700 w=500 | elapsed=23997s eta=25291s
+  [799/1638] t=8 m=1000 w=500 | elapsed=24027s eta=25261s
+  [800/1638] t=8 m=2000 w=500 | elapsed=24057s eta=25231s
+  [801/1638] t=8 m=3000 w=500 | elapsed=24087s eta=25201s
+  [802/1638] t=8 m=5000 w=500 | elapsed=24117s eta=25170s
+  [803/1638] t=8 m=7000 w=500 | elapsed=24147s eta=25140s
+  [804/1638] t=8 m=10000 w=500 | elapsed=24177s eta=25110s
+  [805/1638] t=8 m=20000 w=500 | elapsed=24208s eta=25081s
+  [806/1638] t=8 m=50000 w=500 | elapsed=24238s eta=25050s
+  [807/1638] t=16 m=0 w=500 | elapsed=24268s eta=25020s
+  [808/1638] t=16 m=10 w=500 | elapsed=24298s eta=24990s
+  [809/1638] t=16 m=20 w=500 | elapsed=24328s eta=24960s
+  [810/1638] t=16 m=30 w=500 | elapsed=24358s eta=24930s
+  [811/1638] t=16 m=40 w=500 | elapsed=24388s eta=24899s
+  [812/1638] t=16 m=50 w=500 | elapsed=24418s eta=24869s
+  [813/1638] t=16 m=60 w=500 | elapsed=24448s eta=24839s
+  [814/1638] t=16 m=70 w=500 | elapsed=24479s eta=24810s
+  [815/1638] t=16 m=80 w=500 | elapsed=24509s eta=24779s
+  [816/1638] t=16 m=90 w=500 | elapsed=24539s eta=24749s
+  [817/1638] t=16 m=100 w=500 | elapsed=24569s eta=24719s
+  [818/1638] t=16 m=150 w=500 | elapsed=24599s eta=24689s
+  [819/1638] t=16 m=200 w=500 | elapsed=24629s eta=24659s
+  [820/1638] t=16 m=250 w=500 | elapsed=24659s eta=24628s
+  [821/1638] t=16 m=300 w=500 | elapsed=24689s eta=24598s
+  [822/1638] t=16 m=400 w=500 | elapsed=24719s eta=24568s
+  [823/1638] t=16 m=500 w=500 | elapsed=24749s eta=24538s
+  [824/1638] t=16 m=700 w=500 | elapsed=24780s eta=24509s
+  [825/1638] t=16 m=1000 w=500 | elapsed=24810s eta=24478s
+  [826/1638] t=16 m=2000 w=500 | elapsed=24840s eta=24448s
+  [827/1638] t=16 m=3000 w=500 | elapsed=24870s eta=24418s
+  [828/1638] t=16 m=5000 w=500 | elapsed=24900s eta=24388s
+  [829/1638] t=16 m=7000 w=500 | elapsed=24930s eta=24357s
+  [830/1638] t=16 m=10000 w=500 | elapsed=24960s eta=24327s
+  [831/1638] t=16 m=20000 w=500 | elapsed=24990s eta=24297s
+  [832/1638] t=16 m=50000 w=500 | elapsed=25020s eta=24267s
+  [833/1638] t=32 m=0 w=500 | elapsed=25051s eta=24238s
+  [834/1638] t=32 m=10 w=500 | elapsed=25081s eta=24207s
+  [835/1638] t=32 m=20 w=500 | elapsed=25111s eta=24177s
+  [836/1638] t=32 m=30 w=500 | elapsed=25141s eta=24147s
+  [837/1638] t=32 m=40 w=500 | elapsed=25171s eta=24117s
+  [838/1638] t=32 m=50 w=500 | elapsed=25201s eta=24086s
+  [839/1638] t=32 m=60 w=500 | elapsed=25231s eta=24056s
+  [840/1638] t=32 m=70 w=500 | elapsed=25261s eta=24026s
+  [841/1638] t=32 m=80 w=500 | elapsed=25291s eta=23996s
+  [842/1638] t=32 m=90 w=500 | elapsed=25322s eta=23967s
+  [843/1638] t=32 m=100 w=500 | elapsed=25352s eta=23936s
+  [844/1638] t=32 m=150 w=500 | elapsed=25382s eta=23906s
+  [845/1638] t=32 m=200 w=500 | elapsed=25412s eta=23876s
+  [846/1638] t=32 m=250 w=500 | elapsed=25442s eta=23846s
+  [847/1638] t=32 m=300 w=500 | elapsed=25472s eta=23816s
+  [848/1638] t=32 m=400 w=500 | elapsed=25502s eta=23785s
+  [849/1638] t=32 m=500 w=500 | elapsed=25532s eta=23755s
+  [850/1638] t=32 m=700 w=500 | elapsed=25562s eta=23725s
+  [851/1638] t=32 m=1000 w=500 | elapsed=25593s eta=23696s
+  [852/1638] t=32 m=2000 w=500 | elapsed=25623s eta=23665s
+  [853/1638] t=32 m=3000 w=500 | elapsed=25653s eta=23635s
+  [854/1638] t=32 m=5000 w=500 | elapsed=25683s eta=23605s
+  [855/1638] t=32 m=7000 w=500 | elapsed=25713s eta=23575s
+  [856/1638] t=32 m=10000 w=500 | elapsed=25743s eta=23545s
+  [857/1638] t=32 m=20000 w=500 | elapsed=25773s eta=23514s
+  [858/1638] t=32 m=50000 w=500 | elapsed=25803s eta=23484s
 --- w=500ns, rep=3/3 ---
-  [111/132] t=4 m=0 w=500 | elapsed=3341s eta=632s
-  [112/132] t=4 m=10 w=500 | elapsed=3371s eta=601s
-  [113/132] t=4 m=20 w=500 | elapsed=3402s eta=572s
-  [114/132] t=4 m=30 w=500 | elapsed=3432s eta=541s
-  [115/132] t=4 m=40 w=500 | elapsed=3462s eta=511s
-  [116/132] t=4 m=50 w=500 | elapsed=3492s eta=481s
-  [117/132] t=4 m=60 w=500 | elapsed=3522s eta=451s
-  [118/132] t=4 m=70 w=500 | elapsed=3552s eta=421s
-  [119/132] t=4 m=80 w=500 | elapsed=3582s eta=391s
-  [120/132] t=4 m=90 w=500 | elapsed=3612s eta=361s
-  [121/132] t=4 m=100 w=500 | elapsed=3642s eta=331s
-  [122/132] t=8 m=0 w=500 | elapsed=3673s eta=301s
-  [123/132] t=8 m=10 w=500 | elapsed=3703s eta=270s
-  [124/132] t=8 m=20 w=500 | elapsed=3733s eta=240s
-  [125/132] t=8 m=30 w=500 | elapsed=3763s eta=210s
-  [126/132] t=8 m=40 w=500 | elapsed=3793s eta=180s
-  [127/132] t=8 m=50 w=500 | elapsed=3823s eta=150s
-  [128/132] t=8 m=60 w=500 | elapsed=3853s eta=120s
-  [129/132] t=8 m=70 w=500 | elapsed=3883s eta=90s
-  [130/132] t=8 m=80 w=500 | elapsed=3913s eta=60s
-  [131/132] t=8 m=90 w=500 | elapsed=3943s eta=30s
-  [132/132] t=8 m=100 w=500 | elapsed=3974s eta=0s
+  [859/1638] t=8 m=0 w=500 | elapsed=25833s eta=23454s
+  [860/1638] t=8 m=10 w=500 | elapsed=25864s eta=23425s
+  [861/1638] t=8 m=20 w=500 | elapsed=25894s eta=23394s
+  [862/1638] t=8 m=30 w=500 | elapsed=25924s eta=23364s
+  [863/1638] t=8 m=40 w=500 | elapsed=25954s eta=23334s
+  [864/1638] t=8 m=50 w=500 | elapsed=25984s eta=23304s
+  [865/1638] t=8 m=60 w=500 | elapsed=26014s eta=23274s
+  [866/1638] t=8 m=70 w=500 | elapsed=26044s eta=23243s
+  [867/1638] t=8 m=80 w=500 | elapsed=26074s eta=23213s
+  [868/1638] t=8 m=90 w=500 | elapsed=26104s eta=23183s
+  [869/1638] t=8 m=100 w=500 | elapsed=26134s eta=23153s
+  [870/1638] t=8 m=150 w=500 | elapsed=26165s eta=23123s
+  [871/1638] t=8 m=200 w=500 | elapsed=26195s eta=23093s
+  [872/1638] t=8 m=250 w=500 | elapsed=26225s eta=23063s
+  [873/1638] t=8 m=300 w=500 | elapsed=26255s eta=23033s
+  [874/1638] t=8 m=400 w=500 | elapsed=26285s eta=23003s
+  [875/1638] t=8 m=500 w=500 | elapsed=26315s eta=22972s
+  [876/1638] t=8 m=700 w=500 | elapsed=26345s eta=22942s
+  [877/1638] t=8 m=1000 w=500 | elapsed=26375s eta=22912s
+  [878/1638] t=8 m=2000 w=500 | elapsed=26405s eta=22882s
+  [879/1638] t=8 m=3000 w=500 | elapsed=26436s eta=22852s
+  [880/1638] t=8 m=5000 w=500 | elapsed=26466s eta=22822s
+  [881/1638] t=8 m=7000 w=500 | elapsed=26496s eta=22792s
+  [882/1638] t=8 m=10000 w=500 | elapsed=26526s eta=22762s
+  [883/1638] t=8 m=20000 w=500 | elapsed=26556s eta=22732s
+  [884/1638] t=8 m=50000 w=500 | elapsed=26586s eta=22701s
+  [885/1638] t=16 m=0 w=500 | elapsed=26616s eta=22671s
+  [886/1638] t=16 m=10 w=500 | elapsed=26646s eta=22641s
+  [887/1638] t=16 m=20 w=500 | elapsed=26676s eta=22611s
+  [888/1638] t=16 m=30 w=500 | elapsed=26707s eta=22582s
+  [889/1638] t=16 m=40 w=500 | elapsed=26737s eta=22551s
+  [890/1638] t=16 m=50 w=500 | elapsed=26767s eta=22521s
+  [891/1638] t=16 m=60 w=500 | elapsed=26797s eta=22491s
+  [892/1638] t=16 m=70 w=500 | elapsed=26827s eta=22461s
+  [893/1638] t=16 m=80 w=500 | elapsed=26857s eta=22431s
+  [894/1638] t=16 m=90 w=500 | elapsed=26887s eta=22400s
+  [895/1638] t=16 m=100 w=500 | elapsed=26917s eta=22370s
+  [896/1638] t=16 m=150 w=500 | elapsed=26947s eta=22340s
+  [897/1638] t=16 m=200 w=500 | elapsed=26977s eta=22310s
+  [898/1638] t=16 m=250 w=500 | elapsed=27008s eta=22280s
+  [899/1638] t=16 m=300 w=500 | elapsed=27038s eta=22250s
+  [900/1638] t=16 m=400 w=500 | elapsed=27068s eta=22220s
+  [901/1638] t=16 m=500 w=500 | elapsed=27098s eta=22190s
+  [902/1638] t=16 m=700 w=500 | elapsed=27128s eta=22160s
+  [903/1638] t=16 m=1000 w=500 | elapsed=27158s eta=22129s
+  [904/1638] t=16 m=2000 w=500 | elapsed=27188s eta=22099s
+  [905/1638] t=16 m=3000 w=500 | elapsed=27218s eta=22069s
+  [906/1638] t=16 m=5000 w=500 | elapsed=27248s eta=22039s
+  [907/1638] t=16 m=7000 w=500 | elapsed=27279s eta=22009s
+  [908/1638] t=16 m=10000 w=500 | elapsed=27309s eta=21979s
+  [909/1638] t=16 m=20000 w=500 | elapsed=27339s eta=21949s
+  [910/1638] t=16 m=50000 w=500 | elapsed=27369s eta=21919s
+  [911/1638] t=32 m=0 w=500 | elapsed=27399s eta=21889s
+  [912/1638] t=32 m=10 w=500 | elapsed=27429s eta=21858s
+  [913/1638] t=32 m=20 w=500 | elapsed=27459s eta=21828s
+  [914/1638] t=32 m=30 w=500 | elapsed=27489s eta=21798s
+  [915/1638] t=32 m=40 w=500 | elapsed=27519s eta=21768s
+  [916/1638] t=32 m=50 w=500 | elapsed=27550s eta=21738s
+  [917/1638] t=32 m=60 w=500 | elapsed=27580s eta=21708s
+  [918/1638] t=32 m=70 w=500 | elapsed=27610s eta=21678s
+  [919/1638] t=32 m=80 w=500 | elapsed=27640s eta=21648s
+  [920/1638] t=32 m=90 w=500 | elapsed=27670s eta=21618s
+  [921/1638] t=32 m=100 w=500 | elapsed=27700s eta=21587s
+  [922/1638] t=32 m=150 w=500 | elapsed=27730s eta=21557s
+  [923/1638] t=32 m=200 w=500 | elapsed=27760s eta=21527s
+  [924/1638] t=32 m=250 w=500 | elapsed=27790s eta=21497s
+  [925/1638] t=32 m=300 w=500 | elapsed=27820s eta=21467s
+  [926/1638] t=32 m=400 w=500 | elapsed=27851s eta=21437s
+  [927/1638] t=32 m=500 w=500 | elapsed=27881s eta=21407s
+  [928/1638] t=32 m=700 w=500 | elapsed=27911s eta=21377s
+  [929/1638] t=32 m=1000 w=500 | elapsed=27941s eta=21347s
+  [930/1638] t=32 m=2000 w=500 | elapsed=27971s eta=21316s
+  [931/1638] t=32 m=3000 w=500 | elapsed=28001s eta=21286s
+  [932/1638] t=32 m=5000 w=500 | elapsed=28031s eta=21256s
+  [933/1638] t=32 m=7000 w=500 | elapsed=28061s eta=21226s
+  [934/1638] t=32 m=10000 w=500 | elapsed=28091s eta=21196s
+  [935/1638] t=32 m=20000 w=500 | elapsed=28122s eta=21166s
+  [936/1638] t=32 m=50000 w=500 | elapsed=28152s eta=21136s
+--- w=1000ns, rep=1/3 ---
+  [937/1638] t=8 m=0 w=1000 | elapsed=28182s eta=21106s
+  [938/1638] t=8 m=10 w=1000 | elapsed=28212s eta=21076s
+  [939/1638] t=8 m=20 w=1000 | elapsed=28242s eta=21046s
+  [940/1638] t=8 m=30 w=1000 | elapsed=28272s eta=21015s
+  [941/1638] t=8 m=40 w=1000 | elapsed=28302s eta=20985s
+  [942/1638] t=8 m=50 w=1000 | elapsed=28332s eta=20955s
+  [943/1638] t=8 m=60 w=1000 | elapsed=28362s eta=20925s
+  [944/1638] t=8 m=70 w=1000 | elapsed=28393s eta=20895s
+  [945/1638] t=8 m=80 w=1000 | elapsed=28423s eta=20865s
+  [946/1638] t=8 m=90 w=1000 | elapsed=28453s eta=20835s
+  [947/1638] t=8 m=100 w=1000 | elapsed=28483s eta=20805s
+  [948/1638] t=8 m=150 w=1000 | elapsed=28513s eta=20775s
+  [949/1638] t=8 m=200 w=1000 | elapsed=28543s eta=20744s
+  [950/1638] t=8 m=250 w=1000 | elapsed=28573s eta=20714s
+  [951/1638] t=8 m=300 w=1000 | elapsed=28603s eta=20684s
+  [952/1638] t=8 m=400 w=1000 | elapsed=28633s eta=20654s
+  [953/1638] t=8 m=500 w=1000 | elapsed=28664s eta=20624s
+  [954/1638] t=8 m=700 w=1000 | elapsed=28694s eta=20594s
+  [955/1638] t=8 m=1000 w=1000 | elapsed=28724s eta=20564s
+  [956/1638] t=8 m=2000 w=1000 | elapsed=28754s eta=20534s
+  [957/1638] t=8 m=3000 w=1000 | elapsed=28784s eta=20504s
+  [958/1638] t=8 m=5000 w=1000 | elapsed=28814s eta=20473s
+  [959/1638] t=8 m=7000 w=1000 | elapsed=28844s eta=20443s
+  [960/1638] t=8 m=10000 w=1000 | elapsed=28874s eta=20413s
+  [961/1638] t=8 m=20000 w=1000 | elapsed=28904s eta=20383s
+  [962/1638] t=8 m=50000 w=1000 | elapsed=28935s eta=20353s
+  [963/1638] t=16 m=0 w=1000 | elapsed=28965s eta=20323s
+  [964/1638] t=16 m=10 w=1000 | elapsed=28995s eta=20293s
+  [965/1638] t=16 m=20 w=1000 | elapsed=29025s eta=20263s
+  [966/1638] t=16 m=30 w=1000 | elapsed=29055s eta=20233s
+  [967/1638] t=16 m=40 w=1000 | elapsed=29085s eta=20202s
+  [968/1638] t=16 m=50 w=1000 | elapsed=29115s eta=20172s
+  [969/1638] t=16 m=60 w=1000 | elapsed=29145s eta=20142s
+  [970/1638] t=16 m=70 w=1000 | elapsed=29175s eta=20112s
+  [971/1638] t=16 m=80 w=1000 | elapsed=29205s eta=20082s
+  [972/1638] t=16 m=90 w=1000 | elapsed=29236s eta=20052s
+  [973/1638] t=16 m=100 w=1000 | elapsed=29266s eta=20022s
+  [974/1638] t=16 m=150 w=1000 | elapsed=29296s eta=19992s
+  [975/1638] t=16 m=200 w=1000 | elapsed=29326s eta=19962s
+  [976/1638] t=16 m=250 w=1000 | elapsed=29356s eta=19931s
+  [977/1638] t=16 m=300 w=1000 | elapsed=29386s eta=19901s
+  [978/1638] t=16 m=400 w=1000 | elapsed=29416s eta=19871s
+  [979/1638] t=16 m=500 w=1000 | elapsed=29446s eta=19841s
+  [980/1638] t=16 m=700 w=1000 | elapsed=29476s eta=19811s
+  [981/1638] t=16 m=1000 w=1000 | elapsed=29507s eta=19781s
+  [982/1638] t=16 m=2000 w=1000 | elapsed=29537s eta=19751s
+  [983/1638] t=16 m=3000 w=1000 | elapsed=29567s eta=19721s
+  [984/1638] t=16 m=5000 w=1000 | elapsed=29597s eta=19691s
+  [985/1638] t=16 m=7000 w=1000 | elapsed=29627s eta=19661s
+  [986/1638] t=16 m=10000 w=1000 | elapsed=29657s eta=19630s
+  [987/1638] t=16 m=20000 w=1000 | elapsed=29687s eta=19600s
+  [988/1638] t=16 m=50000 w=1000 | elapsed=29717s eta=19570s
+  [989/1638] t=32 m=0 w=1000 | elapsed=29747s eta=19540s
+  [990/1638] t=32 m=10 w=1000 | elapsed=29778s eta=19510s
+  [991/1638] t=32 m=20 w=1000 | elapsed=29808s eta=19480s
+  [992/1638] t=32 m=30 w=1000 | elapsed=29838s eta=19450s
+  [993/1638] t=32 m=40 w=1000 | elapsed=29868s eta=19420s
+  [994/1638] t=32 m=50 w=1000 | elapsed=29898s eta=19390s
+  [995/1638] t=32 m=60 w=1000 | elapsed=29928s eta=19359s
+  [996/1638] t=32 m=70 w=1000 | elapsed=29958s eta=19329s
+  [997/1638] t=32 m=80 w=1000 | elapsed=29988s eta=19299s
+  [998/1638] t=32 m=90 w=1000 | elapsed=30018s eta=19269s
+  [999/1638] t=32 m=100 w=1000 | elapsed=30048s eta=19239s
+  [1000/1638] t=32 m=150 w=1000 | elapsed=30079s eta=19209s
+  [1001/1638] t=32 m=200 w=1000 | elapsed=30109s eta=19179s
+  [1002/1638] t=32 m=250 w=1000 | elapsed=30139s eta=19149s
+  [1003/1638] t=32 m=300 w=1000 | elapsed=30169s eta=19119s
+  [1004/1638] t=32 m=400 w=1000 | elapsed=30199s eta=19088s
+  [1005/1638] t=32 m=500 w=1000 | elapsed=30229s eta=19058s
+  [1006/1638] t=32 m=700 w=1000 | elapsed=30259s eta=19028s
+  [1007/1638] t=32 m=1000 w=1000 | elapsed=30289s eta=18998s
+  [1008/1638] t=32 m=2000 w=1000 | elapsed=30319s eta=18968s
+  [1009/1638] t=32 m=3000 w=1000 | elapsed=30350s eta=18938s
+  [1010/1638] t=32 m=5000 w=1000 | elapsed=30380s eta=18908s
+  [1011/1638] t=32 m=7000 w=1000 | elapsed=30410s eta=18878s
+  [1012/1638] t=32 m=10000 w=1000 | elapsed=30440s eta=18848s
+  [1013/1638] t=32 m=20000 w=1000 | elapsed=30470s eta=18817s
+  [1014/1638] t=32 m=50000 w=1000 | elapsed=30500s eta=18787s
+--- w=1000ns, rep=2/3 ---
+  [1015/1638] t=8 m=0 w=1000 | elapsed=30530s eta=18757s
+  [1016/1638] t=8 m=10 w=1000 | elapsed=30560s eta=18727s
+  [1017/1638] t=8 m=20 w=1000 | elapsed=30590s eta=18697s
+  [1018/1638] t=8 m=30 w=1000 | elapsed=30621s eta=18667s
+  [1019/1638] t=8 m=40 w=1000 | elapsed=30651s eta=18637s
+  [1020/1638] t=8 m=50 w=1000 | elapsed=30681s eta=18607s
+  [1021/1638] t=8 m=60 w=1000 | elapsed=30711s eta=18577s
+  [1022/1638] t=8 m=70 w=1000 | elapsed=30741s eta=18546s
+  [1023/1638] t=8 m=80 w=1000 | elapsed=30771s eta=18516s
+  [1024/1638] t=8 m=90 w=1000 | elapsed=30801s eta=18486s
+  [1025/1638] t=8 m=100 w=1000 | elapsed=30831s eta=18456s
+  [1026/1638] t=8 m=150 w=1000 | elapsed=30861s eta=18426s
+  [1027/1638] t=8 m=200 w=1000 | elapsed=30892s eta=18396s
+  [1028/1638] t=8 m=250 w=1000 | elapsed=30922s eta=18366s
+  [1029/1638] t=8 m=300 w=1000 | elapsed=30952s eta=18336s
+  [1030/1638] t=8 m=400 w=1000 | elapsed=30982s eta=18306s
+  [1031/1638] t=8 m=500 w=1000 | elapsed=31012s eta=18276s
+  [1032/1638] t=8 m=700 w=1000 | elapsed=31042s eta=18245s
+  [1033/1638] t=8 m=1000 w=1000 | elapsed=31072s eta=18215s
+  [1034/1638] t=8 m=2000 w=1000 | elapsed=31102s eta=18185s
+  [1035/1638] t=8 m=3000 w=1000 | elapsed=31132s eta=18155s
+  [1036/1638] t=8 m=5000 w=1000 | elapsed=31162s eta=18125s
+  [1037/1638] t=8 m=7000 w=1000 | elapsed=31193s eta=18095s
+  [1038/1638] t=8 m=10000 w=1000 | elapsed=31223s eta=18065s
+  [1039/1638] t=8 m=20000 w=1000 | elapsed=31253s eta=18035s
+  [1040/1638] t=8 m=50000 w=1000 | elapsed=31283s eta=18005s
+  [1041/1638] t=16 m=0 w=1000 | elapsed=31313s eta=17974s
+  [1042/1638] t=16 m=10 w=1000 | elapsed=31343s eta=17944s
+  [1043/1638] t=16 m=20 w=1000 | elapsed=31373s eta=17914s
+  [1044/1638] t=16 m=30 w=1000 | elapsed=31403s eta=17884s
+  [1045/1638] t=16 m=40 w=1000 | elapsed=31433s eta=17854s
+  [1046/1638] t=16 m=50 w=1000 | elapsed=31464s eta=17824s
+  [1047/1638] t=16 m=60 w=1000 | elapsed=31494s eta=17794s
+  [1048/1638] t=16 m=70 w=1000 | elapsed=31524s eta=17764s
+  [1049/1638] t=16 m=80 w=1000 | elapsed=31554s eta=17734s
+  [1050/1638] t=16 m=90 w=1000 | elapsed=31584s eta=17703s
+  [1051/1638] t=16 m=100 w=1000 | elapsed=31614s eta=17673s
+  [1052/1638] t=16 m=150 w=1000 | elapsed=31644s eta=17643s
+  [1053/1638] t=16 m=200 w=1000 | elapsed=31674s eta=17613s
+  [1054/1638] t=16 m=250 w=1000 | elapsed=31704s eta=17583s
+  [1055/1638] t=16 m=300 w=1000 | elapsed=31735s eta=17553s
+  [1056/1638] t=16 m=400 w=1000 | elapsed=31765s eta=17523s
+  [1057/1638] t=16 m=500 w=1000 | elapsed=31795s eta=17493s
+  [1058/1638] t=16 m=700 w=1000 | elapsed=31825s eta=17463s
+  [1059/1638] t=16 m=1000 w=1000 | elapsed=31855s eta=17432s
+  [1060/1638] t=16 m=2000 w=1000 | elapsed=31885s eta=17402s
+  [1061/1638] t=16 m=3000 w=1000 | elapsed=31915s eta=17372s
+  [1062/1638] t=16 m=5000 w=1000 | elapsed=31945s eta=17342s
+  [1063/1638] t=16 m=7000 w=1000 | elapsed=31975s eta=17312s
+  [1064/1638] t=16 m=10000 w=1000 | elapsed=32006s eta=17282s
+  [1065/1638] t=16 m=20000 w=1000 | elapsed=32036s eta=17252s
+  [1066/1638] t=16 m=50000 w=1000 | elapsed=32066s eta=17222s
+  [1067/1638] t=32 m=0 w=1000 | elapsed=32096s eta=17192s
+  [1068/1638] t=32 m=10 w=1000 | elapsed=32126s eta=17161s
+  [1069/1638] t=32 m=20 w=1000 | elapsed=32156s eta=17131s
+  [1070/1638] t=32 m=30 w=1000 | elapsed=32186s eta=17101s
+  [1071/1638] t=32 m=40 w=1000 | elapsed=32216s eta=17071s
+  [1072/1638] t=32 m=50 w=1000 | elapsed=32246s eta=17041s
+  [1073/1638] t=32 m=60 w=1000 | elapsed=32276s eta=17011s
+  [1074/1638] t=32 m=70 w=1000 | elapsed=32307s eta=16981s
+  [1075/1638] t=32 m=80 w=1000 | elapsed=32337s eta=16951s
+  [1076/1638] t=32 m=90 w=1000 | elapsed=32367s eta=16921s
+  [1077/1638] t=32 m=100 w=1000 | elapsed=32397s eta=16891s
+  [1078/1638] t=32 m=150 w=1000 | elapsed=32427s eta=16860s
+  [1079/1638] t=32 m=200 w=1000 | elapsed=32457s eta=16830s
+  [1080/1638] t=32 m=250 w=1000 | elapsed=32487s eta=16800s
+  [1081/1638] t=32 m=300 w=1000 | elapsed=32517s eta=16770s
+  [1082/1638] t=32 m=400 w=1000 | elapsed=32547s eta=16740s
+  [1083/1638] t=32 m=500 w=1000 | elapsed=32578s eta=16710s
+  [1084/1638] t=32 m=700 w=1000 | elapsed=32608s eta=16680s
+  [1085/1638] t=32 m=1000 w=1000 | elapsed=32638s eta=16650s
+  [1086/1638] t=32 m=2000 w=1000 | elapsed=32668s eta=16620s
+  [1087/1638] t=32 m=3000 w=1000 | elapsed=32698s eta=16589s
+  [1088/1638] t=32 m=5000 w=1000 | elapsed=32728s eta=16559s
+  [1089/1638] t=32 m=7000 w=1000 | elapsed=32758s eta=16529s
+  [1090/1638] t=32 m=10000 w=1000 | elapsed=32788s eta=16499s
+  [1091/1638] t=32 m=20000 w=1000 | elapsed=32818s eta=16469s
+  [1092/1638] t=32 m=50000 w=1000 | elapsed=32849s eta=16439s
+--- w=1000ns, rep=3/3 ---
+  [1093/1638] t=8 m=0 w=1000 | elapsed=32879s eta=16409s
+  [1094/1638] t=8 m=10 w=1000 | elapsed=32909s eta=16379s
+  [1095/1638] t=8 m=20 w=1000 | elapsed=32939s eta=16349s
+  [1096/1638] t=8 m=30 w=1000 | elapsed=32969s eta=16318s
+  [1097/1638] t=8 m=40 w=1000 | elapsed=32999s eta=16288s
+  [1098/1638] t=8 m=50 w=1000 | elapsed=33029s eta=16258s
+  [1099/1638] t=8 m=60 w=1000 | elapsed=33059s eta=16228s
+  [1100/1638] t=8 m=70 w=1000 | elapsed=33089s eta=16198s
+  [1101/1638] t=8 m=80 w=1000 | elapsed=33120s eta=16168s
+  [1102/1638] t=8 m=90 w=1000 | elapsed=33150s eta=16138s
+  [1103/1638] t=8 m=100 w=1000 | elapsed=33180s eta=16108s
+  [1104/1638] t=8 m=150 w=1000 | elapsed=33210s eta=16078s
+  [1105/1638] t=8 m=200 w=1000 | elapsed=33240s eta=16047s
+  [1106/1638] t=8 m=250 w=1000 | elapsed=33270s eta=16017s
+  [1107/1638] t=8 m=300 w=1000 | elapsed=33300s eta=15987s
+  [1108/1638] t=8 m=400 w=1000 | elapsed=33330s eta=15957s
+  [1109/1638] t=8 m=500 w=1000 | elapsed=33360s eta=15927s
+  [1110/1638] t=8 m=700 w=1000 | elapsed=33390s eta=15897s
+  [1111/1638] t=8 m=1000 w=1000 | elapsed=33421s eta=15867s
+  [1112/1638] t=8 m=2000 w=1000 | elapsed=33451s eta=15837s
+  [1113/1638] t=8 m=3000 w=1000 | elapsed=33481s eta=15807s
+  [1114/1638] t=8 m=5000 w=1000 | elapsed=33511s eta=15776s
+  [1115/1638] t=8 m=7000 w=1000 | elapsed=33541s eta=15746s
+  [1116/1638] t=8 m=10000 w=1000 | elapsed=33571s eta=15716s
+  [1117/1638] t=8 m=20000 w=1000 | elapsed=33601s eta=15686s
+  [1118/1638] t=8 m=50000 w=1000 | elapsed=33631s eta=15656s
+  [1119/1638] t=16 m=0 w=1000 | elapsed=33661s eta=15626s
+  [1120/1638] t=16 m=10 w=1000 | elapsed=33692s eta=15596s
+  [1121/1638] t=16 m=20 w=1000 | elapsed=33722s eta=15566s
+  [1122/1638] t=16 m=30 w=1000 | elapsed=33752s eta=15536s
+  [1123/1638] t=16 m=40 w=1000 | elapsed=33782s eta=15505s
+  [1124/1638] t=16 m=50 w=1000 | elapsed=33812s eta=15475s
+  [1125/1638] t=16 m=60 w=1000 | elapsed=33842s eta=15445s
+  [1126/1638] t=16 m=70 w=1000 | elapsed=33872s eta=15415s
+  [1127/1638] t=16 m=80 w=1000 | elapsed=33902s eta=15385s
+  [1128/1638] t=16 m=90 w=1000 | elapsed=33932s eta=15355s
+  [1129/1638] t=16 m=100 w=1000 | elapsed=33963s eta=15325s
+  [1130/1638] t=16 m=150 w=1000 | elapsed=33993s eta=15295s
+  [1131/1638] t=16 m=200 w=1000 | elapsed=34023s eta=15265s
+  [1132/1638] t=16 m=250 w=1000 | elapsed=34053s eta=15235s
+  [1133/1638] t=16 m=300 w=1000 | elapsed=34083s eta=15204s
+  [1134/1638] t=16 m=400 w=1000 | elapsed=34113s eta=15174s
+  [1135/1638] t=16 m=500 w=1000 | elapsed=34143s eta=15144s
+  [1136/1638] t=16 m=700 w=1000 | elapsed=34173s eta=15114s
+  [1137/1638] t=16 m=1000 w=1000 | elapsed=34203s eta=15084s
+  [1138/1638] t=16 m=2000 w=1000 | elapsed=34233s eta=15054s
+  [1139/1638] t=16 m=3000 w=1000 | elapsed=34264s eta=15024s
+  [1140/1638] t=16 m=5000 w=1000 | elapsed=34294s eta=14994s
+  [1141/1638] t=16 m=7000 w=1000 | elapsed=34324s eta=14964s
+  [1142/1638] t=16 m=10000 w=1000 | elapsed=34354s eta=14933s
+  [1143/1638] t=16 m=20000 w=1000 | elapsed=34384s eta=14903s
+  [1144/1638] t=16 m=50000 w=1000 | elapsed=34414s eta=14873s
+  [1145/1638] t=32 m=0 w=1000 | elapsed=34444s eta=14843s
+  [1146/1638] t=32 m=10 w=1000 | elapsed=34474s eta=14813s
+  [1147/1638] t=32 m=20 w=1000 | elapsed=34504s eta=14783s
+  [1148/1638] t=32 m=30 w=1000 | elapsed=34535s eta=14753s
+  [1149/1638] t=32 m=40 w=1000 | elapsed=34565s eta=14723s
+  [1150/1638] t=32 m=50 w=1000 | elapsed=34595s eta=14693s
+  [1151/1638] t=32 m=60 w=1000 | elapsed=34625s eta=14662s
+  [1152/1638] t=32 m=70 w=1000 | elapsed=34655s eta=14632s
+  [1153/1638] t=32 m=80 w=1000 | elapsed=34685s eta=14602s
+  [1154/1638] t=32 m=90 w=1000 | elapsed=34715s eta=14572s
+  [1155/1638] t=32 m=100 w=1000 | elapsed=34745s eta=14542s
+  [1156/1638] t=32 m=150 w=1000 | elapsed=34775s eta=14512s
+  [1157/1638] t=32 m=200 w=1000 | elapsed=34806s eta=14482s
+  [1158/1638] t=32 m=250 w=1000 | elapsed=34836s eta=14452s
+  [1159/1638] t=32 m=300 w=1000 | elapsed=34866s eta=14422s
+  [1160/1638] t=32 m=400 w=1000 | elapsed=34896s eta=14391s
+  [1161/1638] t=32 m=500 w=1000 | elapsed=34926s eta=14361s
+  [1162/1638] t=32 m=700 w=1000 | elapsed=34956s eta=14331s
+  [1163/1638] t=32 m=1000 w=1000 | elapsed=34986s eta=14301s
+  [1164/1638] t=32 m=2000 w=1000 | elapsed=35016s eta=14271s
+  [1165/1638] t=32 m=3000 w=1000 | elapsed=35046s eta=14241s
+  [1166/1638] t=32 m=5000 w=1000 | elapsed=35077s eta=14211s
+  [1167/1638] t=32 m=7000 w=1000 | elapsed=35107s eta=14181s
+  [1168/1638] t=32 m=10000 w=1000 | elapsed=35137s eta=14151s
+  [1169/1638] t=32 m=20000 w=1000 | elapsed=35167s eta=14120s
+  [1170/1638] t=32 m=50000 w=1000 | elapsed=35197s eta=14090s
+--- w=2000ns, rep=1/3 ---
+  [1171/1638] t=8 m=0 w=2000 | elapsed=35227s eta=14060s
+  [1172/1638] t=8 m=10 w=2000 | elapsed=35257s eta=14030s
+  [1173/1638] t=8 m=20 w=2000 | elapsed=35287s eta=14000s
+  [1174/1638] t=8 m=30 w=2000 | elapsed=35317s eta=13970s
+  [1175/1638] t=8 m=40 w=2000 | elapsed=35348s eta=13940s
+  [1176/1638] t=8 m=50 w=2000 | elapsed=35378s eta=13910s
+  [1177/1638] t=8 m=60 w=2000 | elapsed=35408s eta=13880s
+  [1178/1638] t=8 m=70 w=2000 | elapsed=35438s eta=13850s
+  [1179/1638] t=8 m=80 w=2000 | elapsed=35468s eta=13819s
+  [1180/1638] t=8 m=90 w=2000 | elapsed=35498s eta=13789s
+  [1181/1638] t=8 m=100 w=2000 | elapsed=35528s eta=13759s
+  [1182/1638] t=8 m=150 w=2000 | elapsed=35558s eta=13729s
+  [1183/1638] t=8 m=200 w=2000 | elapsed=35588s eta=13699s
+  [1184/1638] t=8 m=250 w=2000 | elapsed=35618s eta=13669s
+  [1185/1638] t=8 m=300 w=2000 | elapsed=35649s eta=13639s
+  [1186/1638] t=8 m=400 w=2000 | elapsed=35679s eta=13609s
+  [1187/1638] t=8 m=500 w=2000 | elapsed=35709s eta=13579s
+  [1188/1638] t=8 m=700 w=2000 | elapsed=35739s eta=13548s
+  [1189/1638] t=8 m=1000 w=2000 | elapsed=35769s eta=13518s
+  [1190/1638] t=8 m=2000 w=2000 | elapsed=35799s eta=13488s
+  [1191/1638] t=8 m=3000 w=2000 | elapsed=35829s eta=13458s
+  [1192/1638] t=8 m=5000 w=2000 | elapsed=35859s eta=13428s
+  [1193/1638] t=8 m=7000 w=2000 | elapsed=35889s eta=13398s
+  [1194/1638] t=8 m=10000 w=2000 | elapsed=35920s eta=13368s
+  [1195/1638] t=8 m=20000 w=2000 | elapsed=35950s eta=13338s
+  [1196/1638] t=8 m=50000 w=2000 | elapsed=35980s eta=13308s
+  [1197/1638] t=16 m=0 w=2000 | elapsed=36010s eta=13277s
+  [1198/1638] t=16 m=10 w=2000 | elapsed=36040s eta=13247s
+  [1199/1638] t=16 m=20 w=2000 | elapsed=36070s eta=13217s
+  [1200/1638] t=16 m=30 w=2000 | elapsed=36100s eta=13187s
+  [1201/1638] t=16 m=40 w=2000 | elapsed=36130s eta=13157s
+  [1202/1638] t=16 m=50 w=2000 | elapsed=36160s eta=13127s
+  [1203/1638] t=16 m=60 w=2000 | elapsed=36191s eta=13097s
+  [1204/1638] t=16 m=70 w=2000 | elapsed=36221s eta=13067s
+  [1205/1638] t=16 m=80 w=2000 | elapsed=36251s eta=13037s
+  [1206/1638] t=16 m=90 w=2000 | elapsed=36281s eta=13006s
+  [1207/1638] t=16 m=100 w=2000 | elapsed=36311s eta=12976s
+  [1208/1638] t=16 m=150 w=2000 | elapsed=36341s eta=12946s
+  [1209/1638] t=16 m=200 w=2000 | elapsed=36371s eta=12916s
+  [1210/1638] t=16 m=250 w=2000 | elapsed=36401s eta=12886s
+  [1211/1638] t=16 m=300 w=2000 | elapsed=36431s eta=12856s
+  [1212/1638] t=16 m=400 w=2000 | elapsed=36461s eta=12826s
+  [1213/1638] t=16 m=500 w=2000 | elapsed=36492s eta=12796s
+  [1214/1638] t=16 m=700 w=2000 | elapsed=36522s eta=12766s
+  [1215/1638] t=16 m=1000 w=2000 | elapsed=36552s eta=12735s
+  [1216/1638] t=16 m=2000 w=2000 | elapsed=36582s eta=12705s
+  [1217/1638] t=16 m=3000 w=2000 | elapsed=36612s eta=12675s
+  [1218/1638] t=16 m=5000 w=2000 | elapsed=36642s eta=12645s
+  [1219/1638] t=16 m=7000 w=2000 | elapsed=36672s eta=12615s
+  [1220/1638] t=16 m=10000 w=2000 | elapsed=36702s eta=12585s
+  [1221/1638] t=16 m=20000 w=2000 | elapsed=36732s eta=12555s
+  [1222/1638] t=16 m=50000 w=2000 | elapsed=36763s eta=12525s
+  [1223/1638] t=32 m=0 w=2000 | elapsed=36793s eta=12495s
+  [1224/1638] t=32 m=10 w=2000 | elapsed=36823s eta=12465s
+  [1225/1638] t=32 m=20 w=2000 | elapsed=36853s eta=12434s
+  [1226/1638] t=32 m=30 w=2000 | elapsed=36883s eta=12404s
+  [1227/1638] t=32 m=40 w=2000 | elapsed=36913s eta=12374s
+  [1228/1638] t=32 m=50 w=2000 | elapsed=36943s eta=12344s
+  [1229/1638] t=32 m=60 w=2000 | elapsed=36973s eta=12314s
+  [1230/1638] t=32 m=70 w=2000 | elapsed=37003s eta=12284s
+  [1231/1638] t=32 m=80 w=2000 | elapsed=37034s eta=12254s
+  [1232/1638] t=32 m=90 w=2000 | elapsed=37064s eta=12224s
+  [1233/1638] t=32 m=100 w=2000 | elapsed=37094s eta=12194s
+  [1234/1638] t=32 m=150 w=2000 | elapsed=37124s eta=12163s
+  [1235/1638] t=32 m=200 w=2000 | elapsed=37154s eta=12133s
+  [1236/1638] t=32 m=250 w=2000 | elapsed=37184s eta=12103s
+  [1237/1638] t=32 m=300 w=2000 | elapsed=37214s eta=12073s
+  [1238/1638] t=32 m=400 w=2000 | elapsed=37244s eta=12043s
+  [1239/1638] t=32 m=500 w=2000 | elapsed=37274s eta=12013s
+  [1240/1638] t=32 m=700 w=2000 | elapsed=37305s eta=11983s
+  [1241/1638] t=32 m=1000 w=2000 | elapsed=37335s eta=11953s
+  [1242/1638] t=32 m=2000 w=2000 | elapsed=37365s eta=11923s
+  [1243/1638] t=32 m=3000 w=2000 | elapsed=37395s eta=11892s
+  [1244/1638] t=32 m=5000 w=2000 | elapsed=37425s eta=11862s
+  [1245/1638] t=32 m=7000 w=2000 | elapsed=37455s eta=11832s
+  [1246/1638] t=32 m=10000 w=2000 | elapsed=37485s eta=11802s
+  [1247/1638] t=32 m=20000 w=2000 | elapsed=37515s eta=11772s
+  [1248/1638] t=32 m=50000 w=2000 | elapsed=37545s eta=11742s
+--- w=2000ns, rep=2/3 ---
+  [1249/1638] t=8 m=0 w=2000 | elapsed=37576s eta=11712s
+  [1250/1638] t=8 m=10 w=2000 | elapsed=37606s eta=11682s
+  [1251/1638] t=8 m=20 w=2000 | elapsed=37636s eta=11652s
+  [1252/1638] t=8 m=30 w=2000 | elapsed=37666s eta=11621s
+  [1253/1638] t=8 m=40 w=2000 | elapsed=37696s eta=11591s
+  [1254/1638] t=8 m=50 w=2000 | elapsed=37726s eta=11561s
+  [1255/1638] t=8 m=60 w=2000 | elapsed=37756s eta=11531s
+  [1256/1638] t=8 m=70 w=2000 | elapsed=37786s eta=11501s
+  [1257/1638] t=8 m=80 w=2000 | elapsed=37816s eta=11471s
+  [1258/1638] t=8 m=90 w=2000 | elapsed=37847s eta=11441s
+  [1259/1638] t=8 m=100 w=2000 | elapsed=37877s eta=11411s
+  [1260/1638] t=8 m=150 w=2000 | elapsed=37907s eta=11381s
+  [1261/1638] t=8 m=200 w=2000 | elapsed=37937s eta=11350s
+  [1262/1638] t=8 m=250 w=2000 | elapsed=37967s eta=11320s
+  [1263/1638] t=8 m=300 w=2000 | elapsed=37997s eta=11290s
+  [1264/1638] t=8 m=400 w=2000 | elapsed=38027s eta=11260s
+  [1265/1638] t=8 m=500 w=2000 | elapsed=38057s eta=11230s
+  [1266/1638] t=8 m=700 w=2000 | elapsed=38087s eta=11200s
+  [1267/1638] t=8 m=1000 w=2000 | elapsed=38117s eta=11170s
+  [1268/1638] t=8 m=2000 w=2000 | elapsed=38148s eta=11140s
+  [1269/1638] t=8 m=3000 w=2000 | elapsed=38178s eta=11110s
+  [1270/1638] t=8 m=5000 w=2000 | elapsed=38208s eta=11080s
+  [1271/1638] t=8 m=7000 w=2000 | elapsed=38238s eta=11049s
+  [1272/1638] t=8 m=10000 w=2000 | elapsed=38268s eta=11019s
+  [1273/1638] t=8 m=20000 w=2000 | elapsed=38298s eta=10989s
+  [1274/1638] t=8 m=50000 w=2000 | elapsed=38328s eta=10959s
+  [1275/1638] t=16 m=0 w=2000 | elapsed=38358s eta=10929s
+  [1276/1638] t=16 m=10 w=2000 | elapsed=38388s eta=10899s
+  [1277/1638] t=16 m=20 w=2000 | elapsed=38419s eta=10869s
+  [1278/1638] t=16 m=30 w=2000 | elapsed=38449s eta=10839s
+  [1279/1638] t=16 m=40 w=2000 | elapsed=38479s eta=10809s
+  [1280/1638] t=16 m=50 w=2000 | elapsed=38509s eta=10778s
+  [1281/1638] t=16 m=60 w=2000 | elapsed=38539s eta=10748s
+  [1282/1638] t=16 m=70 w=2000 | elapsed=38569s eta=10718s
+  [1283/1638] t=16 m=80 w=2000 | elapsed=38599s eta=10688s
+  [1284/1638] t=16 m=90 w=2000 | elapsed=38629s eta=10658s
+  [1285/1638] t=16 m=100 w=2000 | elapsed=38659s eta=10628s
+  [1286/1638] t=16 m=150 w=2000 | elapsed=38689s eta=10598s
+  [1287/1638] t=16 m=200 w=2000 | elapsed=38720s eta=10568s
+  [1288/1638] t=16 m=250 w=2000 | elapsed=38750s eta=10538s
+  [1289/1638] t=16 m=300 w=2000 | elapsed=38780s eta=10507s
+  [1290/1638] t=16 m=400 w=2000 | elapsed=38810s eta=10477s
+  [1291/1638] t=16 m=500 w=2000 | elapsed=38840s eta=10447s
+  [1292/1638] t=16 m=700 w=2000 | elapsed=38870s eta=10417s
+  [1293/1638] t=16 m=1000 w=2000 | elapsed=38900s eta=10387s
+  [1294/1638] t=16 m=2000 w=2000 | elapsed=38930s eta=10357s
+  [1295/1638] t=16 m=3000 w=2000 | elapsed=38960s eta=10327s
+  [1296/1638] t=16 m=5000 w=2000 | elapsed=38991s eta=10297s
+  [1297/1638] t=16 m=7000 w=2000 | elapsed=39021s eta=10267s
+  [1298/1638] t=16 m=10000 w=2000 | elapsed=39051s eta=10236s
+  [1299/1638] t=16 m=20000 w=2000 | elapsed=39081s eta=10206s
+  [1300/1638] t=16 m=50000 w=2000 | elapsed=39111s eta=10176s
+  [1301/1638] t=32 m=0 w=2000 | elapsed=39141s eta=10146s
+  [1302/1638] t=32 m=10 w=2000 | elapsed=39171s eta=10116s
+  [1303/1638] t=32 m=20 w=2000 | elapsed=39201s eta=10086s
+  [1304/1638] t=32 m=30 w=2000 | elapsed=39231s eta=10056s
+  [1305/1638] t=32 m=40 w=2000 | elapsed=39262s eta=10026s
+  [1306/1638] t=32 m=50 w=2000 | elapsed=39292s eta=9996s
+  [1307/1638] t=32 m=60 w=2000 | elapsed=39322s eta=9965s
+  [1308/1638] t=32 m=70 w=2000 | elapsed=39352s eta=9935s
+  [1309/1638] t=32 m=80 w=2000 | elapsed=39382s eta=9905s
+  [1310/1638] t=32 m=90 w=2000 | elapsed=39412s eta=9875s
+  [1311/1638] t=32 m=100 w=2000 | elapsed=39442s eta=9845s
+  [1312/1638] t=32 m=150 w=2000 | elapsed=39472s eta=9815s
+  [1313/1638] t=32 m=200 w=2000 | elapsed=39502s eta=9785s
+  [1314/1638] t=32 m=250 w=2000 | elapsed=39533s eta=9755s
+  [1315/1638] t=32 m=300 w=2000 | elapsed=39563s eta=9725s
+  [1316/1638] t=32 m=400 w=2000 | elapsed=39593s eta=9695s
+  [1317/1638] t=32 m=500 w=2000 | elapsed=39623s eta=9664s
+  [1318/1638] t=32 m=700 w=2000 | elapsed=39653s eta=9634s
+  [1319/1638] t=32 m=1000 w=2000 | elapsed=39683s eta=9604s
+  [1320/1638] t=32 m=2000 w=2000 | elapsed=39713s eta=9574s
+  [1321/1638] t=32 m=3000 w=2000 | elapsed=39743s eta=9544s
+  [1322/1638] t=32 m=5000 w=2000 | elapsed=39773s eta=9514s
+  [1323/1638] t=32 m=7000 w=2000 | elapsed=39804s eta=9484s
+  [1324/1638] t=32 m=10000 w=2000 | elapsed=39834s eta=9454s
+  [1325/1638] t=32 m=20000 w=2000 | elapsed=39864s eta=9424s
+  [1326/1638] t=32 m=50000 w=2000 | elapsed=39894s eta=9393s
+--- w=2000ns, rep=3/3 ---
+  [1327/1638] t=8 m=0 w=2000 | elapsed=39924s eta=9363s
+  [1328/1638] t=8 m=10 w=2000 | elapsed=39954s eta=9333s
+  [1329/1638] t=8 m=20 w=2000 | elapsed=39984s eta=9303s
+  [1330/1638] t=8 m=30 w=2000 | elapsed=40014s eta=9273s
+  [1331/1638] t=8 m=40 w=2000 | elapsed=40044s eta=9243s
+  [1332/1638] t=8 m=50 w=2000 | elapsed=40075s eta=9213s
+  [1333/1638] t=8 m=60 w=2000 | elapsed=40105s eta=9183s
+  [1334/1638] t=8 m=70 w=2000 | elapsed=40135s eta=9153s
+  [1335/1638] t=8 m=80 w=2000 | elapsed=40165s eta=9122s
+  [1336/1638] t=8 m=90 w=2000 | elapsed=40195s eta=9092s
+  [1337/1638] t=8 m=100 w=2000 | elapsed=40225s eta=9062s
+  [1338/1638] t=8 m=150 w=2000 | elapsed=40255s eta=9032s
+  [1339/1638] t=8 m=200 w=2000 | elapsed=40285s eta=9002s
+  [1340/1638] t=8 m=250 w=2000 | elapsed=40315s eta=8972s
+  [1341/1638] t=8 m=300 w=2000 | elapsed=40345s eta=8942s
+  [1342/1638] t=8 m=400 w=2000 | elapsed=40376s eta=8912s
+  [1343/1638] t=8 m=500 w=2000 | elapsed=40406s eta=8882s
+  [1344/1638] t=8 m=700 w=2000 | elapsed=40436s eta=8851s
+  [1345/1638] t=8 m=1000 w=2000 | elapsed=40466s eta=8821s
+  [1346/1638] t=8 m=2000 w=2000 | elapsed=40496s eta=8791s
+  [1347/1638] t=8 m=3000 w=2000 | elapsed=40526s eta=8761s
+  [1348/1638] t=8 m=5000 w=2000 | elapsed=40556s eta=8731s
+  [1349/1638] t=8 m=7000 w=2000 | elapsed=40586s eta=8701s
+  [1350/1638] t=8 m=10000 w=2000 | elapsed=40616s eta=8671s
+  [1351/1638] t=8 m=20000 w=2000 | elapsed=40647s eta=8641s
+  [1352/1638] t=8 m=50000 w=2000 | elapsed=40677s eta=8611s
+  [1353/1638] t=16 m=0 w=2000 | elapsed=40707s eta=8580s
+  [1354/1638] t=16 m=10 w=2000 | elapsed=40737s eta=8550s
+  [1355/1638] t=16 m=20 w=2000 | elapsed=40767s eta=8520s
+  [1356/1638] t=16 m=30 w=2000 | elapsed=40797s eta=8490s
+  [1357/1638] t=16 m=40 w=2000 | elapsed=40827s eta=8460s
+  [1358/1638] t=16 m=50 w=2000 | elapsed=40857s eta=8430s
+  [1359/1638] t=16 m=60 w=2000 | elapsed=40887s eta=8400s
+  [1360/1638] t=16 m=70 w=2000 | elapsed=40918s eta=8370s
+  [1361/1638] t=16 m=80 w=2000 | elapsed=40948s eta=8340s
+  [1362/1638] t=16 m=90 w=2000 | elapsed=40978s eta=8310s
+  [1363/1638] t=16 m=100 w=2000 | elapsed=41008s eta=8279s
+  [1364/1638] t=16 m=150 w=2000 | elapsed=41038s eta=8249s
+  [1365/1638] t=16 m=200 w=2000 | elapsed=41068s eta=8219s
+  [1366/1638] t=16 m=250 w=2000 | elapsed=41098s eta=8189s
+  [1367/1638] t=16 m=300 w=2000 | elapsed=41128s eta=8159s
+  [1368/1638] t=16 m=400 w=2000 | elapsed=41158s eta=8129s
+  [1369/1638] t=16 m=500 w=2000 | elapsed=41188s eta=8099s
+  [1370/1638] t=16 m=700 w=2000 | elapsed=41219s eta=8069s
+  [1371/1638] t=16 m=1000 w=2000 | elapsed=41249s eta=8039s
+  [1372/1638] t=16 m=2000 w=2000 | elapsed=41279s eta=8008s
+  [1373/1638] t=16 m=3000 w=2000 | elapsed=41309s eta=7978s
+  [1374/1638] t=16 m=5000 w=2000 | elapsed=41339s eta=7948s
+  [1375/1638] t=16 m=7000 w=2000 | elapsed=41369s eta=7918s
+  [1376/1638] t=16 m=10000 w=2000 | elapsed=41399s eta=7888s
+  [1377/1638] t=16 m=20000 w=2000 | elapsed=41429s eta=7858s
+  [1378/1638] t=16 m=50000 w=2000 | elapsed=41459s eta=7828s
+  [1379/1638] t=32 m=0 w=2000 | elapsed=41490s eta=7798s
+  [1380/1638] t=32 m=10 w=2000 | elapsed=41520s eta=7768s
+  [1381/1638] t=32 m=20 w=2000 | elapsed=41550s eta=7737s
+  [1382/1638] t=32 m=30 w=2000 | elapsed=41580s eta=7707s
+  [1383/1638] t=32 m=40 w=2000 | elapsed=41610s eta=7677s
+  [1384/1638] t=32 m=50 w=2000 | elapsed=41640s eta=7647s
+  [1385/1638] t=32 m=60 w=2000 | elapsed=41670s eta=7617s
+  [1386/1638] t=32 m=70 w=2000 | elapsed=41700s eta=7587s
+  [1387/1638] t=32 m=80 w=2000 | elapsed=41730s eta=7557s
+  [1388/1638] t=32 m=90 w=2000 | elapsed=41761s eta=7527s
+  [1389/1638] t=32 m=100 w=2000 | elapsed=41791s eta=7497s
+  [1390/1638] t=32 m=150 w=2000 | elapsed=41821s eta=7466s
+  [1391/1638] t=32 m=200 w=2000 | elapsed=41851s eta=7436s
+  [1392/1638] t=32 m=250 w=2000 | elapsed=41881s eta=7406s
+  [1393/1638] t=32 m=300 w=2000 | elapsed=41911s eta=7376s
+  [1394/1638] t=32 m=400 w=2000 | elapsed=41941s eta=7346s
+  [1395/1638] t=32 m=500 w=2000 | elapsed=41971s eta=7316s
+  [1396/1638] t=32 m=700 w=2000 | elapsed=42001s eta=7286s
+  [1397/1638] t=32 m=1000 w=2000 | elapsed=42031s eta=7256s
+  [1398/1638] t=32 m=2000 w=2000 | elapsed=42062s eta=7226s
+  [1399/1638] t=32 m=3000 w=2000 | elapsed=42092s eta=7195s
+  [1400/1638] t=32 m=5000 w=2000 | elapsed=42122s eta=7165s
+  [1401/1638] t=32 m=7000 w=2000 | elapsed=42152s eta=7135s
+  [1402/1638] t=32 m=10000 w=2000 | elapsed=42182s eta=7105s
+  [1403/1638] t=32 m=20000 w=2000 | elapsed=42212s eta=7075s
+  [1404/1638] t=32 m=50000 w=2000 | elapsed=42242s eta=7045s
+--- w=5000ns, rep=1/3 ---
+  [1405/1638] t=8 m=0 w=5000 | elapsed=42272s eta=7015s
+  [1406/1638] t=8 m=10 w=5000 | elapsed=42303s eta=6985s
+  [1407/1638] t=8 m=20 w=5000 | elapsed=42333s eta=6955s
+  [1408/1638] t=8 m=30 w=5000 | elapsed=42363s eta=6925s
+  [1409/1638] t=8 m=40 w=5000 | elapsed=42393s eta=6894s
+  [1410/1638] t=8 m=50 w=5000 | elapsed=42423s eta=6864s
+  [1411/1638] t=8 m=60 w=5000 | elapsed=42453s eta=6834s
+  [1412/1638] t=8 m=70 w=5000 | elapsed=42483s eta=6804s
+  [1413/1638] t=8 m=80 w=5000 | elapsed=42513s eta=6774s
+  [1414/1638] t=8 m=90 w=5000 | elapsed=42543s eta=6744s
+  [1415/1638] t=8 m=100 w=5000 | elapsed=42573s eta=6714s
+  [1416/1638] t=8 m=150 w=5000 | elapsed=42604s eta=6684s
+  [1417/1638] t=8 m=200 w=5000 | elapsed=42634s eta=6654s
+  [1418/1638] t=8 m=250 w=5000 | elapsed=42664s eta=6623s
+  [1419/1638] t=8 m=300 w=5000 | elapsed=42694s eta=6593s
+  [1420/1638] t=8 m=400 w=5000 | elapsed=42724s eta=6563s
+  [1421/1638] t=8 m=500 w=5000 | elapsed=42754s eta=6533s
+  [1422/1638] t=8 m=700 w=5000 | elapsed=42784s eta=6503s
+  [1423/1638] t=8 m=1000 w=5000 | elapsed=42814s eta=6473s
+  [1424/1638] t=8 m=2000 w=5000 | elapsed=42844s eta=6443s
+  [1425/1638] t=8 m=3000 w=5000 | elapsed=42875s eta=6413s
+  [1426/1638] t=8 m=5000 w=5000 | elapsed=42905s eta=6383s
+  [1427/1638] t=8 m=7000 w=5000 | elapsed=42935s eta=6352s
+  [1428/1638] t=8 m=10000 w=5000 | elapsed=42965s eta=6322s
+  [1429/1638] t=8 m=20000 w=5000 | elapsed=42995s eta=6292s
+  [1430/1638] t=8 m=50000 w=5000 | elapsed=43025s eta=6262s
+  [1431/1638] t=16 m=0 w=5000 | elapsed=43055s eta=6232s
+  [1432/1638] t=16 m=10 w=5000 | elapsed=43085s eta=6202s
+  [1433/1638] t=16 m=20 w=5000 | elapsed=43115s eta=6172s
+  [1434/1638] t=16 m=30 w=5000 | elapsed=43145s eta=6142s
+  [1435/1638] t=16 m=40 w=5000 | elapsed=43176s eta=6112s
+  [1436/1638] t=16 m=50 w=5000 | elapsed=43206s eta=6081s
+  [1437/1638] t=16 m=60 w=5000 | elapsed=43236s eta=6051s
+  [1438/1638] t=16 m=70 w=5000 | elapsed=43266s eta=6021s
+  [1439/1638] t=16 m=80 w=5000 | elapsed=43296s eta=5991s
+  [1440/1638] t=16 m=90 w=5000 | elapsed=43326s eta=5961s
+  [1441/1638] t=16 m=100 w=5000 | elapsed=43356s eta=5931s
+  [1442/1638] t=16 m=150 w=5000 | elapsed=43386s eta=5901s
+  [1443/1638] t=16 m=200 w=5000 | elapsed=43416s eta=5871s
+  [1444/1638] t=16 m=250 w=5000 | elapsed=43447s eta=5841s
+  [1445/1638] t=16 m=300 w=5000 | elapsed=43477s eta=5810s
+  [1446/1638] t=16 m=400 w=5000 | elapsed=43507s eta=5780s
+  [1447/1638] t=16 m=500 w=5000 | elapsed=43537s eta=5750s
+  [1448/1638] t=16 m=700 w=5000 | elapsed=43567s eta=5720s
+  [1449/1638] t=16 m=1000 w=5000 | elapsed=43597s eta=5690s
+  [1450/1638] t=16 m=2000 w=5000 | elapsed=43627s eta=5660s
+  [1451/1638] t=16 m=3000 w=5000 | elapsed=43657s eta=5630s
+  [1452/1638] t=16 m=5000 w=5000 | elapsed=43687s eta=5600s
+  [1453/1638] t=16 m=7000 w=5000 | elapsed=43718s eta=5570s
+  [1454/1638] t=16 m=10000 w=5000 | elapsed=43748s eta=5540s
+  [1455/1638] t=16 m=20000 w=5000 | elapsed=43778s eta=5509s
+  [1456/1638] t=16 m=50000 w=5000 | elapsed=43808s eta=5479s
+  [1457/1638] t=32 m=0 w=5000 | elapsed=43838s eta=5449s
+  [1458/1638] t=32 m=10 w=5000 | elapsed=43868s eta=5419s
+  [1459/1638] t=32 m=20 w=5000 | elapsed=43898s eta=5389s
+  [1460/1638] t=32 m=30 w=5000 | elapsed=43928s eta=5359s
+  [1461/1638] t=32 m=40 w=5000 | elapsed=43958s eta=5329s
+  [1462/1638] t=32 m=50 w=5000 | elapsed=43988s eta=5299s
+  [1463/1638] t=32 m=60 w=5000 | elapsed=44019s eta=5269s
+  [1464/1638] t=32 m=70 w=5000 | elapsed=44049s eta=5238s
+  [1465/1638] t=32 m=80 w=5000 | elapsed=44079s eta=5208s
+  [1466/1638] t=32 m=90 w=5000 | elapsed=44109s eta=5178s
+  [1467/1638] t=32 m=100 w=5000 | elapsed=44139s eta=5148s
+  [1468/1638] t=32 m=150 w=5000 | elapsed=44169s eta=5118s
+  [1469/1638] t=32 m=200 w=5000 | elapsed=44199s eta=5088s
+  [1470/1638] t=32 m=250 w=5000 | elapsed=44229s eta=5058s
+  [1471/1638] t=32 m=300 w=5000 | elapsed=44259s eta=5028s
+  [1472/1638] t=32 m=400 w=5000 | elapsed=44290s eta=4998s
+  [1473/1638] t=32 m=500 w=5000 | elapsed=44320s eta=4967s
+  [1474/1638] t=32 m=700 w=5000 | elapsed=44350s eta=4937s
+  [1475/1638] t=32 m=1000 w=5000 | elapsed=44380s eta=4907s
+  [1476/1638] t=32 m=2000 w=5000 | elapsed=44410s eta=4877s
+  [1477/1638] t=32 m=3000 w=5000 | elapsed=44440s eta=4847s
+  [1478/1638] t=32 m=5000 w=5000 | elapsed=44470s eta=4817s
+  [1479/1638] t=32 m=7000 w=5000 | elapsed=44500s eta=4787s
+  [1480/1638] t=32 m=10000 w=5000 | elapsed=44530s eta=4757s
+  [1481/1638] t=32 m=20000 w=5000 | elapsed=44561s eta=4727s
+  [1482/1638] t=32 m=50000 w=5000 | elapsed=44591s eta=4696s
+--- w=5000ns, rep=2/3 ---
+  [1483/1638] t=8 m=0 w=5000 | elapsed=44621s eta=4666s
+  [1484/1638] t=8 m=10 w=5000 | elapsed=44651s eta=4636s
+  [1485/1638] t=8 m=20 w=5000 | elapsed=44681s eta=4606s
+  [1486/1638] t=8 m=30 w=5000 | elapsed=44711s eta=4576s
+  [1487/1638] t=8 m=40 w=5000 | elapsed=44741s eta=4546s
+  [1488/1638] t=8 m=50 w=5000 | elapsed=44771s eta=4516s
+  [1489/1638] t=8 m=60 w=5000 | elapsed=44801s eta=4486s
+  [1490/1638] t=8 m=70 w=5000 | elapsed=44832s eta=4456s
+  [1491/1638] t=8 m=80 w=5000 | elapsed=44862s eta=4425s
+  [1492/1638] t=8 m=90 w=5000 | elapsed=44892s eta=4395s
+  [1493/1638] t=8 m=100 w=5000 | elapsed=44922s eta=4365s
+  [1494/1638] t=8 m=150 w=5000 | elapsed=44952s eta=4335s
+  [1495/1638] t=8 m=200 w=5000 | elapsed=44982s eta=4305s
+  [1496/1638] t=8 m=250 w=5000 | elapsed=45012s eta=4275s
+  [1497/1638] t=8 m=300 w=5000 | elapsed=45042s eta=4245s
+  [1498/1638] t=8 m=400 w=5000 | elapsed=45072s eta=4215s
+  [1499/1638] t=8 m=500 w=5000 | elapsed=45102s eta=4185s
+  [1500/1638] t=8 m=700 w=5000 | elapsed=45133s eta=4155s
+  [1501/1638] t=8 m=1000 w=5000 | elapsed=45163s eta=4124s
+  [1502/1638] t=8 m=2000 w=5000 | elapsed=45193s eta=4094s
+  [1503/1638] t=8 m=3000 w=5000 | elapsed=45223s eta=4064s
+  [1504/1638] t=8 m=5000 w=5000 | elapsed=45253s eta=4034s
+  [1505/1638] t=8 m=7000 w=5000 | elapsed=45283s eta=4004s
+  [1506/1638] t=8 m=10000 w=5000 | elapsed=45313s eta=3974s
+  [1507/1638] t=8 m=20000 w=5000 | elapsed=45343s eta=3944s
+  [1508/1638] t=8 m=50000 w=5000 | elapsed=45373s eta=3914s
+  [1509/1638] t=16 m=0 w=5000 | elapsed=45404s eta=3884s
+  [1510/1638] t=16 m=10 w=5000 | elapsed=45434s eta=3853s
+  [1511/1638] t=16 m=20 w=5000 | elapsed=45464s eta=3823s
+  [1512/1638] t=16 m=30 w=5000 | elapsed=45494s eta=3793s
+  [1513/1638] t=16 m=40 w=5000 | elapsed=45524s eta=3763s
+  [1514/1638] t=16 m=50 w=5000 | elapsed=45554s eta=3733s
+  [1515/1638] t=16 m=60 w=5000 | elapsed=45584s eta=3703s
+  [1516/1638] t=16 m=70 w=5000 | elapsed=45614s eta=3673s
+  [1517/1638] t=16 m=80 w=5000 | elapsed=45644s eta=3643s
+  [1518/1638] t=16 m=90 w=5000 | elapsed=45675s eta=3613s
+  [1519/1638] t=16 m=100 w=5000 | elapsed=45705s eta=3582s
+  [1520/1638] t=16 m=150 w=5000 | elapsed=45735s eta=3552s
+  [1521/1638] t=16 m=200 w=5000 | elapsed=45765s eta=3522s
+  [1522/1638] t=16 m=250 w=5000 | elapsed=45795s eta=3492s
+  [1523/1638] t=16 m=300 w=5000 | elapsed=45825s eta=3462s
+  [1524/1638] t=16 m=400 w=5000 | elapsed=45855s eta=3432s
+  [1525/1638] t=16 m=500 w=5000 | elapsed=45885s eta=3402s
+  [1526/1638] t=16 m=700 w=5000 | elapsed=45915s eta=3372s
+  [1527/1638] t=16 m=1000 w=5000 | elapsed=45945s eta=3342s
+  [1528/1638] t=16 m=2000 w=5000 | elapsed=45976s eta=3311s
+  [1529/1638] t=16 m=3000 w=5000 | elapsed=46006s eta=3281s
+  [1530/1638] t=16 m=5000 w=5000 | elapsed=46036s eta=3251s
+  [1531/1638] t=16 m=7000 w=5000 | elapsed=46066s eta=3221s
+  [1532/1638] t=16 m=10000 w=5000 | elapsed=46096s eta=3191s
+  [1533/1638] t=16 m=20000 w=5000 | elapsed=46126s eta=3161s
+  [1534/1638] t=16 m=50000 w=5000 | elapsed=46156s eta=3131s
+  [1535/1638] t=32 m=0 w=5000 | elapsed=46186s eta=3101s
+  [1536/1638] t=32 m=10 w=5000 | elapsed=46216s eta=3071s
+  [1537/1638] t=32 m=20 w=5000 | elapsed=46247s eta=3040s
+  [1538/1638] t=32 m=30 w=5000 | elapsed=46277s eta=3010s
+  [1539/1638] t=32 m=40 w=5000 | elapsed=46307s eta=2980s
+  [1540/1638] t=32 m=50 w=5000 | elapsed=46337s eta=2950s
+  [1541/1638] t=32 m=60 w=5000 | elapsed=46367s eta=2920s
+  [1542/1638] t=32 m=70 w=5000 | elapsed=46397s eta=2890s
+  [1543/1638] t=32 m=80 w=5000 | elapsed=46427s eta=2860s
+  [1544/1638] t=32 m=90 w=5000 | elapsed=46457s eta=2830s
+  [1545/1638] t=32 m=100 w=5000 | elapsed=46487s eta=2800s
+  [1546/1638] t=32 m=150 w=5000 | elapsed=46518s eta=2770s
+  [1547/1638] t=32 m=200 w=5000 | elapsed=46548s eta=2739s
+  [1548/1638] t=32 m=250 w=5000 | elapsed=46578s eta=2709s
+  [1549/1638] t=32 m=300 w=5000 | elapsed=46608s eta=2679s
+  [1550/1638] t=32 m=400 w=5000 | elapsed=46638s eta=2649s
+  [1551/1638] t=32 m=500 w=5000 | elapsed=46668s eta=2619s
+  [1552/1638] t=32 m=700 w=5000 | elapsed=46698s eta=2589s
+  [1553/1638] t=32 m=1000 w=5000 | elapsed=46728s eta=2559s
+  [1554/1638] t=32 m=2000 w=5000 | elapsed=46758s eta=2529s
+  [1555/1638] t=32 m=3000 w=5000 | elapsed=46788s eta=2498s
+  [1556/1638] t=32 m=5000 w=5000 | elapsed=46819s eta=2468s
+  [1557/1638] t=32 m=7000 w=5000 | elapsed=46849s eta=2438s
+  [1558/1638] t=32 m=10000 w=5000 | elapsed=46879s eta=2408s
+  [1559/1638] t=32 m=20000 w=5000 | elapsed=46909s eta=2378s
+  [1560/1638] t=32 m=50000 w=5000 | elapsed=46939s eta=2348s
+--- w=5000ns, rep=3/3 ---
+  [1561/1638] t=8 m=0 w=5000 | elapsed=46969s eta=2318s
+  [1562/1638] t=8 m=10 w=5000 | elapsed=46999s eta=2288s
+  [1563/1638] t=8 m=20 w=5000 | elapsed=47029s eta=2258s
+  [1564/1638] t=8 m=30 w=5000 | elapsed=47059s eta=2228s
+  [1565/1638] t=8 m=40 w=5000 | elapsed=47090s eta=2197s
+  [1566/1638] t=8 m=50 w=5000 | elapsed=47120s eta=2167s
+  [1567/1638] t=8 m=60 w=5000 | elapsed=47150s eta=2137s
+  [1568/1638] t=8 m=70 w=5000 | elapsed=47180s eta=2107s
+  [1569/1638] t=8 m=80 w=5000 | elapsed=47210s eta=2077s
+  [1570/1638] t=8 m=90 w=5000 | elapsed=47240s eta=2047s
+  [1571/1638] t=8 m=100 w=5000 | elapsed=47270s eta=2017s
+  [1572/1638] t=8 m=150 w=5000 | elapsed=47300s eta=1987s
+  [1573/1638] t=8 m=200 w=5000 | elapsed=47330s eta=1957s
+  [1574/1638] t=8 m=250 w=5000 | elapsed=47361s eta=1926s
+  [1575/1638] t=8 m=300 w=5000 | elapsed=47391s eta=1896s
+  [1576/1638] t=8 m=400 w=5000 | elapsed=47421s eta=1866s
+  [1577/1638] t=8 m=500 w=5000 | elapsed=47451s eta=1836s
+  [1578/1638] t=8 m=700 w=5000 | elapsed=47481s eta=1806s
+  [1579/1638] t=8 m=1000 w=5000 | elapsed=47511s eta=1776s
+  [1580/1638] t=8 m=2000 w=5000 | elapsed=47541s eta=1746s
+  [1581/1638] t=8 m=3000 w=5000 | elapsed=47571s eta=1716s
+  [1582/1638] t=8 m=5000 w=5000 | elapsed=47601s eta=1686s
+  [1583/1638] t=8 m=7000 w=5000 | elapsed=47631s eta=1655s
+  [1584/1638] t=8 m=10000 w=5000 | elapsed=47662s eta=1625s
+  [1585/1638] t=8 m=20000 w=5000 | elapsed=47692s eta=1595s
+  [1586/1638] t=8 m=50000 w=5000 | elapsed=47722s eta=1565s
+  [1587/1638] t=16 m=0 w=5000 | elapsed=47752s eta=1535s
+  [1588/1638] t=16 m=10 w=5000 | elapsed=47782s eta=1505s
+  [1589/1638] t=16 m=20 w=5000 | elapsed=47812s eta=1475s
+  [1590/1638] t=16 m=30 w=5000 | elapsed=47842s eta=1445s
+  [1591/1638] t=16 m=40 w=5000 | elapsed=47872s eta=1415s
+  [1592/1638] t=16 m=50 w=5000 | elapsed=47902s eta=1384s
+  [1593/1638] t=16 m=60 w=5000 | elapsed=47933s eta=1354s
+  [1594/1638] t=16 m=70 w=5000 | elapsed=47963s eta=1324s
+  [1595/1638] t=16 m=80 w=5000 | elapsed=47993s eta=1294s
+  [1596/1638] t=16 m=90 w=5000 | elapsed=48023s eta=1264s
+  [1597/1638] t=16 m=100 w=5000 | elapsed=48053s eta=1234s
+  [1598/1638] t=16 m=150 w=5000 | elapsed=48083s eta=1204s
+  [1599/1638] t=16 m=200 w=5000 | elapsed=48113s eta=1174s
+  [1600/1638] t=16 m=250 w=5000 | elapsed=48143s eta=1144s
+  [1601/1638] t=16 m=300 w=5000 | elapsed=48173s eta=1114s
+  [1602/1638] t=16 m=400 w=5000 | elapsed=48204s eta=1083s
+  [1603/1638] t=16 m=500 w=5000 | elapsed=48234s eta=1053s
+  [1604/1638] t=16 m=700 w=5000 | elapsed=48264s eta=1023s
+  [1605/1638] t=16 m=1000 w=5000 | elapsed=48294s eta=993s
+  [1606/1638] t=16 m=2000 w=5000 | elapsed=48324s eta=963s
+  [1607/1638] t=16 m=3000 w=5000 | elapsed=48354s eta=933s
+  [1608/1638] t=16 m=5000 w=5000 | elapsed=48384s eta=903s
+  [1609/1638] t=16 m=7000 w=5000 | elapsed=48414s eta=873s
+  [1610/1638] t=16 m=10000 w=5000 | elapsed=48444s eta=843s
+  [1611/1638] t=16 m=20000 w=5000 | elapsed=48475s eta=812s
+  [1612/1638] t=16 m=50000 w=5000 | elapsed=48505s eta=782s
+  [1613/1638] t=32 m=0 w=5000 | elapsed=48535s eta=752s
+  [1614/1638] t=32 m=10 w=5000 | elapsed=48565s eta=722s
+  [1615/1638] t=32 m=20 w=5000 | elapsed=48595s eta=692s
+  [1616/1638] t=32 m=30 w=5000 | elapsed=48625s eta=662s
+  [1617/1638] t=32 m=40 w=5000 | elapsed=48655s eta=632s
+  [1618/1638] t=32 m=50 w=5000 | elapsed=48685s eta=602s
+  [1619/1638] t=32 m=60 w=5000 | elapsed=48715s eta=572s
+  [1620/1638] t=32 m=70 w=5000 | elapsed=48745s eta=541s
+  [1621/1638] t=32 m=80 w=5000 | elapsed=48776s eta=511s
+  [1622/1638] t=32 m=90 w=5000 | elapsed=48806s eta=481s
+  [1623/1638] t=32 m=100 w=5000 | elapsed=48836s eta=451s
+  [1624/1638] t=32 m=150 w=5000 | elapsed=48866s eta=421s
+  [1625/1638] t=32 m=200 w=5000 | elapsed=48896s eta=391s
+  [1626/1638] t=32 m=250 w=5000 | elapsed=48926s eta=361s
+  [1627/1638] t=32 m=300 w=5000 | elapsed=48956s eta=331s
+  [1628/1638] t=32 m=400 w=5000 | elapsed=48986s eta=301s
+  [1629/1638] t=32 m=500 w=5000 | elapsed=49016s eta=270s
+  [1630/1638] t=32 m=700 w=5000 | elapsed=49047s eta=240s
+  [1631/1638] t=32 m=1000 w=5000 | elapsed=49077s eta=210s
+  [1632/1638] t=32 m=2000 w=5000 | elapsed=49107s eta=180s
+  [1633/1638] t=32 m=3000 w=5000 | elapsed=49137s eta=150s
+  [1634/1638] t=32 m=5000 w=5000 | elapsed=49167s eta=120s
+  [1635/1638] t=32 m=7000 w=5000 | elapsed=49197s eta=90s
+  [1636/1638] t=32 m=10000 w=5000 | elapsed=49227s eta=60s
+  [1637/1638] t=32 m=20000 w=5000 | elapsed=49257s eta=30s
+  [1638/1638] t=32 m=50000 w=5000 | elapsed=49287s eta=0s
 
-=== Done. Results in result/emerald_c6620/ ===
-=== CPU Setup ===
-Setting cpu: 0
-Setting cpu: 1
-Setting cpu: 2
-Setting cpu: 3
-Setting cpu: 4
-Setting cpu: 5
-Setting cpu: 6
-Setting cpu: 7
-Setting cpu: 8
-Setting cpu: 9
-Setting cpu: 10
-Setting cpu: 11
-Setting cpu: 12
-Setting cpu: 13
-Setting cpu: 14
-Setting cpu: 15
-Setting cpu: 16
-Setting cpu: 17
-Setting cpu: 18
-Setting cpu: 19
-Setting cpu: 20
-Setting cpu: 21
-Setting cpu: 22
-Setting cpu: 23
-Setting cpu: 24
-Setting cpu: 25
-Setting cpu: 26
-Setting cpu: 27
-Setting cpu: 28
-Setting cpu: 29
-Setting cpu: 30
-Setting cpu: 31
-Setting cpu: 32
-Setting cpu: 33
-Setting cpu: 34
-Setting cpu: 35
-Setting cpu: 36
-Setting cpu: 37
-Setting cpu: 38
-Setting cpu: 39
-Setting cpu: 40
-Setting cpu: 41
-Setting cpu: 42
-Setting cpu: 43
-Setting cpu: 44
-Setting cpu: 45
-Setting cpu: 46
-Setting cpu: 47
-Setting cpu: 48
-Setting cpu: 49
-Setting cpu: 50
-Setting cpu: 51
-Setting cpu: 52
-Setting cpu: 53
-Setting cpu: 54
-Setting cpu: 55
-  governor: performance
-  Intel turbo: disabled
-
-=== Experiment (Server: emerald_c6620) ===
-Reps: 3, Threads: 4 8, Multipliers: 250 500 1000 5000 10000, Work(ns): 0 500
-Total runs: 60 (est. ~30 min)
-
---- w=0ns, rep=1/3 ---
-  [1/60] t=4 m=250 w=0 | elapsed=30s eta=1770s
-  [2/60] t=4 m=500 w=0 | elapsed=60s eta=1740s
-  [3/60] t=4 m=1000 w=0 | elapsed=90s eta=1710s
-  [4/60] t=4 m=5000 w=0 | elapsed=121s eta=1694s
-  [5/60] t=4 m=10000 w=0 | elapsed=151s eta=1661s
-  [6/60] t=8 m=250 w=0 | elapsed=181s eta=1629s
-  [7/60] t=8 m=500 w=0 | elapsed=211s eta=1597s
-  [8/60] t=8 m=1000 w=0 | elapsed=241s eta=1566s
-  [9/60] t=8 m=5000 w=0 | elapsed=271s eta=1535s
-  [10/60] t=8 m=10000 w=0 | elapsed=301s eta=1505s
---- w=0ns, rep=2/3 ---
-  [11/60] t=4 m=250 w=0 | elapsed=331s eta=1474s
-  [12/60] t=4 m=500 w=0 | elapsed=361s eta=1444s
-  [13/60] t=4 m=1000 w=0 | elapsed=392s eta=1417s
-  [14/60] t=4 m=5000 w=0 | elapsed=422s eta=1386s
-  [15/60] t=4 m=10000 w=0 | elapsed=452s eta=1356s
-=== CPU Setup ===
-Setting cpu: 0
-Setting cpu: 1
-Setting cpu: 2
-Setting cpu: 3
-Setting cpu: 4
-Setting cpu: 5
-Setting cpu: 6
-Setting cpu: 7
-Setting cpu: 8
-Setting cpu: 9
-Setting cpu: 10
-Setting cpu: 11
-Setting cpu: 12
-Setting cpu: 13
-Setting cpu: 14
-Setting cpu: 15
-Setting cpu: 16
-Setting cpu: 17
-Setting cpu: 18
-Setting cpu: 19
-Setting cpu: 20
-Setting cpu: 21
-Setting cpu: 22
-Setting cpu: 23
-Setting cpu: 24
-Setting cpu: 25
-Setting cpu: 26
-Setting cpu: 27
-Setting cpu: 28
-Setting cpu: 29
-Setting cpu: 30
-Setting cpu: 31
-Setting cpu: 32
-Setting cpu: 33
-Setting cpu: 34
-Setting cpu: 35
-Setting cpu: 36
-Setting cpu: 37
-Setting cpu: 38
-Setting cpu: 39
-Setting cpu: 40
-Setting cpu: 41
-Setting cpu: 42
-Setting cpu: 43
-Setting cpu: 44
-Setting cpu: 45
-Setting cpu: 46
-Setting cpu: 47
-Setting cpu: 48
-Setting cpu: 49
-Setting cpu: 50
-Setting cpu: 51
-Setting cpu: 52
-Setting cpu: 53
-Setting cpu: 54
-Setting cpu: 55
-  governor: performance
-  Intel turbo: disabled
-
-=== Experiment (Server: emerald_c6620) ===
-Reps: 3, Threads: 4 8, Multipliers: 250 500 1000 5000 10000, Work(ns): 0 500
-Total runs: 60 (est. ~30 min)
-
---- w=0ns, rep=1/3 ---
-  [1/60] t=4 m=250 w=0 | elapsed=30s eta=1770s
-  [2/60] t=4 m=500 w=0 | elapsed=60s eta=1740s
-  [3/60] t=4 m=1000 w=0 | elapsed=91s eta=1729s
-  [4/60] t=4 m=5000 w=0 | elapsed=121s eta=1694s
-  [5/60] t=4 m=10000 w=0 | elapsed=151s eta=1661s
-  [6/60] t=8 m=250 w=0 | elapsed=181s eta=1629s
-  [7/60] t=8 m=500 w=0 | elapsed=211s eta=1597s
-  [8/60] t=8 m=1000 w=0 | elapsed=241s eta=1566s
-  [9/60] t=8 m=5000 w=0 | elapsed=271s eta=1535s
-  [10/60] t=8 m=10000 w=0 | elapsed=301s eta=1505s
---- w=0ns, rep=2/3 ---
-  [11/60] t=4 m=250 w=0 | elapsed=331s eta=1474s
-  [12/60] t=4 m=500 w=0 | elapsed=361s eta=1444s
-  [13/60] t=4 m=1000 w=0 | elapsed=392s eta=1417s
-  [14/60] t=4 m=5000 w=0 | elapsed=422s eta=1386s
-  [15/60] t=4 m=10000 w=0 | elapsed=452s eta=1356s
-  [16/60] t=8 m=250 w=0 | elapsed=482s eta=1325s
-  [17/60] t=8 m=500 w=0 | elapsed=512s eta=1295s
-  [18/60] t=8 m=1000 w=0 | elapsed=542s eta=1264s
-  [19/60] t=8 m=5000 w=0 | elapsed=572s eta=1234s
-  [20/60] t=8 m=10000 w=0 | elapsed=602s eta=1204s
---- w=0ns, rep=3/3 ---
-  [21/60] t=4 m=250 w=0 | elapsed=632s eta=1173s
-  [22/60] t=4 m=500 w=0 | elapsed=663s eta=1145s
-  [23/60] t=4 m=1000 w=0 | elapsed=693s eta=1114s
-  [24/60] t=4 m=5000 w=0 | elapsed=723s eta=1084s
-  [25/60] t=4 m=10000 w=0 | elapsed=753s eta=1054s
-  [26/60] t=8 m=250 w=0 | elapsed=783s eta=1023s
-  [27/60] t=8 m=500 w=0 | elapsed=813s eta=993s
-  [28/60] t=8 m=1000 w=0 | elapsed=843s eta=963s
-  [29/60] t=8 m=5000 w=0 | elapsed=873s eta=933s
-  [30/60] t=8 m=10000 w=0 | elapsed=903s eta=903s
---- w=500ns, rep=1/3 ---
-  [31/60] t=4 m=250 w=500 | elapsed=933s eta=872s
-  [32/60] t=4 m=500 w=500 | elapsed=964s eta=843s
-  [33/60] t=4 m=1000 w=500 | elapsed=994s eta=813s
-  [34/60] t=4 m=5000 w=500 | elapsed=1024s eta=783s
-  [35/60] t=4 m=10000 w=500 | elapsed=1054s eta=752s
-  [36/60] t=8 m=250 w=500 | elapsed=1084s eta=722s
-  [37/60] t=8 m=500 w=500 | elapsed=1114s eta=692s
-  [38/60] t=8 m=1000 w=500 | elapsed=1144s eta=662s
-  [39/60] t=8 m=5000 w=500 | elapsed=1174s eta=632s
-  [40/60] t=8 m=10000 w=500 | elapsed=1204s eta=602s
---- w=500ns, rep=2/3 ---
-  [41/60] t=4 m=250 w=500 | elapsed=1234s eta=571s
-  [42/60] t=4 m=500 w=500 | elapsed=1265s eta=542s
-  [43/60] t=4 m=1000 w=500 | elapsed=1295s eta=511s
-  [44/60] t=4 m=5000 w=500 | elapsed=1325s eta=481s
-  [45/60] t=4 m=10000 w=500 | elapsed=1355s eta=451s
-  [46/60] t=8 m=250 w=500 | elapsed=1385s eta=421s
-  [47/60] t=8 m=500 w=500 | elapsed=1415s eta=391s
-  [48/60] t=8 m=1000 w=500 | elapsed=1445s eta=361s
-  [49/60] t=8 m=5000 w=500 | elapsed=1475s eta=331s
-  [50/60] t=8 m=10000 w=500 | elapsed=1505s eta=301s
---- w=500ns, rep=3/3 ---
-  [51/60] t=4 m=250 w=500 | elapsed=1536s eta=271s
-  [52/60] t=4 m=500 w=500 | elapsed=1566s eta=240s
-  [53/60] t=4 m=1000 w=500 | elapsed=1596s eta=210s
-  [54/60] t=4 m=5000 w=500 | elapsed=1626s eta=180s
-  [55/60] t=4 m=10000 w=500 | elapsed=1656s eta=150s
-  [56/60] t=8 m=250 w=500 | elapsed=1686s eta=120s
-  [57/60] t=8 m=500 w=500 | elapsed=1716s eta=90s
-  [58/60] t=8 m=1000 w=500 | elapsed=1746s eta=60s
-  [59/60] t=8 m=5000 w=500 | elapsed=1776s eta=30s
-  [60/60] t=8 m=10000 w=500 | elapsed=1806s eta=0s
-
-=== Done. Results in result/emerald_c6620/ ===
-=== CPU Setup ===
-Setting cpu: 0
-Setting cpu: 1
-Setting cpu: 2
-Setting cpu: 3
-Setting cpu: 4
-Setting cpu: 5
-Setting cpu: 6
-Setting cpu: 7
-Setting cpu: 8
-Setting cpu: 9
-Setting cpu: 10
-Setting cpu: 11
-Setting cpu: 12
-Setting cpu: 13
-Setting cpu: 14
-Setting cpu: 15
-Setting cpu: 16
-Setting cpu: 17
-Setting cpu: 18
-Setting cpu: 19
-Setting cpu: 20
-Setting cpu: 21
-Setting cpu: 22
-Setting cpu: 23
-Setting cpu: 24
-Setting cpu: 25
-Setting cpu: 26
-Setting cpu: 27
-Setting cpu: 28
-Setting cpu: 29
-Setting cpu: 30
-Setting cpu: 31
-Setting cpu: 32
-Setting cpu: 33
-Setting cpu: 34
-Setting cpu: 35
-Setting cpu: 36
-Setting cpu: 37
-Setting cpu: 38
-Setting cpu: 39
-Setting cpu: 40
-Setting cpu: 41
-Setting cpu: 42
-Setting cpu: 43
-Setting cpu: 44
-Setting cpu: 45
-Setting cpu: 46
-Setting cpu: 47
-Setting cpu: 48
-Setting cpu: 49
-Setting cpu: 50
-Setting cpu: 51
-Setting cpu: 52
-Setting cpu: 53
-Setting cpu: 54
-Setting cpu: 55
-  governor: performance
-  Intel turbo: disabled
-
-=== Experiment (Server: emerald_c6620) ===
-Reps: 3, Threads: 16 32, Multipliers: 0 10 20 30 40 50 60 70 80 90 100 250 500 1000 5000 10000, Work(ns): 0 500
-Total runs: 192 (est. ~96 min)
-
---- w=0ns, rep=1/3 ---
-  [1/192] t=16 m=0 w=0 | elapsed=30s eta=5730s
-  [2/192] t=16 m=10 w=0 | elapsed=60s eta=5700s
-  [3/192] t=16 m=20 w=0 | elapsed=90s eta=5670s
-  [4/192] t=16 m=30 w=0 | elapsed=121s eta=5687s
-  [5/192] t=16 m=40 w=0 | elapsed=151s eta=5647s
-  [6/192] t=16 m=50 w=0 | elapsed=181s eta=5611s
-  [7/192] t=16 m=60 w=0 | elapsed=211s eta=5576s
-  [8/192] t=16 m=70 w=0 | elapsed=241s eta=5543s
-  [9/192] t=16 m=80 w=0 | elapsed=271s eta=5510s
-  [10/192] t=16 m=90 w=0 | elapsed=301s eta=5478s
-  [11/192] t=16 m=100 w=0 | elapsed=331s eta=5446s
-  [12/192] t=16 m=250 w=0 | elapsed=361s eta=5415s
-  [13/192] t=16 m=500 w=0 | elapsed=391s eta=5383s
-  [14/192] t=16 m=1000 w=0 | elapsed=422s eta=5365s
-  [15/192] t=16 m=5000 w=0 | elapsed=452s eta=5333s
-  [16/192] t=16 m=10000 w=0 | elapsed=482s eta=5302s
-  [17/192] t=32 m=0 w=0 | elapsed=512s eta=5270s
-  [18/192] t=32 m=10 w=0 | elapsed=542s eta=5239s
-  [19/192] t=32 m=20 w=0 | elapsed=572s eta=5208s
-  [20/192] t=32 m=30 w=0 | elapsed=602s eta=5177s
-  [21/192] t=32 m=40 w=0 | elapsed=632s eta=5146s
-  [22/192] t=32 m=50 w=0 | elapsed=662s eta=5115s
-  [23/192] t=32 m=60 w=0 | elapsed=693s eta=5092s
-  [24/192] t=32 m=70 w=0 | elapsed=723s eta=5061s
-  [25/192] t=32 m=80 w=0 | elapsed=753s eta=5030s
-  [26/192] t=32 m=90 w=0 | elapsed=783s eta=4999s
-  [27/192] t=32 m=100 w=0 | elapsed=813s eta=4968s
-  [28/192] t=32 m=250 w=0 | elapsed=843s eta=4937s
-  [29/192] t=32 m=500 w=0 | elapsed=873s eta=4906s
-  [30/192] t=32 m=1000 w=0 | elapsed=903s eta=4876s
-  [31/192] t=32 m=5000 w=0 | elapsed=933s eta=4845s
-  [32/192] t=32 m=10000 w=0 | elapsed=964s eta=4820s
---- w=0ns, rep=2/3 ---
-  [33/192] t=16 m=0 w=0 | elapsed=994s eta=4789s
-  [34/192] t=16 m=10 w=0 | elapsed=1024s eta=4758s
-  [35/192] t=16 m=20 w=0 | elapsed=1054s eta=4727s
-  [36/192] t=16 m=30 w=0 | elapsed=1084s eta=4697s
-  [37/192] t=16 m=40 w=0 | elapsed=1114s eta=4666s
-  [38/192] t=16 m=50 w=0 | elapsed=1144s eta=4636s
-  [39/192] t=16 m=60 w=0 | elapsed=1174s eta=4605s
-  [40/192] t=16 m=70 w=0 | elapsed=1204s eta=4575s
-  [41/192] t=16 m=80 w=0 | elapsed=1234s eta=4544s
-  [42/192] t=16 m=90 w=0 | elapsed=1265s eta=4517s
-  [43/192] t=16 m=100 w=0 | elapsed=1295s eta=4487s
-  [44/192] t=16 m=250 w=0 | elapsed=1325s eta=4456s
-  [45/192] t=16 m=500 w=0 | elapsed=1355s eta=4426s
-  [46/192] t=16 m=1000 w=0 | elapsed=1385s eta=4395s
-  [47/192] t=16 m=5000 w=0 | elapsed=1415s eta=4365s
-  [48/192] t=16 m=10000 w=0 | elapsed=1445s eta=4335s
-  [49/192] t=32 m=0 w=0 | elapsed=1475s eta=4304s
-  [50/192] t=32 m=10 w=0 | elapsed=1505s eta=4274s
-  [51/192] t=32 m=20 w=0 | elapsed=1535s eta=4243s
-  [52/192] t=32 m=30 w=0 | elapsed=1566s eta=4216s
-  [53/192] t=32 m=40 w=0 | elapsed=1596s eta=4185s
-  [54/192] t=32 m=50 w=0 | elapsed=1626s eta=4155s
-  [55/192] t=32 m=60 w=0 | elapsed=1656s eta=4124s
-  [56/192] t=32 m=70 w=0 | elapsed=1686s eta=4094s
-  [57/192] t=32 m=80 w=0 | elapsed=1716s eta=4064s
-  [58/192] t=32 m=90 w=0 | elapsed=1746s eta=4033s
-  [59/192] t=32 m=100 w=0 | elapsed=1776s eta=4003s
-  [60/192] t=32 m=250 w=0 | elapsed=1806s eta=3973s
-  [61/192] t=32 m=500 w=0 | elapsed=1837s eta=3945s
-  [62/192] t=32 m=1000 w=0 | elapsed=1867s eta=3914s
-  [63/192] t=32 m=5000 w=0 | elapsed=1897s eta=3884s
-  [64/192] t=32 m=10000 w=0 | elapsed=1927s eta=3854s
---- w=0ns, rep=3/3 ---
-  [65/192] t=16 m=0 w=0 | elapsed=1957s eta=3823s
-  [66/192] t=16 m=10 w=0 | elapsed=1987s eta=3793s
-  [67/192] t=16 m=20 w=0 | elapsed=2017s eta=3763s
-  [68/192] t=16 m=30 w=0 | elapsed=2047s eta=3732s
-  [69/192] t=16 m=40 w=0 | elapsed=2077s eta=3702s
-  [70/192] t=16 m=50 w=0 | elapsed=2108s eta=3673s
-  [71/192] t=16 m=60 w=0 | elapsed=2138s eta=3643s
-  [72/192] t=16 m=70 w=0 | elapsed=2168s eta=3613s
-  [73/192] t=16 m=80 w=0 | elapsed=2198s eta=3583s
-  [74/192] t=16 m=90 w=0 | elapsed=2228s eta=3552s
-  [75/192] t=16 m=100 w=0 | elapsed=2258s eta=3522s
-  [76/192] t=16 m=250 w=0 | elapsed=2288s eta=3492s
-  [77/192] t=16 m=500 w=0 | elapsed=2318s eta=3461s
-  [78/192] t=16 m=1000 w=0 | elapsed=2348s eta=3431s
-  [79/192] t=16 m=5000 w=0 | elapsed=2378s eta=3401s
-  [80/192] t=16 m=10000 w=0 | elapsed=2409s eta=3372s
-  [81/192] t=32 m=0 w=0 | elapsed=2439s eta=3342s
-  [82/192] t=32 m=10 w=0 | elapsed=2469s eta=3312s
-  [83/192] t=32 m=20 w=0 | elapsed=2499s eta=3281s
-  [84/192] t=32 m=30 w=0 | elapsed=2529s eta=3251s
-  [85/192] t=32 m=40 w=0 | elapsed=2559s eta=3221s
-  [86/192] t=32 m=50 w=0 | elapsed=2589s eta=3191s
-  [87/192] t=32 m=60 w=0 | elapsed=2619s eta=3160s
-  [88/192] t=32 m=70 w=0 | elapsed=2649s eta=3130s
-  [89/192] t=32 m=80 w=0 | elapsed=2680s eta=3101s
-  [90/192] t=32 m=90 w=0 | elapsed=2710s eta=3071s
-  [91/192] t=32 m=100 w=0 | elapsed=2740s eta=3041s
-  [92/192] t=32 m=250 w=0 | elapsed=2770s eta=3010s
-  [93/192] t=32 m=500 w=0 | elapsed=2800s eta=2980s
-  [94/192] t=32 m=1000 w=0 | elapsed=2830s eta=2950s
-  [95/192] t=32 m=5000 w=0 | elapsed=2860s eta=2920s
-  [96/192] t=32 m=10000 w=0 | elapsed=2890s eta=2890s
---- w=500ns, rep=1/3 ---
-  [97/192] t=16 m=0 w=500 | elapsed=2920s eta=2859s
-  [98/192] t=16 m=10 w=500 | elapsed=2951s eta=2830s
-  [99/192] t=16 m=20 w=500 | elapsed=2981s eta=2800s
-  [100/192] t=16 m=30 w=500 | elapsed=3011s eta=2770s
-  [101/192] t=16 m=40 w=500 | elapsed=3041s eta=2739s
-  [102/192] t=16 m=50 w=500 | elapsed=3071s eta=2709s
-  [103/192] t=16 m=60 w=500 | elapsed=3101s eta=2679s
-  [104/192] t=16 m=70 w=500 | elapsed=3131s eta=2649s
-  [105/192] t=16 m=80 w=500 | elapsed=3161s eta=2619s
-  [106/192] t=16 m=90 w=500 | elapsed=3191s eta=2588s
-  [107/192] t=16 m=100 w=500 | elapsed=3221s eta=2558s
-  [108/192] t=16 m=250 w=500 | elapsed=3252s eta=2529s
-  [109/192] t=16 m=500 w=500 | elapsed=3282s eta=2499s
-  [110/192] t=16 m=1000 w=500 | elapsed=3312s eta=2468s
-  [111/192] t=16 m=5000 w=500 | elapsed=3342s eta=2438s
-  [112/192] t=16 m=10000 w=500 | elapsed=3372s eta=2408s
-  [113/192] t=32 m=0 w=500 | elapsed=3402s eta=2378s
-  [114/192] t=32 m=10 w=500 | elapsed=3432s eta=2348s
-  [115/192] t=32 m=20 w=500 | elapsed=3462s eta=2318s
-  [116/192] t=32 m=30 w=500 | elapsed=3492s eta=2287s
-  [117/192] t=32 m=40 w=500 | elapsed=3522s eta=2257s
-  [118/192] t=32 m=50 w=500 | elapsed=3553s eta=2228s
-  [119/192] t=32 m=60 w=500 | elapsed=3583s eta=2197s
-  [120/192] t=32 m=70 w=500 | elapsed=3613s eta=2167s
-  [121/192] t=32 m=80 w=500 | elapsed=3643s eta=2137s
-  [122/192] t=32 m=90 w=500 | elapsed=3673s eta=2107s
-  [123/192] t=32 m=100 w=500 | elapsed=3703s eta=2077s
-  [124/192] t=32 m=250 w=500 | elapsed=3733s eta=2047s
-  [125/192] t=32 m=500 w=500 | elapsed=3763s eta=2016s
-  [126/192] t=32 m=1000 w=500 | elapsed=3793s eta=1986s
-  [127/192] t=32 m=5000 w=500 | elapsed=3824s eta=1957s
-  [128/192] t=32 m=10000 w=500 | elapsed=3854s eta=1927s
---- w=500ns, rep=2/3 ---
-  [129/192] t=16 m=0 w=500 | elapsed=3884s eta=1896s
-  [130/192] t=16 m=10 w=500 | elapsed=3914s eta=1866s
-  [131/192] t=16 m=20 w=500 | elapsed=3944s eta=1836s
-  [132/192] t=16 m=30 w=500 | elapsed=3974s eta=1806s
-  [133/192] t=16 m=40 w=500 | elapsed=4004s eta=1776s
-  [134/192] t=16 m=50 w=500 | elapsed=4034s eta=1746s
-  [135/192] t=16 m=60 w=500 | elapsed=4064s eta=1715s
-  [136/192] t=16 m=70 w=500 | elapsed=4094s eta=1685s
-  [137/192] t=16 m=80 w=500 | elapsed=4125s eta=1656s
-  [138/192] t=16 m=90 w=500 | elapsed=4155s eta=1625s
-  [139/192] t=16 m=100 w=500 | elapsed=4185s eta=1595s
-  [140/192] t=16 m=250 w=500 | elapsed=4215s eta=1565s
-  [141/192] t=16 m=500 w=500 | elapsed=4245s eta=1535s
-  [142/192] t=16 m=1000 w=500 | elapsed=4275s eta=1505s
-  [143/192] t=16 m=5000 w=500 | elapsed=4305s eta=1475s
-  [144/192] t=16 m=10000 w=500 | elapsed=4335s eta=1445s
-  [145/192] t=32 m=0 w=500 | elapsed=4365s eta=1414s
-  [146/192] t=32 m=10 w=500 | elapsed=4396s eta=1385s
-  [147/192] t=32 m=20 w=500 | elapsed=4426s eta=1354s
-  [148/192] t=32 m=30 w=500 | elapsed=4456s eta=1324s
-  [149/192] t=32 m=40 w=500 | elapsed=4486s eta=1294s
-  [150/192] t=32 m=50 w=500 | elapsed=4516s eta=1264s
-  [151/192] t=32 m=60 w=500 | elapsed=4546s eta=1234s
-  [152/192] t=32 m=70 w=500 | elapsed=4576s eta=1204s
-  [153/192] t=32 m=80 w=500 | elapsed=4606s eta=1174s
-  [154/192] t=32 m=90 w=500 | elapsed=4636s eta=1143s
-  [155/192] t=32 m=100 w=500 | elapsed=4666s eta=1113s
-  [156/192] t=32 m=250 w=500 | elapsed=4697s eta=1083s
-  [157/192] t=32 m=500 w=500 | elapsed=4727s eta=1053s
-  [158/192] t=32 m=1000 w=500 | elapsed=4757s eta=1023s
-  [159/192] t=32 m=5000 w=500 | elapsed=4787s eta=993s
-  [160/192] t=32 m=10000 w=500 | elapsed=4817s eta=963s
---- w=500ns, rep=3/3 ---
-  [161/192] t=16 m=0 w=500 | elapsed=4847s eta=933s
-  [162/192] t=16 m=10 w=500 | elapsed=4877s eta=903s
-  [163/192] t=16 m=20 w=500 | elapsed=4907s eta=873s
-  [164/192] t=16 m=30 w=500 | elapsed=4937s eta=842s
-  [165/192] t=16 m=40 w=500 | elapsed=4968s eta=812s
-  [166/192] t=16 m=50 w=500 | elapsed=4998s eta=782s
-  [167/192] t=16 m=60 w=500 | elapsed=5028s eta=752s
-  [168/192] t=16 m=70 w=500 | elapsed=5058s eta=722s
-  [169/192] t=16 m=80 w=500 | elapsed=5088s eta=692s
-  [170/192] t=16 m=90 w=500 | elapsed=5118s eta=662s
-  [171/192] t=16 m=100 w=500 | elapsed=5148s eta=632s
-  [172/192] t=16 m=250 w=500 | elapsed=5178s eta=602s
-  [173/192] t=16 m=500 w=500 | elapsed=5208s eta=571s
-  [174/192] t=16 m=1000 w=500 | elapsed=5238s eta=541s
-  [175/192] t=16 m=5000 w=500 | elapsed=5269s eta=511s
-  [176/192] t=16 m=10000 w=500 | elapsed=5299s eta=481s
-  [177/192] t=32 m=0 w=500 | elapsed=5329s eta=451s
-  [178/192] t=32 m=10 w=500 | elapsed=5359s eta=421s
-  [179/192] t=32 m=20 w=500 | elapsed=5389s eta=391s
-  [180/192] t=32 m=30 w=500 | elapsed=5419s eta=361s
-  [181/192] t=32 m=40 w=500 | elapsed=5449s eta=331s
-  [182/192] t=32 m=50 w=500 | elapsed=5479s eta=301s
-  [183/192] t=32 m=60 w=500 | elapsed=5509s eta=270s
-  [184/192] t=32 m=70 w=500 | elapsed=5540s eta=240s
-  [185/192] t=32 m=80 w=500 | elapsed=5570s eta=210s
-  [186/192] t=32 m=90 w=500 | elapsed=5600s eta=180s
-  [187/192] t=32 m=100 w=500 | elapsed=5630s eta=150s
-  [188/192] t=32 m=250 w=500 | elapsed=5660s eta=120s
-  [189/192] t=32 m=500 w=500 | elapsed=5690s eta=90s
-Terminated
-=== CPU Setup ===
-Setting cpu: 0
-Setting cpu: 1
-Setting cpu: 2
-Setting cpu: 3
-Setting cpu: 4
-Setting cpu: 5
-Setting cpu: 6
-Setting cpu: 7
-Setting cpu: 8
-Setting cpu: 9
-Setting cpu: 10
-Setting cpu: 11
-Setting cpu: 12
-Setting cpu: 13
-Setting cpu: 14
-Setting cpu: 15
-Setting cpu: 16
-Setting cpu: 17
-Setting cpu: 18
-Setting cpu: 19
-Setting cpu: 20
-Setting cpu: 21
-Setting cpu: 22
-Setting cpu: 23
-Setting cpu: 24
-Setting cpu: 25
-Setting cpu: 26
-Setting cpu: 27
-Setting cpu: 28
-Setting cpu: 29
-Setting cpu: 30
-Setting cpu: 31
-Setting cpu: 32
-Setting cpu: 33
-Setting cpu: 34
-Setting cpu: 35
-Setting cpu: 36
-Setting cpu: 37
-Setting cpu: 38
-Setting cpu: 39
-Setting cpu: 40
-Setting cpu: 41
-Setting cpu: 42
-Setting cpu: 43
-Setting cpu: 44
-Setting cpu: 45
-Setting cpu: 46
-Setting cpu: 47
-Setting cpu: 48
-Setting cpu: 49
-Setting cpu: 50
-Setting cpu: 51
-Setting cpu: 52
-Setting cpu: 53
-Setting cpu: 54
-Setting cpu: 55
-  governor: performance
-  Intel turbo: disabled
-
-=== Experiment (Server: emerald_c6620) ===
-Reps: 3, Threads: 16 32, Multipliers: 0 10 20 30 40 50 60 70 80 90 100 250 500 1000 5000 10000, Work(ns): 0 500
-Total runs: 192 (est. ~96 min)
-
---- w=0ns, rep=1/3 ---
-  [1/192] SKIP t=16 m=0 w=0
-  [2/192] SKIP t=16 m=10 w=0
-  [3/192] SKIP t=16 m=20 w=0
-  [4/192] SKIP t=16 m=30 w=0
-  [5/192] SKIP t=16 m=40 w=0
-  [6/192] SKIP t=16 m=50 w=0
-  [7/192] SKIP t=16 m=60 w=0
-  [8/192] SKIP t=16 m=70 w=0
-  [9/192] SKIP t=16 m=80 w=0
-  [10/192] SKIP t=16 m=90 w=0
-  [11/192] SKIP t=16 m=100 w=0
-  [12/192] SKIP t=16 m=250 w=0
-  [13/192] SKIP t=16 m=500 w=0
-  [14/192] SKIP t=16 m=1000 w=0
-  [15/192] SKIP t=16 m=5000 w=0
-  [16/192] SKIP t=16 m=10000 w=0
-  [17/192] SKIP t=32 m=0 w=0
-  [18/192] SKIP t=32 m=10 w=0
-  [19/192] SKIP t=32 m=20 w=0
-  [20/192] SKIP t=32 m=30 w=0
-  [21/192] SKIP t=32 m=40 w=0
-  [22/192] SKIP t=32 m=50 w=0
-  [23/192] SKIP t=32 m=60 w=0
-  [24/192] SKIP t=32 m=70 w=0
-  [25/192] SKIP t=32 m=80 w=0
-  [26/192] SKIP t=32 m=90 w=0
-  [27/192] SKIP t=32 m=100 w=0
-  [28/192] SKIP t=32 m=250 w=0
-  [29/192] SKIP t=32 m=500 w=0
-  [30/192] SKIP t=32 m=1000 w=0
-  [31/192] SKIP t=32 m=5000 w=0
-  [32/192] SKIP t=32 m=10000 w=0
---- w=0ns, rep=2/3 ---
-  [33/192] SKIP t=16 m=0 w=0
-  [34/192] SKIP t=16 m=10 w=0
-  [35/192] SKIP t=16 m=20 w=0
-  [36/192] SKIP t=16 m=30 w=0
-  [37/192] SKIP t=16 m=40 w=0
-  [38/192] SKIP t=16 m=50 w=0
-  [39/192] SKIP t=16 m=60 w=0
-  [40/192] SKIP t=16 m=70 w=0
-  [41/192] SKIP t=16 m=80 w=0
-  [42/192] SKIP t=16 m=90 w=0
-  [43/192] SKIP t=16 m=100 w=0
-  [44/192] SKIP t=16 m=250 w=0
-  [45/192] SKIP t=16 m=500 w=0
-  [46/192] SKIP t=16 m=1000 w=0
-  [47/192] SKIP t=16 m=5000 w=0
-  [48/192] SKIP t=16 m=10000 w=0
-  [49/192] SKIP t=32 m=0 w=0
-  [50/192] SKIP t=32 m=10 w=0
-  [51/192] SKIP t=32 m=20 w=0
-  [52/192] SKIP t=32 m=30 w=0
-  [53/192] SKIP t=32 m=40 w=0
-  [54/192] SKIP t=32 m=50 w=0
-  [55/192] SKIP t=32 m=60 w=0
-  [56/192] SKIP t=32 m=70 w=0
-  [57/192] SKIP t=32 m=80 w=0
-  [58/192] SKIP t=32 m=90 w=0
-  [59/192] SKIP t=32 m=100 w=0
-  [60/192] SKIP t=32 m=250 w=0
-  [61/192] SKIP t=32 m=500 w=0
-  [62/192] SKIP t=32 m=1000 w=0
-  [63/192] SKIP t=32 m=5000 w=0
-  [64/192] SKIP t=32 m=10000 w=0
---- w=0ns, rep=3/3 ---
-  [65/192] SKIP t=16 m=0 w=0
-  [66/192] SKIP t=16 m=10 w=0
-  [67/192] SKIP t=16 m=20 w=0
-  [68/192] SKIP t=16 m=30 w=0
-  [69/192] SKIP t=16 m=40 w=0
-  [70/192] SKIP t=16 m=50 w=0
-  [71/192] SKIP t=16 m=60 w=0
-  [72/192] SKIP t=16 m=70 w=0
-  [73/192] SKIP t=16 m=80 w=0
-  [74/192] SKIP t=16 m=90 w=0
-  [75/192] SKIP t=16 m=100 w=0
-  [76/192] SKIP t=16 m=250 w=0
-  [77/192] SKIP t=16 m=500 w=0
-  [78/192] SKIP t=16 m=1000 w=0
-  [79/192] SKIP t=16 m=5000 w=0
-  [80/192] SKIP t=16 m=10000 w=0
-  [81/192] SKIP t=32 m=0 w=0
-  [82/192] SKIP t=32 m=10 w=0
-  [83/192] SKIP t=32 m=20 w=0
-  [84/192] SKIP t=32 m=30 w=0
-  [85/192] SKIP t=32 m=40 w=0
-  [86/192] SKIP t=32 m=50 w=0
-  [87/192] SKIP t=32 m=60 w=0
-  [88/192] SKIP t=32 m=70 w=0
-  [89/192] SKIP t=32 m=80 w=0
-  [90/192] SKIP t=32 m=90 w=0
-  [91/192] SKIP t=32 m=100 w=0
-  [92/192] SKIP t=32 m=250 w=0
-  [93/192] SKIP t=32 m=500 w=0
-  [94/192] SKIP t=32 m=1000 w=0
-  [95/192] SKIP t=32 m=5000 w=0
-  [96/192] SKIP t=32 m=10000 w=0
---- w=500ns, rep=1/3 ---
-  [97/192] SKIP t=16 m=0 w=500
-  [98/192] SKIP t=16 m=10 w=500
-  [99/192] SKIP t=16 m=20 w=500
-  [100/192] SKIP t=16 m=30 w=500
-  [101/192] SKIP t=16 m=40 w=500
-  [102/192] SKIP t=16 m=50 w=500
-  [103/192] SKIP t=16 m=60 w=500
-  [104/192] SKIP t=16 m=70 w=500
-  [105/192] SKIP t=16 m=80 w=500
-  [106/192] SKIP t=16 m=90 w=500
-  [107/192] SKIP t=16 m=100 w=500
-  [108/192] SKIP t=16 m=250 w=500
-  [109/192] SKIP t=16 m=500 w=500
-  [110/192] SKIP t=16 m=1000 w=500
-  [111/192] SKIP t=16 m=5000 w=500
-  [112/192] SKIP t=16 m=10000 w=500
-  [113/192] SKIP t=32 m=0 w=500
-  [114/192] SKIP t=32 m=10 w=500
-  [115/192] SKIP t=32 m=20 w=500
-  [116/192] SKIP t=32 m=30 w=500
-  [117/192] SKIP t=32 m=40 w=500
-  [118/192] SKIP t=32 m=50 w=500
-  [119/192] SKIP t=32 m=60 w=500
-  [120/192] SKIP t=32 m=70 w=500
-  [121/192] SKIP t=32 m=80 w=500
-  [122/192] SKIP t=32 m=90 w=500
-  [123/192] SKIP t=32 m=100 w=500
-  [124/192] SKIP t=32 m=250 w=500
-  [125/192] SKIP t=32 m=500 w=500
-  [126/192] SKIP t=32 m=1000 w=500
-  [127/192] SKIP t=32 m=5000 w=500
-  [128/192] SKIP t=32 m=10000 w=500
---- w=500ns, rep=2/3 ---
-  [129/192] SKIP t=16 m=0 w=500
-  [130/192] SKIP t=16 m=10 w=500
-  [131/192] SKIP t=16 m=20 w=500
-  [132/192] SKIP t=16 m=30 w=500
-  [133/192] SKIP t=16 m=40 w=500
-  [134/192] SKIP t=16 m=50 w=500
-  [135/192] SKIP t=16 m=60 w=500
-  [136/192] SKIP t=16 m=70 w=500
-  [137/192] SKIP t=16 m=80 w=500
-  [138/192] SKIP t=16 m=90 w=500
-  [139/192] SKIP t=16 m=100 w=500
-  [140/192] SKIP t=16 m=250 w=500
-  [141/192] SKIP t=16 m=500 w=500
-  [142/192] SKIP t=16 m=1000 w=500
-  [143/192] SKIP t=16 m=5000 w=500
-  [144/192] SKIP t=16 m=10000 w=500
-  [145/192] SKIP t=32 m=0 w=500
-  [146/192] SKIP t=32 m=10 w=500
-  [147/192] SKIP t=32 m=20 w=500
-  [148/192] SKIP t=32 m=30 w=500
-  [149/192] SKIP t=32 m=40 w=500
-  [150/192] SKIP t=32 m=50 w=500
-  [151/192] SKIP t=32 m=60 w=500
-  [152/192] SKIP t=32 m=70 w=500
-  [153/192] SKIP t=32 m=80 w=500
-  [154/192] SKIP t=32 m=90 w=500
-  [155/192] SKIP t=32 m=100 w=500
-  [156/192] SKIP t=32 m=250 w=500
-  [157/192] SKIP t=32 m=500 w=500
-  [158/192] SKIP t=32 m=1000 w=500
-  [159/192] SKIP t=32 m=5000 w=500
-  [160/192] SKIP t=32 m=10000 w=500
---- w=500ns, rep=3/3 ---
-  [161/192] SKIP t=16 m=0 w=500
-  [162/192] SKIP t=16 m=10 w=500
-  [163/192] SKIP t=16 m=20 w=500
-  [164/192] SKIP t=16 m=30 w=500
-  [165/192] SKIP t=16 m=40 w=500
-  [166/192] SKIP t=16 m=50 w=500
-  [167/192] SKIP t=16 m=60 w=500
-  [168/192] SKIP t=16 m=70 w=500
-  [169/192] SKIP t=16 m=80 w=500
-  [170/192] SKIP t=16 m=90 w=500
-  [171/192] SKIP t=16 m=100 w=500
-  [172/192] SKIP t=16 m=250 w=500
-  [173/192] SKIP t=16 m=500 w=500
-  [174/192] SKIP t=16 m=1000 w=500
-  [175/192] SKIP t=16 m=5000 w=500
-  [176/192] SKIP t=16 m=10000 w=500
-  [177/192] SKIP t=32 m=0 w=500
-  [178/192] SKIP t=32 m=10 w=500
-  [179/192] SKIP t=32 m=20 w=500
-  [180/192] SKIP t=32 m=30 w=500
-  [181/192] SKIP t=32 m=40 w=500
-  [182/192] SKIP t=32 m=50 w=500
-  [183/192] SKIP t=32 m=60 w=500
-  [184/192] SKIP t=32 m=70 w=500
-  [185/192] SKIP t=32 m=80 w=500
-  [186/192] SKIP t=32 m=90 w=500
-  [187/192] SKIP t=32 m=100 w=500
-  [188/192] SKIP t=32 m=250 w=500
-  [189/192] SKIP t=32 m=500 w=500
-  [190/192] t=32 m=1000 w=500 | elapsed=31s eta=62s
-  [191/192] t=32 m=5000 w=500 | elapsed=61s eta=30s
-  [192/192] t=32 m=10000 w=500 | elapsed=91s eta=0s
-
-=== Done. Results in result/emerald_c6620/ (skipped: 189/192) ===
+=== Done. Results in result/emerald_c6620/ (skipped: 1/1638) ===
