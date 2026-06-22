@@ -33,6 +33,7 @@ typedef struct thread_stats {
 	long long ut_delay_count;
 	long long yield_count;
 	long long sleep_count;
+	long long total_latency_tsc;
 } thread_stats_t;
 
 typedef struct thread_arg {
@@ -45,8 +46,7 @@ alignas(64) unsigned int	num_threads = 16;
 alignas(64) unsigned int	spin_wait_pause_multiplier = 50;
 alignas(64) unsigned int	spin_wait_rounds = 30;
 alignas(64) unsigned int	spin_wait_delay = 6;
-alignas(64) long			
-work_ns = 0;
+alignas(64) long			work_ns = 0;
 
 void lock_init(atomic_bool *l) {
 	atomic_store(l, false);
@@ -82,25 +82,25 @@ static void busy_wait_ns(long ns)
 unsigned long ut_delay(unsigned long delay) {
 	unsigned long i, j;
 	const unsigned long iterations = delay * spin_wait_pause_multiplier;
-	
+
 	// 低優先度にする
 	// UT_LOW_PRIORITY_CPU();
 
 	j = 0;
-  
+
 	for (i = 0; i < iterations; i++) {
 	  j += i;
 	  cpu_relax();
 	}
-  
+
 	// 優先度を戻す
 	// UT_RESUME_PRIORITY_CPU();
-  
+
 	return (j);
 }
 
 // https://github.com/mysql/mysql-server/blob/447eb26e094b444a88c532028647e48228c3c04f/storage/innobase/sync/sync0rw.cc#L273
-void lock_acquire(atomic_bool *l, thread_stats_t *stats) {
+bool lock_acquire(atomic_bool *l, thread_stats_t *stats) {
 	unsigned long	i = 0;
 
 lock_loop:
@@ -121,7 +121,7 @@ lock_loop:
 
 	// atomic_exchange_explicitは変更前の値が返されるのでfalseなら成功、trueならすでに他のスレッドがロックを獲得済みと判断できる
 	if (!atomic_exchange_explicit(l, true, memory_order_acquire)) {
-		return;
+		return true;
 	} else {
 		if (i < spin_wait_rounds) {
 			goto lock_loop;
@@ -136,7 +136,7 @@ lock_loop:
 		}
 		bool stopping = atomic_load_explicit(&stop_flag, memory_order_relaxed);
 		pthread_mutex_unlock(&mutex);
-		if (stopping) return;
+		if (stopping) return false;
 
 		i = 0;
 
@@ -147,7 +147,7 @@ lock_loop:
 void lock_release(atomic_bool *l) {
 	atomic_exchange_explicit(l, false, memory_order_release);
 	pthread_mutex_lock(&mutex);
-	// cond_signalはブロックしているスレッドを1つだけ起床させる
+	// cond_signalはブロックしているスレッドを少なくとも1つ以上起床させる
 	pthread_cond_signal(&cond);
 	pthread_mutex_unlock(&mutex);
 }
@@ -166,13 +166,13 @@ void *thread_func(void *param)
 	thread_stats_t *stats = &arg->stats;
 
 	while (!atomic_load_explicit(&stop_flag, memory_order_relaxed)) {
-		// unsigned long long start = __rdtsc();
-		lock_acquire(&lock_var, stats);
+		unsigned long long start = __rdtsc();
+		if (!lock_acquire(&lock_var, stats)) break;
 		busy_wait_ns(work_ns);
 		stats->total_count++;
 		lock_release(&lock_var);
-		// unsigned long long end = __rdtsc();
-		// atomic_fetch_add_explicit(&total_latency_tsc, (end - start), memory_order_relaxed);
+		unsigned long long end = __rdtsc();
+		stats->total_latency_tsc += (long long)(end - start);
 	}
 	return NULL;
 }
@@ -241,6 +241,7 @@ int main(int argc, char *argv[]) {
 		global_ut_delay_count += thread_args[i].stats.ut_delay_count;
 		global_yield_count += thread_args[i].stats.yield_count;
 		global_sleep_count += thread_args[i].stats.sleep_count;
+		total_latency_tsc += thread_args[i].stats.total_latency_tsc;
 	}
 
 	printf("------------------------------------\n");
@@ -250,8 +251,9 @@ int main(int argc, char *argv[]) {
 	printf("Global yield count: %lld\n", global_yield_count);
 	printf("Global sleep count: %lld\n", global_sleep_count);
 	printf("Work[ns]: %ld\n", work_ns);
-	// printf("Average Latency[tsc]: %lld\n", total_latency_tsc / total_count);
-	
+	if (total_count > 0)
+		printf("Average Latency[tsc]: %lld\n", total_latency_tsc / total_count);
+
 	free(thread_args);
 	free(threads);
 	return 0;

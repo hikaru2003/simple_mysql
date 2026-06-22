@@ -41,7 +41,7 @@ done
 echo "Cloning simple_mysql repository..."
 cd $USER_HOME
 git clone ${GIT_REPO_URL}
-chmod +x $USER_HOME/simple_mysql/simple_lock $USER_HOME/simple_mysql/pause_cycle_count
+chmod +x $USER_HOME/simple_mysql/simple_spinlock $USER_HOME/simple_mysql/debug_simple_spinlock $USER_HOME/simple_mysql/pause_cycle_count
 
 # Apply htop config
 mkdir -p $USER_HOME/.config/htop
