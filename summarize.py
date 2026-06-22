@@ -1,3 +1,24 @@
+# Usage:
+#   python3 summarize.py
+#
+# Description:
+#   各サーバ・w 値・スレッド数の実験結果 (rep1/2/3) を集計し、
+#   平均スループット・yield/sleep/ut_delay カウンタを summary_{t}.md として出力する。
+#
+# Parameters (in script):
+#   BASE           = '/home/morisaki/simple_mysql/result'
+#   SERVERS        = [ivy_c8220, broadwell_xl170, skylake_c220g5, skylake_ann, icelake_sm110, emerald_c6620]
+#   WORK_DURATIONS = [0, 100, 200, 500, 1000, 2000, 5000]  # ns
+#   THREADS        = [1, 4, 8, 16, 32]
+#   REPS           = ['rep1', 'rep2', 'rep3']
+#
+# Input:
+#   result/{server}/w{w}/rep{1,2,3}/t{t}_m{m}.txt
+#   （なければ result/{server}/2026_5_28/w{w}/ にフォールバック）
+#
+# Output:
+#   result/{server}/w{w}/summary_t{t}.md  : multiplier × throughput/カウンタの集計表
+
 import os, re
 
 DURATION = 30
